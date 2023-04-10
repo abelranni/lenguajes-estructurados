@@ -1,0 +1,29 @@
+{
+  "unversionedId": "Lenguaje C/02.01_conceptos",
+  "id": "Lenguaje C/02.01_conceptos",
+  "title": "02.01 - Conceptos Generales",
+  "description": "Lenguajes Estructurados",
+  "source": "@site/docs/02 - Lenguaje C/02.01_conceptos.md",
+  "sourceDirName": "02 - Lenguaje C",
+  "slug": "/Lenguaje C/02.01_conceptos",
+  "permalink": "/docs/Lenguaje C/02.01_conceptos",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02 - Lenguaje C/02.01_conceptos.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "marp": true,
+    "theme": "default",
+    "size": 969,
+    "paginate": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "02.01.E - Juego de la vida de Conway",
+    "permalink": "/docs/Lenguaje C/02.01.E_life_conway"
+  },
+  "next": {
+    "title": "02.02.E - Fractales de Julia",
+    "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia"
+  }
+}

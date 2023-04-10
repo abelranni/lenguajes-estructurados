@@ -1,0 +1,251 @@
+{
+  "/__docusaurus/debug-816": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-293-1c2"
+    }
+  },
+  "/__docusaurus/debug/config-b66": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-293-1c2"
+    }
+  },
+  "/__docusaurus/debug/content-f50": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-293-1c2"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-2a0": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-293-1c2"
+    }
+  },
+  "/__docusaurus/debug/metadata-5b9": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-293-1c2"
+    }
+  },
+  "/__docusaurus/debug/registry-964": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-293-1c2"
+    }
+  },
+  "/__docusaurus/debug/routes-ac1": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-293-1c2"
+    }
+  },
+  "/blog-dd5": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "metadata": "metadata---blogb-2-b-df1"
+  },
+  "/blog/archive-2ab": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "archive": "archive---blog-archiveb-2-f-393"
+  },
+  "/blog/first-blog-post-795": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-first-blog-poste-27-4a1"
+  },
+  "/blog/long-blog-post-302": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-long-blog-post-736-bc7"
+  },
+  "/blog/mdx-blog-post-090": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-mdx-blog-post-593-37b"
+  },
+  "/blog/tags-12c": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/docusaurus-352": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "tag": "tag---blog-tags-docusaurusa-80-728",
+    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
+  },
+  "/blog/tags/facebook-1d1": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      }
+    ],
+    "tag": "tag---blog-tags-facebook-031-c52",
+    "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
+  },
+  "/blog/tags/hello-404": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blog-871-381"
+      }
+    ],
+    "tag": "tag---blog-tags-hello-30-a-bed",
+    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
+  },
+  "/blog/tags/hola-063": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "tag": "tag---blog-tags-holae-16-18a",
+    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
+  },
+  "/blog/welcome-1a7": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-68-b-a4f"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcomed-9-f-ffb"
+  },
+  "/markdown-page-ca0": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---markdown-pagee-64-66b"
+    },
+    "content": "content---markdown-page-393-028"
+  },
+  "/docs-99f": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__context": {
+      "plugin": "plugin---docsed-5-97c"
+    },
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/category/01---introducción-7b3": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-01-introduccion-590-470"
+  },
+  "/docs/category/02---lenguaje-c-2cb": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-02-lenguaje-c-12-e-d45"
+  },
+  "/docs/intro-aed": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/Introduccion/01.01_programacion_estructurada-278": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introduccion-01-01-programacion-estructurada-328-ebf"
+  },
+  "/docs/Introduccion/01.02_buenas_practicas-0d9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introduccion-01-02-buenas-practicas-179-a74"
+  },
+  "/docs/Lenguaje C/02.01_conceptos-d05": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-lenguaje-c-02-01-conceptose-28-745"
+  },
+  "/docs/Lenguaje C/02.01.E_life_conway-75d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-lenguaje-c-02-01-e-life-conway-103-e3a"
+  },
+  "/docs/Lenguaje C/02.02_estructuras-b16": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-lenguaje-c-02-02-estructuras-53-c-d1c"
+  },
+  "/docs/Lenguaje C/02.02.E_fractales_julia-18c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-lenguaje-c-02-02-e-fractales-julia-38-f-ccf"
+  },
+  "/docs/Lenguaje C/02.03_punteros-dd0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-lenguaje-c-02-03-punterosb-03-f91"
+  },
+  "/docs/Lenguaje C/02.04_repaso-ff4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-lenguaje-c-02-04-repaso-0-a-2-e54"
+  },
+  "/docs/Lenguaje C/02.05_memoria-ac7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-lenguaje-c-02-05-memoria-573-b21"
+  },
+  "/-3b3": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---markdown-pagee-64-66b"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

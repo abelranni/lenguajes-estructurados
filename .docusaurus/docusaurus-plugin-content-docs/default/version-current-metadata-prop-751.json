@@ -1,0 +1,154 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "01 - Introducción",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "01.01 - Programación Estructurada",
+            "href": "/docs/Introduccion/01.01_programacion_estructurada",
+            "docId": "Introduccion/01.01_programacion_estructurada"
+          },
+          {
+            "type": "link",
+            "label": "01.02 - Buenas prácticas",
+            "href": "/docs/Introduccion/01.02_buenas_practicas",
+            "docId": "Introduccion/01.02_buenas_practicas"
+          }
+        ],
+        "href": "/docs/category/01---introducción"
+      },
+      {
+        "type": "category",
+        "label": "02 - Lenguaje C",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "02.01.E - Juego de la vida de Conway",
+            "href": "/docs/Lenguaje C/02.01.E_life_conway",
+            "docId": "Lenguaje C/02.01.E_life_conway"
+          },
+          {
+            "type": "link",
+            "label": "02.01 - Conceptos Generales",
+            "href": "/docs/Lenguaje C/02.01_conceptos",
+            "docId": "Lenguaje C/02.01_conceptos"
+          },
+          {
+            "type": "link",
+            "label": "02.02.E - Fractales de Julia",
+            "href": "/docs/Lenguaje C/02.02.E_fractales_julia",
+            "docId": "Lenguaje C/02.02.E_fractales_julia"
+          },
+          {
+            "type": "link",
+            "label": "02.02 - Estructuras de datos (struct)",
+            "href": "/docs/Lenguaje C/02.02_estructuras",
+            "docId": "Lenguaje C/02.02_estructuras"
+          },
+          {
+            "type": "link",
+            "label": "02.03 - Punteros",
+            "href": "/docs/Lenguaje C/02.03_punteros",
+            "docId": "Lenguaje C/02.03_punteros"
+          },
+          {
+            "type": "link",
+            "label": "02.04 - Repaso de conceptos",
+            "href": "/docs/Lenguaje C/02.04_repaso",
+            "docId": "Lenguaje C/02.04_repaso"
+          },
+          {
+            "type": "link",
+            "label": "02.05 - Manejo de memoria",
+            "href": "/docs/Lenguaje C/02.05_memoria",
+            "docId": "Lenguaje C/02.05_memoria"
+          }
+        ],
+        "href": "/docs/category/02---lenguaje-c"
+      },
+      {
+        "type": "link",
+        "label": "Tutorial Intro",
+        "href": "/docs/intro",
+        "docId": "intro"
+      }
+    ]
+  },
+  "docs": {
+    "intro": {
+      "id": "intro",
+      "title": "Tutorial Intro",
+      "description": "Let's discover Docusaurus in less than 5 minutes.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Introduccion/01.01_programacion_estructurada": {
+      "id": "Introduccion/01.01_programacion_estructurada",
+      "title": "01.01 - Programación Estructurada",
+      "description": "Introducción",
+      "sidebar": "tutorialSidebar"
+    },
+    "Introduccion/01.02_buenas_practicas": {
+      "id": "Introduccion/01.02_buenas_practicas",
+      "title": "01.02 - Buenas prácticas",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/02.01_conceptos": {
+      "id": "Lenguaje C/02.01_conceptos",
+      "title": "02.01 - Conceptos Generales",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/02.01.E_life_conway": {
+      "id": "Lenguaje C/02.01.E_life_conway",
+      "title": "02.01.E - Juego de la vida de Conway",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/02.02_estructuras": {
+      "id": "Lenguaje C/02.02_estructuras",
+      "title": "02.02 - Estructuras de datos (struct)",
+      "description": "\"# Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/02.02.E_fractales_julia": {
+      "id": "Lenguaje C/02.02.E_fractales_julia",
+      "title": "02.02.E - Fractales de Julia",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/02.03_punteros": {
+      "id": "Lenguaje C/02.03_punteros",
+      "title": "02.03 - Punteros",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/02.04_repaso": {
+      "id": "Lenguaje C/02.04_repaso",
+      "title": "02.04 - Repaso de conceptos",
+      "description": "Conceptos básicos de C",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/02.05_memoria": {
+      "id": "Lenguaje C/02.05_memoria",
+      "title": "02.05 - Manejo de memoria",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

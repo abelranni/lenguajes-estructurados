@@ -1,0 +1,25 @@
+{
+  "unversionedId": "doc/01.02_buenas_practicas",
+  "id": "doc/01.02_buenas_practicas",
+  "title": "Lenguajes Estructurados",
+  "description": "01.02 - Buenas prácticas en programación",
+  "source": "@site/docs/doc/01.02_buenas_practicas.md",
+  "sourceDirName": "doc",
+  "slug": "/doc/01.02_buenas_practicas",
+  "permalink": "/docs/doc/01.02_buenas_practicas",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/doc/01.02_buenas_practicas.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "marp": true,
+    "theme": "default",
+    "size": 969,
+    "paginate": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lenguajes Estructurados",
+    "permalink": "/docs/doc/01.01_programacion_estructurada"
+  }
+}

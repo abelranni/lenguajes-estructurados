@@ -1,0 +1,16 @@
+{
+  "title": "01 - Introducción",
+  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "slug": "/category/01---introducción-1",
+  "permalink": "/docs/category/01---introducción-1",
+  "navigation": {
+    "previous": {
+      "title": "01.02 - Buenas prácticas",
+      "permalink": "/docs/Introduccion/01.02_buenas_practicas"
+    },
+    "next": {
+      "title": "Lenguajes Estructurados",
+      "permalink": "/docs/Lenguaje C/02.01.E_life_conway"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "Lenguaje C/02.02.E_fractales_julia",
+  "id": "Lenguaje C/02.02.E_fractales_julia",
+  "title": "02.02.E - Fractales de Julia",
+  "description": "Lenguajes Estructurados",
+  "source": "@site/docs/02 - Lenguaje C/02.02.E_fractales_julia.md",
+  "sourceDirName": "02 - Lenguaje C",
+  "slug": "/Lenguaje C/02.02.E_fractales_julia",
+  "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02 - Lenguaje C/02.02.E_fractales_julia.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "marp": true,
+    "theme": "default",
+    "size": 969,
+    "paginate": true,
+    "math": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "02.01 - Conceptos Generales",
+    "permalink": "/docs/Lenguaje C/02.01_conceptos"
+  },
+  "next": {
+    "title": "02.02 - Estructuras de datos (struct)",
+    "permalink": "/docs/Lenguaje C/02.02_estructuras"
+  }
+}

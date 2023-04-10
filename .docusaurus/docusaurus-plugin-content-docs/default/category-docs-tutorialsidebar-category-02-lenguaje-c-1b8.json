@@ -1,0 +1,16 @@
+{
+  "title": "02 - Lenguaje C",
+  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "slug": "/category/02---lenguaje-c",
+  "permalink": "/docs/category/02---lenguaje-c",
+  "navigation": {
+    "previous": {
+      "title": "01.02 - Buenas prácticas",
+      "permalink": "/docs/Introduccion/01.02_buenas_practicas"
+    },
+    "next": {
+      "title": "02.01.E - Juego de la vida de Conway",
+      "permalink": "/docs/Lenguaje C/02.01.E_life_conway"
+    }
+  }
+}
