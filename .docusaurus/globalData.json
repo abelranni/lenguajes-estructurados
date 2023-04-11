@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "Introduccion/01.01_programacion_estructurada",
+          "mainDocId": "intro",
           "docs": [
             {
               "id": "intro",
@@ -75,8 +75,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/category/01---introducción",
-                "label": "01 - Introducción"
+                "path": "/docs/intro",
+                "label": "intro"
               }
             }
           }

@@ -1,11 +1,11 @@
 {
   "permalink": "/blog/welcome",
-  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/blog/2021-08-26-welcome/index.md",
-  "source": "@site/blog/2021-08-26-welcome/index.md",
-  "title": "Welcome",
+  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/blog/2023-04-10-bienvenida/index.md",
+  "source": "@site/blog/2023-04-10-bienvenida/index.md",
+  "title": "Bienvenida",
   "description": "Las funciones de blogging de Docusaurus funcionan con el plugin de blog.",
-  "date": "2021-08-26T00:00:00.000Z",
-  "formattedDate": "26 de agosto de 2021",
+  "date": "2023-04-10T00:00:00.000Z",
+  "formattedDate": "10 de abril de 2023",
   "tags": [
     {
       "label": "lenguajes",
@@ -33,7 +33,7 @@
   ],
   "frontMatter": {
     "slug": "welcome",
-    "title": "Welcome",
+    "title": "Bienvenida",
     "authors": [
       "abel"
     ],

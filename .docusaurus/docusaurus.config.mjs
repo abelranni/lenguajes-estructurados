@@ -27,11 +27,11 @@ export default {
       {
         "docs": {
           "sidebarPath": "C:\\ucel\\lenguajes-estructurados\\sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/"
         },
         "theme": {
           "customCss": "C:\\ucel\\lenguajes-estructurados\\src\\css\\custom.css"

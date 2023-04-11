@@ -4,6 +4,10 @@
   "slug": "/category/01---introducción",
   "permalink": "/docs/category/01---introducción",
   "navigation": {
+    "previous": {
+      "title": "Tutorial Intro",
+      "permalink": "/docs/intro"
+    },
     "next": {
       "title": "01.01 - Programación Estructurada",
       "permalink": "/docs/Introduccion/01.01_programacion_estructurada"

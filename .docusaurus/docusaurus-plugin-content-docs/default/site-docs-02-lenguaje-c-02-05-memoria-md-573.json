@@ -8,7 +8,7 @@
   "slug": "/Lenguaje C/02.05_memoria",
   "permalink": "/docs/Lenguaje C/02.05_memoria",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02 - Lenguaje C/02.05_memoria.md",
+  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.05_memoria.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -21,9 +21,5 @@
   "previous": {
     "title": "02.04 - Repaso de conceptos",
     "permalink": "/docs/Lenguaje C/02.04_repaso"
-  },
-  "next": {
-    "title": "Tutorial Intro",
-    "permalink": "/docs/intro"
   }
 }

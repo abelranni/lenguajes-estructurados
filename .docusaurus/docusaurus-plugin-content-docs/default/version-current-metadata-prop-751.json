@@ -10,6 +10,12 @@
   "docsSidebars": {
     "tutorialSidebar": [
       {
+        "type": "link",
+        "label": "Tutorial Intro",
+        "href": "/docs/intro",
+        "docId": "intro"
+      },
+      {
         "type": "category",
         "label": "01 - Introducción",
         "collapsible": true,
@@ -80,12 +86,6 @@
           }
         ],
         "href": "/docs/category/02---lenguaje-c"
-      },
-      {
-        "type": "link",
-        "label": "Tutorial Intro",
-        "href": "/docs/intro",
-        "docId": "intro"
       }
     ]
   },
@@ -93,7 +93,7 @@
     "intro": {
       "id": "intro",
       "title": "Tutorial Intro",
-      "description": "Let's discover Docusaurus in less than 5 minutes.",
+      "description": "Introducción a la documentación de la asignatura...",
       "sidebar": "tutorialSidebar"
     },
     "Introduccion/01.01_programacion_estructurada": {
