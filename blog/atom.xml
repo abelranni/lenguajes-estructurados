@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://abelranni.github.io/lenguajes-estructurados/blog</id>
+    <title>Lenguajes Estrucuturados Blog</title>
+    <updated>2023-04-10T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://abelranni.github.io/lenguajes-estructurados/blog"/>
+    <subtitle>Lenguajes Estrucuturados Blog</subtitle>
+    <icon>https://abelranni.github.io/lenguajes-estructurados/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Bienvenida]]></title>
+        <id>https://abelranni.github.io/lenguajes-estructurados/blog/welcome</id>
+        <link href="https://abelranni.github.io/lenguajes-estructurados/blog/welcome"/>
+        <updated>2023-04-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Las funciones de blogging de Docusaurus funcionan con el plugin de blog.]]></summary>
+        <content type="html"><![CDATA[<p>Las <a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">funciones de blogging de Docusaurus</a> funcionan con el <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">plugin de blog</a>.</p><p>Simplemente añada archivos Markdown (o carpetas) al directorio <code>blog</code>.</p><p>Los autores habituales del blog pueden añadirse a <code>authors.yml</code>.</p><p>La fecha de la entrada del blog se puede extraer de los nombres de archivo, tales como:</p><ul><li><code>2019-05-30-bienvenida.md</code></li><li><code>2019-05-30-welcome/index.md</code></li></ul><p>El blog también admite etiquetas.</p>]]></content>
+        <author>
+            <name>Abel Ranni</name>
+            <uri>https://github.com/abelranni</uri>
+        </author>
+        <category label="lenguajes" term="lenguajes"/>
+        <category label="c" term="c"/>
+        <category label="intro" term="intro"/>
+    </entry>
+</feed>

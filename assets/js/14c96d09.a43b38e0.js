@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklenguajes_estructurados=self.webpackChunklenguajes_estructurados||[]).push([[849],{1425:s=>{s.exports=JSON.parse('{"label":"intro","permalink":"/lenguajes-estructurados/blog/tags/intro","allTagsPath":"/lenguajes-estructurados/blog/tags","count":1}')}}]);
