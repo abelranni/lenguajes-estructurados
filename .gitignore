@@ -14,5 +14,7 @@
 .test
 */.test
 */.test/*
+**/build/*
+
 
 node_modules

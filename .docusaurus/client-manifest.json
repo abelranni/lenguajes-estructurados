@@ -1,0 +1,63 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "721": [
+      721
+    ],
+    "main": [
+      303,
+      532,
+      179
+    ],
+    "runtime~main": [
+      179,
+      532,
+      303
+    ],
+    "styles": [
+      179,
+      303,
+      532
+    ]
+  },
+  "assets": {
+    "179": {
+      "js": [
+        {
+          "file": "assets/js/main.0cecc8c0.js",
+          "hash": "47409b5c58cbb3e5",
+          "publicPath": "/lenguajes-estructurados/assets/js/main.0cecc8c0.js"
+        }
+      ]
+    },
+    "303": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.befe532c.js",
+          "hash": "da2ba67b4fe1b14b",
+          "publicPath": "/lenguajes-estructurados/assets/js/runtime~main.befe532c.js"
+        }
+      ]
+    },
+    "532": {
+      "css": [
+        {
+          "file": "assets/css/styles.c58b27f2.css",
+          "hash": "7da13fe21a839ef3",
+          "publicPath": "/lenguajes-estructurados/assets/css/styles.c58b27f2.css"
+        }
+      ]
+    },
+    "721": {
+      "js": [
+        {
+          "file": "assets/js/721.8c7dd345.js",
+          "hash": "134cae19d739df85",
+          "publicPath": "/lenguajes-estructurados/assets/js/721.8c7dd345.js"
+        }
+      ]
+    }
+  }
+}

@@ -134,9 +134,9 @@ const config = {
 
 module.exports = config;
 module.exports = {
-  // ...
-  url: 'https://abelranni.github.io/lenguajes-estructurados',
-  baseUrl: '/',
+  title: 'Lenguajes Estrucuturados',
+  url: 'https://abelranni.github.io',
+  baseUrl: '/lenguajes-estructurados',
   projectName: 'lenguajes-estructurados',
   organizationName: 'abelranni',
   trailingSlash: false,
