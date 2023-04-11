@@ -1,5 +1,5 @@
 {
-  "permalink": "/blog/welcome",
+  "permalink": "/lenguajes-estructurados/blog/welcome",
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/blog/2023-04-10-bienvenida/index.md",
   "source": "@site/blog/2023-04-10-bienvenida/index.md",
   "title": "Bienvenida",
@@ -9,15 +9,15 @@
   "tags": [
     {
       "label": "lenguajes",
-      "permalink": "/blog/tags/lenguajes"
+      "permalink": "/lenguajes-estructurados/blog/tags/lenguajes"
     },
     {
       "label": "c",
-      "permalink": "/blog/tags/c"
+      "permalink": "/lenguajes-estructurados/blog/tags/c"
     },
     {
       "label": "intro",
-      "permalink": "/blog/tags/intro"
+      "permalink": "/lenguajes-estructurados/blog/tags/intro"
     }
   ],
   "readingTime": 0.28,

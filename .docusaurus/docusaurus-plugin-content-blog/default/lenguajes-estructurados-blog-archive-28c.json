@@ -1,0 +1,54 @@
+{
+  "blogPosts": [
+    {
+      "id": "welcome",
+      "metadata": {
+        "permalink": "/lenguajes-estructurados/blog/welcome",
+        "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/blog/2023-04-10-bienvenida/index.md",
+        "source": "@site/blog/2023-04-10-bienvenida/index.md",
+        "title": "Bienvenida",
+        "description": "Las funciones de blogging de Docusaurus funcionan con el plugin de blog.",
+        "date": "2023-04-10T00:00:00.000Z",
+        "formattedDate": "10 de abril de 2023",
+        "tags": [
+          {
+            "label": "lenguajes",
+            "permalink": "/lenguajes-estructurados/blog/tags/lenguajes"
+          },
+          {
+            "label": "c",
+            "permalink": "/lenguajes-estructurados/blog/tags/c"
+          },
+          {
+            "label": "intro",
+            "permalink": "/lenguajes-estructurados/blog/tags/intro"
+          }
+        ],
+        "readingTime": 0.28,
+        "hasTruncateMarker": false,
+        "authors": [
+          {
+            "name": "Abel Ranni",
+            "title": "Developer",
+            "url": "https://github.com/abelranni",
+            "imageURL": "https://avatars.githubusercontent.com/u/13169667?v=4",
+            "key": "abel"
+          }
+        ],
+        "frontMatter": {
+          "slug": "welcome",
+          "title": "Bienvenida",
+          "authors": [
+            "abel"
+          ],
+          "tags": [
+            "lenguajes",
+            "c",
+            "intro"
+          ]
+        }
+      },
+      "content": "Las [funciones de blogging de Docusaurus](https://docusaurus.io/docs/blog) funcionan con el [plugin de blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimplemente añada archivos Markdown (o carpetas) al directorio `blog`.\n\nLos autores habituales del blog pueden añadirse a `authors.yml`.\n\nLa fecha de la entrada del blog se puede extraer de los nombres de archivo, tales como:\n\n- `2019-05-30-bienvenida.md`\n- `2019-05-30-welcome/index.md`\n\nEl blog también admite etiquetas."
+    }
+  ]
+}

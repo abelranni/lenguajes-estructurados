@@ -6,7 +6,7 @@
   "source": "@site/docs/02 - Lenguaje C/02.04_repaso.md",
   "sourceDirName": "02 - Lenguaje C",
   "slug": "/Lenguaje C/02.04_repaso",
-  "permalink": "/docs/Lenguaje C/02.04_repaso",
+  "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.04_repaso.md",
   "tags": [],
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "02.03 - Punteros",
-    "permalink": "/docs/Lenguaje C/02.03_punteros"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros"
   },
   "next": {
     "title": "02.05 - Manejo de memoria",
-    "permalink": "/docs/Lenguaje C/02.05_memoria"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria"
   }
 }

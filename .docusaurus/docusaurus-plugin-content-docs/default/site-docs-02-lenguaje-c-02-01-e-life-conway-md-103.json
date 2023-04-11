@@ -6,7 +6,7 @@
   "source": "@site/docs/02 - Lenguaje C/02.01.E_life_conway.md",
   "sourceDirName": "02 - Lenguaje C",
   "slug": "/Lenguaje C/02.01.E_life_conway",
-  "permalink": "/docs/Lenguaje C/02.01.E_life_conway",
+  "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.01.E_life_conway.md",
   "tags": [],
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "02 - Lenguaje C",
-    "permalink": "/docs/category/02---lenguaje-c"
+    "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
   },
   "next": {
     "title": "02.01 - Conceptos Generales",
-    "permalink": "/docs/Lenguaje C/02.01_conceptos"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
   }
 }

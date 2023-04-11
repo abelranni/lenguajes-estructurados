@@ -10,17 +10,20 @@ const config = {
   tagline: 'Apuntes de la asignatura',
   favicon: 'img/favicon.ico',
 
+
+
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://abelranni.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/lenguajes-estructurados',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'abelranni', // Usually your GitHub org/user name.
-  projectName: 'lenguajes-estructurados', // Usually your repo name.
-
+  projectName: 'lenguajes-estructurados',
+  organizationName: 'abelranni',
+  trailingSlash: false,  
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -133,12 +136,3 @@ const config = {
 };
 
 module.exports = config;
-module.exports = {
-  title: 'Lenguajes Estrucuturados',
-  url: 'https://abelranni.github.io',
-  baseUrl: '/lenguajes-estructurados',
-  projectName: 'lenguajes-estructurados',
-  organizationName: 'abelranni',
-  trailingSlash: false,
-  // ...
-};

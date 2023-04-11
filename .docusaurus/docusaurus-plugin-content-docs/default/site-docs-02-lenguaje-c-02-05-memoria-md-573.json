@@ -6,7 +6,7 @@
   "source": "@site/docs/02 - Lenguaje C/02.05_memoria.md",
   "sourceDirName": "02 - Lenguaje C",
   "slug": "/Lenguaje C/02.05_memoria",
-  "permalink": "/docs/Lenguaje C/02.05_memoria",
+  "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.05_memoria.md",
   "tags": [],
@@ -20,6 +20,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "02.04 - Repaso de conceptos",
-    "permalink": "/docs/Lenguaje C/02.04_repaso"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso"
   }
 }

@@ -6,7 +6,7 @@
   "source": "@site/docs/02 - Lenguaje C/02.01_conceptos.md",
   "sourceDirName": "02 - Lenguaje C",
   "slug": "/Lenguaje C/02.01_conceptos",
-  "permalink": "/docs/Lenguaje C/02.01_conceptos",
+  "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.01_conceptos.md",
   "tags": [],
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "02.01.E - Juego de la vida de Conway",
-    "permalink": "/docs/Lenguaje C/02.01.E_life_conway"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway"
   },
   "next": {
     "title": "02.02.E - Fractales de Julia",
-    "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia"
   }
 }

@@ -6,7 +6,7 @@
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",
-  "permalink": "/docs/intro",
+  "permalink": "/lenguajes-estructurados/docs/intro",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/intro.md",
   "tags": [],
@@ -18,6 +18,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "01 - Introducción",
-    "permalink": "/docs/category/01---introducción"
+    "permalink": "/lenguajes-estructurados/docs/category/01---introducción"
   }
 }

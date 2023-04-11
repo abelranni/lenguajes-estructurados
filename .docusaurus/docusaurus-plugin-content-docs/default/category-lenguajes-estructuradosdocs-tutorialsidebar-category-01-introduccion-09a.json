@@ -1,0 +1,16 @@
+{
+  "title": "01 - Introducción",
+  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "slug": "/category/01---introducción",
+  "permalink": "/lenguajes-estructurados/docs/category/01---introducción",
+  "navigation": {
+    "previous": {
+      "title": "Tutorial Intro",
+      "permalink": "/lenguajes-estructurados/docs/intro"
+    },
+    "next": {
+      "title": "01.01 - Programación Estructurada",
+      "permalink": "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada"
+    }
+  }
+}

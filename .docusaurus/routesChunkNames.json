@@ -1,1 +1,149 @@
-{}
+{
+  "/lenguajes-estructurados/blog-304": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "68b4d019"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "e64a0f4e"
+      }
+    ],
+    "metadata": "e5ae0dd0"
+  },
+  "/lenguajes-estructurados/blog/archive-239": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "68b4d019"
+    },
+    "archive": "7a83ab08"
+  },
+  "/lenguajes-estructurados/blog/tags-c10": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "68b4d019"
+    },
+    "sidebar": "814f3328",
+    "tags": "f0743fe9"
+  },
+  "/lenguajes-estructurados/blog/tags/c-248": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "68b4d019"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "e64a0f4e"
+      }
+    ],
+    "tag": "4957b057",
+    "listMetadata": "428850b3"
+  },
+  "/lenguajes-estructurados/blog/tags/intro-e40": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "68b4d019"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "e64a0f4e"
+      }
+    ],
+    "tag": "14c96d09",
+    "listMetadata": "407f921e"
+  },
+  "/lenguajes-estructurados/blog/tags/lenguajes-f02": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "68b4d019"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "e64a0f4e"
+      }
+    ],
+    "tag": "3199d638",
+    "listMetadata": "4435e519"
+  },
+  "/lenguajes-estructurados/blog/welcome-931": {
+    "__comp": "ccc49370",
+    "__context": {
+      "plugin": "68b4d019"
+    },
+    "sidebar": "814f3328",
+    "content": "26d0afd6"
+  },
+  "/lenguajes-estructurados/markdown-page-d31": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "e64b608a"
+    },
+    "content": "393be207"
+  },
+  "/lenguajes-estructurados/docs-007": {
+    "__comp": "1be78505",
+    "__context": {
+      "plugin": "ed58c1ff"
+    },
+    "versionMetadata": "935f2afb"
+  },
+  "/lenguajes-estructurados/docs/category/01---introducción-e21": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "992db1ca"
+  },
+  "/lenguajes-estructurados/docs/category/02---lenguaje-c-e85": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "11f2288f"
+  },
+  "/lenguajes-estructurados/docs/intro-e89": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada-8ff": {
+    "__comp": "17896441",
+    "content": "328f79fb"
+  },
+  "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas-61c": {
+    "__comp": "17896441",
+    "content": "1790c7bc"
+  },
+  "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos-120": {
+    "__comp": "17896441",
+    "content": "e28fe493"
+  },
+  "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway-e2d": {
+    "__comp": "17896441",
+    "content": "10353e1a"
+  },
+  "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras-e45": {
+    "__comp": "17896441",
+    "content": "53c43db6"
+  },
+  "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia-208": {
+    "__comp": "17896441",
+    "content": "38fceda1"
+  },
+  "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros-e9b": {
+    "__comp": "17896441",
+    "content": "b0380f27"
+  },
+  "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso-c37": {
+    "__comp": "17896441",
+    "content": "0a268d0b"
+  },
+  "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria-ce2": {
+    "__comp": "17896441",
+    "content": "57332717"
+  },
+  "/lenguajes-estructurados/-ccf": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "e64b608a"
+    },
+    "config": "5e9f5e1a"
+  }
+}

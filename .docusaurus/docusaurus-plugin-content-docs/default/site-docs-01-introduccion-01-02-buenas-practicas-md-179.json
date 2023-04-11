@@ -6,7 +6,7 @@
   "source": "@site/docs/01 - Introduccion/01.02_buenas_practicas.md",
   "sourceDirName": "01 - Introduccion",
   "slug": "/Introduccion/01.02_buenas_practicas",
-  "permalink": "/docs/Introduccion/01.02_buenas_practicas",
+  "permalink": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/01 - Introduccion/01.02_buenas_practicas.md",
   "tags": [],
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "01.01 - Programación Estructurada",
-    "permalink": "/docs/Introduccion/01.01_programacion_estructurada"
+    "permalink": "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada"
   },
   "next": {
     "title": "02 - Lenguaje C",
-    "permalink": "/docs/category/02---lenguaje-c"
+    "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
   }
 }

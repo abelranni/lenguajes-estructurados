@@ -1,1 +1,88 @@
-{}
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/lenguajes-estructurados/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/lenguajes-estructurados/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/lenguajes-estructurados/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion/01.01_programacion_estructurada",
+              "path": "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Introduccion/01.02_buenas_practicas",
+              "path": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/02.01_conceptos",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/02.01.E_life_conway",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/02.02_estructuras",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/02.02.E_fractales_julia",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/02.03_punteros",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/02.04_repaso",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/02.05_memoria",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/01---introducción",
+              "path": "/lenguajes-estructurados/docs/category/01---introducción",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/02---lenguaje-c",
+              "path": "/lenguajes-estructurados/docs/category/02---lenguaje-c",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/lenguajes-estructurados/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

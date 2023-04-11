@@ -6,7 +6,7 @@
   "source": "@site/docs/02 - Lenguaje C/02.02.E_fractales_julia.md",
   "sourceDirName": "02 - Lenguaje C",
   "slug": "/Lenguaje C/02.02.E_fractales_julia",
-  "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia",
+  "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.02.E_fractales_julia.md",
   "tags": [],
@@ -21,10 +21,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "02.01 - Conceptos Generales",
-    "permalink": "/docs/Lenguaje C/02.01_conceptos"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
   },
   "next": {
     "title": "02.02 - Estructuras de datos (struct)",
-    "permalink": "/docs/Lenguaje C/02.02_estructuras"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras"
   }
 }

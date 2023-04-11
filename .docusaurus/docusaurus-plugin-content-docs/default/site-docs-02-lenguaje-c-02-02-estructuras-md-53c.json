@@ -6,7 +6,7 @@
   "source": "@site/docs/02 - Lenguaje C/02.02_estructuras.md",
   "sourceDirName": "02 - Lenguaje C",
   "slug": "/Lenguaje C/02.02_estructuras",
-  "permalink": "/docs/Lenguaje C/02.02_estructuras",
+  "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras",
   "draft": false,
   "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.02_estructuras.md",
   "tags": [],
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "02.02.E - Fractales de Julia",
-    "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia"
   },
   "next": {
     "title": "02.03 - Punteros",
-    "permalink": "/docs/Lenguaje C/02.03_punteros"
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros"
   }
 }
