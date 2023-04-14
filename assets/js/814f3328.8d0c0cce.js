@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklenguajes_estructurados=self.webpackChunklenguajes_estructurados||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Bienvenida","permalink":"/lenguajes-estructurados/blog/welcome"}]}')}}]);
