@@ -1,7 +1,7 @@
 {
   "unversionedId": "intro",
   "id": "intro",
-  "title": "Tutorial Intro",
+  "title": "Introducción",
   "description": "Introducción a la documentación de la asignatura...",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "01 - Introducción",
-    "permalink": "/lenguajes-estructurados/docs/category/01---introducción"
+    "title": "00 - Configuración",
+    "permalink": "/lenguajes-estructurados/docs/category/00---configuración"
   }
 }

@@ -1,7 +1,7 @@
 {
   "unversionedId": "Lenguaje C/02.02_estructuras",
   "id": "Lenguaje C/02.02_estructuras",
-  "title": "02.02 - Estructuras de datos (struct)",
+  "title": "02.02 - Estructuras de datos",
   "description": "\"# Lenguajes Estructurados",
   "source": "@site/docs/02 - Lenguaje C/02.02_estructuras.md",
   "sourceDirName": "02 - Lenguaje C",
@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "02.02.E - Fractales de Julia",
-    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia"
+    "title": "02.01 - Conceptos Generales",
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
   },
   "next": {
     "title": "02.03 - Punteros",

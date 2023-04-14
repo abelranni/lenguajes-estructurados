@@ -11,6 +11,41 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "Configuraciones/00.01_config_vscode_mingw",
+              "path": "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Configuraciones/00.02_library_SDL2",
+              "path": "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ejercicios Resueltos/03.01_life_conway",
+              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.01_life_conway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ejercicios Resueltos/03.02_fractales_julia",
+              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ejercicios Resueltos/03.03.A_snake",
+              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.A_snake",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ejercicios Resueltos/03.03.B_snake_py",
+              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ejercicios Resueltos/03.05_tictactoe",
+              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/lenguajes-estructurados/docs/intro",
               "sidebar": "tutorialSidebar"
@@ -31,18 +66,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Lenguaje C/02.01.E_life_conway",
-              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "Lenguaje C/02.02_estructuras",
               "path": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Lenguaje C/02.02.E_fractales_julia",
-              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -61,6 +86,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "/category/00---configuración",
+              "path": "/lenguajes-estructurados/docs/category/00---configuración",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "/category/01---introducción",
               "path": "/lenguajes-estructurados/docs/category/01---introducción",
               "sidebar": "tutorialSidebar"
@@ -68,6 +98,11 @@
             {
               "id": "/category/02---lenguaje-c",
               "path": "/lenguajes-estructurados/docs/category/02---lenguaje-c",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/03---ejercicios-resueltos",
+              "path": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos",
               "sidebar": "tutorialSidebar"
             }
           ],

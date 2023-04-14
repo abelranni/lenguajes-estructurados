@@ -1,0 +1,29 @@
+{
+  "unversionedId": "Configuraciones/00.02_library_SDL2",
+  "id": "Configuraciones/00.02_library_SDL2",
+  "title": "00.02 - Instalar biblioteca SDL2",
+  "description": "Lenguajes Estructurados",
+  "source": "@site/docs/00 - Configuraciones/00.02_library_SDL2.md",
+  "sourceDirName": "00 - Configuraciones",
+  "slug": "/Configuraciones/00.02_library_SDL2",
+  "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2",
+  "draft": false,
+  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/00 - Configuraciones/00.02_library_SDL2.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "marp": true,
+    "theme": "default",
+    "size": 969,
+    "paginate": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "00.01 - Configurar Visual Studio Code y MinGW",
+    "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw"
+  },
+  "next": {
+    "title": "01 - Introducción",
+    "permalink": "/lenguajes-estructurados/docs/category/01---introducción"
+  }
+}

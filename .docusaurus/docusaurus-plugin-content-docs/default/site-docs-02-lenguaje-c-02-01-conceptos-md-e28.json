@@ -19,11 +19,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "02.01.E - Juego de la vida de Conway",
-    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway"
+    "title": "02 - Lenguaje C",
+    "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
   },
   "next": {
-    "title": "02.02.E - Fractales de Julia",
-    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia"
+    "title": "02.02 - Estructuras de datos",
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras"
   }
 }

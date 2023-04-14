@@ -2,6 +2,6 @@
 sidebar_position: 0
 ---
 
-# Tutorial Intro
+# Introducción
 
 Introducción a la documentación de la asignatura...

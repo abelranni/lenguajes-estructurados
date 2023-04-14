@@ -1,7 +1,6 @@
 *.exe
 *.o
 *.a
-*.dll
 
 # IDE - VSCode
 .vscode

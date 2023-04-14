@@ -9,8 +9,8 @@
           "badge": false,
           "noIndex": false,
           "className": "docs-version-current",
-          "path": "/docs",
-          "tagsPath": "/docs/tags",
+          "path": "/lenguajes-estructurados/docs",
+          "tagsPath": "/lenguajes-estructurados/docs/tags",
           "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs",
           "editUrlLocalized": "https://github.com/abelranni/lenguajes-estructurados/tree/main/i18n/es/docusaurus-plugin-content-docs/current",
           "isLast": true,
@@ -20,14 +20,214 @@
           "contentPathLocalized": "C:\\ucel\\lenguajes-estructurados\\i18n\\es\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
+              "unversionedId": "Configuraciones/00.01_config_vscode_mingw",
+              "id": "Configuraciones/00.01_config_vscode_mingw",
+              "title": "00.01 - Configurar Visual Studio Code y MinGW",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/00 - Configuraciones/00.01_config_vscode_mingw.md",
+              "sourceDirName": "00 - Configuraciones",
+              "slug": "/Configuraciones/00.01_config_vscode_mingw",
+              "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/00 - Configuraciones/00.01_config_vscode_mingw.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "00 - Configuración",
+                "permalink": "/lenguajes-estructurados/docs/category/00---configuración"
+              },
+              "next": {
+                "title": "00.02 - Instalar biblioteca SDL2",
+                "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2"
+              }
+            },
+            {
+              "unversionedId": "Configuraciones/00.02_library_SDL2",
+              "id": "Configuraciones/00.02_library_SDL2",
+              "title": "00.02 - Instalar biblioteca SDL2",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/00 - Configuraciones/00.02_library_SDL2.md",
+              "sourceDirName": "00 - Configuraciones",
+              "slug": "/Configuraciones/00.02_library_SDL2",
+              "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/00 - Configuraciones/00.02_library_SDL2.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "00.01 - Configurar Visual Studio Code y MinGW",
+                "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw"
+              },
+              "next": {
+                "title": "01 - Introducción",
+                "permalink": "/lenguajes-estructurados/docs/category/01---introducción"
+              }
+            },
+            {
+              "unversionedId": "Ejercicios Resueltos/03.01_life_conway",
+              "id": "Ejercicios Resueltos/03.01_life_conway",
+              "title": "03.01 - Juego de la vida de Conway",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/03 - Ejercicios Resueltos/03.01_life_conway.md",
+              "sourceDirName": "03 - Ejercicios Resueltos",
+              "slug": "/Ejercicios Resueltos/03.01_life_conway",
+              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.01_life_conway",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.01_life_conway.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "03 - Ejercicios Resueltos",
+                "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
+              },
+              "next": {
+                "title": "03.02 - Fractales de Julia",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia"
+              }
+            },
+            {
+              "unversionedId": "Ejercicios Resueltos/03.02_fractales_julia",
+              "id": "Ejercicios Resueltos/03.02_fractales_julia",
+              "title": "03.02 - Fractales de Julia",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/03 - Ejercicios Resueltos/03.02_fractales_julia.md",
+              "sourceDirName": "03 - Ejercicios Resueltos",
+              "slug": "/Ejercicios Resueltos/03.02_fractales_julia",
+              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.02_fractales_julia.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true,
+                "math": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "03.01 - Juego de la vida de Conway",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.01_life_conway"
+              },
+              "next": {
+                "title": "03.03.A - Juego de Snake en C",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.A_snake"
+              }
+            },
+            {
+              "unversionedId": "Ejercicios Resueltos/03.03.A_snake",
+              "id": "Ejercicios Resueltos/03.03.A_snake",
+              "title": "03.03.A - Juego de Snake en C",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/03 - Ejercicios Resueltos/03.03.A_snake.md",
+              "sourceDirName": "03 - Ejercicios Resueltos",
+              "slug": "/Ejercicios Resueltos/03.03.A_snake",
+              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.A_snake",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.03.A_snake.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "03.02 - Fractales de Julia",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia"
+              },
+              "next": {
+                "title": "03.03.B - Snake en Python",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py"
+              }
+            },
+            {
+              "unversionedId": "Ejercicios Resueltos/03.03.B_snake_py",
+              "id": "Ejercicios Resueltos/03.03.B_snake_py",
+              "title": "03.03.B - Snake en Python",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/03 - Ejercicios Resueltos/03.03.B_snake_py.md",
+              "sourceDirName": "03 - Ejercicios Resueltos",
+              "slug": "/Ejercicios Resueltos/03.03.B_snake_py",
+              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.03.B_snake_py.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "03.03.A - Juego de Snake en C",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.A_snake"
+              },
+              "next": {
+                "title": "03.05 -  TicTacToe",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe"
+              }
+            },
+            {
+              "unversionedId": "Ejercicios Resueltos/03.05_tictactoe",
+              "id": "Ejercicios Resueltos/03.05_tictactoe",
+              "title": "03.05 -  TicTacToe",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/03 - Ejercicios Resueltos/03.05_tictactoe.md",
+              "sourceDirName": "03 - Ejercicios Resueltos",
+              "slug": "/Ejercicios Resueltos/03.05_tictactoe",
+              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.05_tictactoe.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "03.03.B - Snake en Python",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py"
+              }
+            },
+            {
               "unversionedId": "intro",
               "id": "intro",
-              "title": "Tutorial Intro",
+              "title": "Introducción",
               "description": "Introducción a la documentación de la asignatura...",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
-              "permalink": "/docs/intro",
+              "permalink": "/lenguajes-estructurados/docs/intro",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/intro.md",
               "tags": [],
@@ -38,8 +238,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "01 - Introducción",
-                "permalink": "/docs/category/01---introducción"
+                "title": "00 - Configuración",
+                "permalink": "/lenguajes-estructurados/docs/category/00---configuración"
               }
             },
             {
@@ -50,7 +250,7 @@
               "source": "@site/docs/01 - Introduccion/01.01_programacion_estructurada.md",
               "sourceDirName": "01 - Introduccion",
               "slug": "/Introduccion/01.01_programacion_estructurada",
-              "permalink": "/docs/Introduccion/01.01_programacion_estructurada",
+              "permalink": "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/01 - Introduccion/01.01_programacion_estructurada.md",
               "tags": [],
@@ -64,11 +264,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "01 - Introducción",
-                "permalink": "/docs/category/01---introducción"
+                "permalink": "/lenguajes-estructurados/docs/category/01---introducción"
               },
               "next": {
                 "title": "01.02 - Buenas prácticas",
-                "permalink": "/docs/Introduccion/01.02_buenas_practicas"
+                "permalink": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas"
               }
             },
             {
@@ -79,7 +279,7 @@
               "source": "@site/docs/01 - Introduccion/01.02_buenas_practicas.md",
               "sourceDirName": "01 - Introduccion",
               "slug": "/Introduccion/01.02_buenas_practicas",
-              "permalink": "/docs/Introduccion/01.02_buenas_practicas",
+              "permalink": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/01 - Introduccion/01.02_buenas_practicas.md",
               "tags": [],
@@ -93,11 +293,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "01.01 - Programación Estructurada",
-                "permalink": "/docs/Introduccion/01.01_programacion_estructurada"
+                "permalink": "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada"
               },
               "next": {
                 "title": "02 - Lenguaje C",
-                "permalink": "/docs/category/02---lenguaje-c"
+                "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
               }
             },
             {
@@ -108,7 +308,7 @@
               "source": "@site/docs/02 - Lenguaje C/02.01_conceptos.md",
               "sourceDirName": "02 - Lenguaje C",
               "slug": "/Lenguaje C/02.01_conceptos",
-              "permalink": "/docs/Lenguaje C/02.01_conceptos",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.01_conceptos.md",
               "tags": [],
@@ -121,52 +321,23 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "02.01.E - Juego de la vida de Conway",
-                "permalink": "/docs/Lenguaje C/02.01.E_life_conway"
-              },
-              "next": {
-                "title": "02.02.E - Fractales de Julia",
-                "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia"
-              }
-            },
-            {
-              "unversionedId": "Lenguaje C/02.01.E_life_conway",
-              "id": "Lenguaje C/02.01.E_life_conway",
-              "title": "02.01.E - Juego de la vida de Conway",
-              "description": "Lenguajes Estructurados",
-              "source": "@site/docs/02 - Lenguaje C/02.01.E_life_conway.md",
-              "sourceDirName": "02 - Lenguaje C",
-              "slug": "/Lenguaje C/02.01.E_life_conway",
-              "permalink": "/docs/Lenguaje C/02.01.E_life_conway",
-              "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.01.E_life_conway.md",
-              "tags": [],
-              "version": "current",
-              "frontMatter": {
-                "marp": true,
-                "theme": "default",
-                "size": 969,
-                "paginate": true
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
                 "title": "02 - Lenguaje C",
-                "permalink": "/docs/category/02---lenguaje-c"
+                "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
               },
               "next": {
-                "title": "02.01 - Conceptos Generales",
-                "permalink": "/docs/Lenguaje C/02.01_conceptos"
+                "title": "02.02 - Estructuras de datos",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras"
               }
             },
             {
               "unversionedId": "Lenguaje C/02.02_estructuras",
               "id": "Lenguaje C/02.02_estructuras",
-              "title": "02.02 - Estructuras de datos (struct)",
+              "title": "02.02 - Estructuras de datos",
               "description": "\"# Lenguajes Estructurados",
               "source": "@site/docs/02 - Lenguaje C/02.02_estructuras.md",
               "sourceDirName": "02 - Lenguaje C",
               "slug": "/Lenguaje C/02.02_estructuras",
-              "permalink": "/docs/Lenguaje C/02.02_estructuras",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.02_estructuras.md",
               "tags": [],
@@ -179,42 +350,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "02.02.E - Fractales de Julia",
-                "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia"
+                "title": "02.01 - Conceptos Generales",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
               },
               "next": {
                 "title": "02.03 - Punteros",
-                "permalink": "/docs/Lenguaje C/02.03_punteros"
-              }
-            },
-            {
-              "unversionedId": "Lenguaje C/02.02.E_fractales_julia",
-              "id": "Lenguaje C/02.02.E_fractales_julia",
-              "title": "02.02.E - Fractales de Julia",
-              "description": "Lenguajes Estructurados",
-              "source": "@site/docs/02 - Lenguaje C/02.02.E_fractales_julia.md",
-              "sourceDirName": "02 - Lenguaje C",
-              "slug": "/Lenguaje C/02.02.E_fractales_julia",
-              "permalink": "/docs/Lenguaje C/02.02.E_fractales_julia",
-              "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.02.E_fractales_julia.md",
-              "tags": [],
-              "version": "current",
-              "frontMatter": {
-                "marp": true,
-                "theme": "default",
-                "size": 969,
-                "paginate": true,
-                "math": true
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "02.01 - Conceptos Generales",
-                "permalink": "/docs/Lenguaje C/02.01_conceptos"
-              },
-              "next": {
-                "title": "02.02 - Estructuras de datos (struct)",
-                "permalink": "/docs/Lenguaje C/02.02_estructuras"
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros"
               }
             },
             {
@@ -225,7 +366,7 @@
               "source": "@site/docs/02 - Lenguaje C/02.03_punteros.md",
               "sourceDirName": "02 - Lenguaje C",
               "slug": "/Lenguaje C/02.03_punteros",
-              "permalink": "/docs/Lenguaje C/02.03_punteros",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.03_punteros.md",
               "tags": [],
@@ -238,12 +379,12 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "02.02 - Estructuras de datos (struct)",
-                "permalink": "/docs/Lenguaje C/02.02_estructuras"
+                "title": "02.02 - Estructuras de datos",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras"
               },
               "next": {
                 "title": "02.04 - Repaso de conceptos",
-                "permalink": "/docs/Lenguaje C/02.04_repaso"
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso"
               }
             },
             {
@@ -254,7 +395,7 @@
               "source": "@site/docs/02 - Lenguaje C/02.04_repaso.md",
               "sourceDirName": "02 - Lenguaje C",
               "slug": "/Lenguaje C/02.04_repaso",
-              "permalink": "/docs/Lenguaje C/02.04_repaso",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.04_repaso.md",
               "tags": [],
@@ -268,11 +409,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "02.03 - Punteros",
-                "permalink": "/docs/Lenguaje C/02.03_punteros"
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros"
               },
               "next": {
                 "title": "02.05 - Manejo de memoria",
-                "permalink": "/docs/Lenguaje C/02.05_memoria"
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria"
               }
             },
             {
@@ -283,7 +424,7 @@
               "source": "@site/docs/02 - Lenguaje C/02.05_memoria.md",
               "sourceDirName": "02 - Lenguaje C",
               "slug": "/Lenguaje C/02.05_memoria",
-              "permalink": "/docs/Lenguaje C/02.05_memoria",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria",
               "draft": false,
               "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.05_memoria.md",
               "tags": [],
@@ -297,7 +438,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "02.04 - Repaso de conceptos",
-                "permalink": "/docs/Lenguaje C/02.04_repaso"
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso"
+              },
+              "next": {
+                "title": "03 - Ejercicios Resueltos",
+                "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
               }
             }
           ],
@@ -307,6 +452,28 @@
               {
                 "type": "doc",
                 "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "00 - Configuración",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Configuraciones/00.01_config_vscode_mingw"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Configuraciones/00.02_library_SDL2"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "description": "Instalación y configuración de las herramientas necesarias",
+                  "slug": "/category/00---configuración",
+                  "permalink": "/lenguajes-estructurados/docs/category/00---configuración"
+                }
               },
               {
                 "type": "category",
@@ -325,9 +492,9 @@
                 ],
                 "link": {
                   "type": "generated-index",
-                  "description": "5 minutes to learn the most important Docusaurus concepts.",
+                  "description": "Introducción a la asignatura",
                   "slug": "/category/01---introducción",
-                  "permalink": "/docs/category/01---introducción"
+                  "permalink": "/lenguajes-estructurados/docs/category/01---introducción"
                 }
               },
               {
@@ -338,15 +505,7 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "Lenguaje C/02.01.E_life_conway"
-                  },
-                  {
-                    "type": "doc",
                     "id": "Lenguaje C/02.01_conceptos"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "Lenguaje C/02.02.E_fractales_julia"
                   },
                   {
                     "type": "doc",
@@ -367,9 +526,43 @@
                 ],
                 "link": {
                   "type": "generated-index",
-                  "description": "5 minutes to learn the most important Docusaurus concepts.",
+                  "description": "Fundamentos de programación en C",
                   "slug": "/category/02---lenguaje-c",
-                  "permalink": "/docs/category/02---lenguaje-c"
+                  "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
+                }
+              },
+              {
+                "type": "category",
+                "label": "03 - Ejercicios Resueltos",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Ejercicios Resueltos/03.01_life_conway"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Ejercicios Resueltos/03.02_fractales_julia"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Ejercicios Resueltos/03.03.A_snake"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Ejercicios Resueltos/03.03.B_snake_py"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Ejercicios Resueltos/03.05_tictactoe"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "description": "Ejercicios resueltos de la asignatura",
+                  "slug": "/category/03---ejercicios-resueltos",
+                  "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
                 }
               }
             ]
@@ -385,7 +578,7 @@
         {
           "id": "welcome",
           "metadata": {
-            "permalink": "/blog/welcome",
+            "permalink": "/lenguajes-estructurados/blog/welcome",
             "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/blog/2023-04-10-bienvenida/index.md",
             "source": "@site/blog/2023-04-10-bienvenida/index.md",
             "title": "Bienvenida",
@@ -395,15 +588,15 @@
             "tags": [
               {
                 "label": "lenguajes",
-                "permalink": "/blog/tags/lenguajes"
+                "permalink": "/lenguajes-estructurados/blog/tags/lenguajes"
               },
               {
                 "label": "c",
-                "permalink": "/blog/tags/c"
+                "permalink": "/lenguajes-estructurados/blog/tags/c"
               },
               {
                 "label": "intro",
-                "permalink": "/blog/tags/intro"
+                "permalink": "/lenguajes-estructurados/blog/tags/intro"
               }
             ],
             "readingTime": 0.28,
@@ -439,7 +632,7 @@
             "welcome"
           ],
           "metadata": {
-            "permalink": "/blog",
+            "permalink": "/lenguajes-estructurados/blog",
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 1,
@@ -450,19 +643,19 @@
         }
       ],
       "blogTags": {
-        "/blog/tags/lenguajes": {
+        "/lenguajes-estructurados/blog/tags/lenguajes": {
           "label": "lenguajes",
           "items": [
             "welcome"
           ],
-          "permalink": "/blog/tags/lenguajes",
+          "permalink": "/lenguajes-estructurados/blog/tags/lenguajes",
           "pages": [
             {
               "items": [
                 "welcome"
               ],
               "metadata": {
-                "permalink": "/blog/tags/lenguajes",
+                "permalink": "/lenguajes-estructurados/blog/tags/lenguajes",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -473,19 +666,19 @@
             }
           ]
         },
-        "/blog/tags/c": {
+        "/lenguajes-estructurados/blog/tags/c": {
           "label": "c",
           "items": [
             "welcome"
           ],
-          "permalink": "/blog/tags/c",
+          "permalink": "/lenguajes-estructurados/blog/tags/c",
           "pages": [
             {
               "items": [
                 "welcome"
               ],
               "metadata": {
-                "permalink": "/blog/tags/c",
+                "permalink": "/lenguajes-estructurados/blog/tags/c",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -496,19 +689,19 @@
             }
           ]
         },
-        "/blog/tags/intro": {
+        "/lenguajes-estructurados/blog/tags/intro": {
           "label": "intro",
           "items": [
             "welcome"
           ],
-          "permalink": "/blog/tags/intro",
+          "permalink": "/lenguajes-estructurados/blog/tags/intro",
           "pages": [
             {
               "items": [
                 "welcome"
               ],
               "metadata": {
-                "permalink": "/blog/tags/intro",
+                "permalink": "/lenguajes-estructurados/blog/tags/intro",
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
@@ -520,19 +713,19 @@
           ]
         }
       },
-      "blogTagsListPath": "/blog/tags"
+      "blogTagsListPath": "/lenguajes-estructurados/blog/tags"
     }
   },
   "docusaurus-plugin-content-pages": {
     "default": [
       {
         "type": "jsx",
-        "permalink": "/",
+        "permalink": "/lenguajes-estructurados/",
         "source": "@site/src/pages/index.js"
       },
       {
         "type": "mdx",
-        "permalink": "/markdown-page",
+        "permalink": "/lenguajes-estructurados/markdown-page",
         "source": "@site/src/pages/markdown-page.md",
         "title": "Markdown page example",
         "description": "You don't need React to write simple standalone pages.",

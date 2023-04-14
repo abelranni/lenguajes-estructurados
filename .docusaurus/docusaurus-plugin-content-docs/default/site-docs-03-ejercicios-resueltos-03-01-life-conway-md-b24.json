@@ -1,0 +1,29 @@
+{
+  "unversionedId": "Ejercicios Resueltos/03.01_life_conway",
+  "id": "Ejercicios Resueltos/03.01_life_conway",
+  "title": "03.01 - Juego de la vida de Conway",
+  "description": "Lenguajes Estructurados",
+  "source": "@site/docs/03 - Ejercicios Resueltos/03.01_life_conway.md",
+  "sourceDirName": "03 - Ejercicios Resueltos",
+  "slug": "/Ejercicios Resueltos/03.01_life_conway",
+  "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.01_life_conway",
+  "draft": false,
+  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.01_life_conway.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "marp": true,
+    "theme": "default",
+    "size": 969,
+    "paginate": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "03 - Ejercicios Resueltos",
+    "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
+  },
+  "next": {
+    "title": "03.02 - Fractales de Julia",
+    "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia"
+  }
+}

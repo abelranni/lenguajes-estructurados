@@ -1,0 +1,16 @@
+{
+  "title": "00 - Configuración",
+  "description": "Instalación y configuración de las herramientas necesarias",
+  "slug": "/category/00---configuración",
+  "permalink": "/lenguajes-estructurados/docs/category/00---configuración",
+  "navigation": {
+    "previous": {
+      "title": "Introducción",
+      "permalink": "/lenguajes-estructurados/docs/intro"
+    },
+    "next": {
+      "title": "00.01 - Configurar Visual Studio Code y MinGW",
+      "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw"
+    }
+  }
+}

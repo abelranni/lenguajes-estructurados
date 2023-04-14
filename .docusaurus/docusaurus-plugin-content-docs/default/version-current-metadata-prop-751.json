@@ -11,9 +11,30 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Tutorial Intro",
+        "label": "Introducción",
         "href": "/lenguajes-estructurados/docs/intro",
         "docId": "intro"
+      },
+      {
+        "type": "category",
+        "label": "00 - Configuración",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "00.01 - Configurar Visual Studio Code y MinGW",
+            "href": "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw",
+            "docId": "Configuraciones/00.01_config_vscode_mingw"
+          },
+          {
+            "type": "link",
+            "label": "00.02 - Instalar biblioteca SDL2",
+            "href": "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2",
+            "docId": "Configuraciones/00.02_library_SDL2"
+          }
+        ],
+        "href": "/lenguajes-estructurados/docs/category/00---configuración"
       },
       {
         "type": "category",
@@ -44,25 +65,13 @@
         "items": [
           {
             "type": "link",
-            "label": "02.01.E - Juego de la vida de Conway",
-            "href": "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway",
-            "docId": "Lenguaje C/02.01.E_life_conway"
-          },
-          {
-            "type": "link",
             "label": "02.01 - Conceptos Generales",
             "href": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
             "docId": "Lenguaje C/02.01_conceptos"
           },
           {
             "type": "link",
-            "label": "02.02.E - Fractales de Julia",
-            "href": "/lenguajes-estructurados/docs/Lenguaje C/02.02.E_fractales_julia",
-            "docId": "Lenguaje C/02.02.E_fractales_julia"
-          },
-          {
-            "type": "link",
-            "label": "02.02 - Estructuras de datos (struct)",
+            "label": "02.02 - Estructuras de datos",
             "href": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras",
             "docId": "Lenguaje C/02.02_estructuras"
           },
@@ -86,13 +95,94 @@
           }
         ],
         "href": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
+      },
+      {
+        "type": "category",
+        "label": "03 - Ejercicios Resueltos",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "03.01 - Juego de la vida de Conway",
+            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.01_life_conway",
+            "docId": "Ejercicios Resueltos/03.01_life_conway"
+          },
+          {
+            "type": "link",
+            "label": "03.02 - Fractales de Julia",
+            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia",
+            "docId": "Ejercicios Resueltos/03.02_fractales_julia"
+          },
+          {
+            "type": "link",
+            "label": "03.03.A - Juego de Snake en C",
+            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.A_snake",
+            "docId": "Ejercicios Resueltos/03.03.A_snake"
+          },
+          {
+            "type": "link",
+            "label": "03.03.B - Snake en Python",
+            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py",
+            "docId": "Ejercicios Resueltos/03.03.B_snake_py"
+          },
+          {
+            "type": "link",
+            "label": "03.05 -  TicTacToe",
+            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe",
+            "docId": "Ejercicios Resueltos/03.05_tictactoe"
+          }
+        ],
+        "href": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
       }
     ]
   },
   "docs": {
+    "Configuraciones/00.01_config_vscode_mingw": {
+      "id": "Configuraciones/00.01_config_vscode_mingw",
+      "title": "00.01 - Configurar Visual Studio Code y MinGW",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Configuraciones/00.02_library_SDL2": {
+      "id": "Configuraciones/00.02_library_SDL2",
+      "title": "00.02 - Instalar biblioteca SDL2",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Ejercicios Resueltos/03.01_life_conway": {
+      "id": "Ejercicios Resueltos/03.01_life_conway",
+      "title": "03.01 - Juego de la vida de Conway",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Ejercicios Resueltos/03.02_fractales_julia": {
+      "id": "Ejercicios Resueltos/03.02_fractales_julia",
+      "title": "03.02 - Fractales de Julia",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Ejercicios Resueltos/03.03.A_snake": {
+      "id": "Ejercicios Resueltos/03.03.A_snake",
+      "title": "03.03.A - Juego de Snake en C",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Ejercicios Resueltos/03.03.B_snake_py": {
+      "id": "Ejercicios Resueltos/03.03.B_snake_py",
+      "title": "03.03.B - Snake en Python",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Ejercicios Resueltos/03.05_tictactoe": {
+      "id": "Ejercicios Resueltos/03.05_tictactoe",
+      "title": "03.05 -  TicTacToe",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
     "intro": {
       "id": "intro",
-      "title": "Tutorial Intro",
+      "title": "Introducción",
       "description": "Introducción a la documentación de la asignatura...",
       "sidebar": "tutorialSidebar"
     },
@@ -114,22 +204,10 @@
       "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     },
-    "Lenguaje C/02.01.E_life_conway": {
-      "id": "Lenguaje C/02.01.E_life_conway",
-      "title": "02.01.E - Juego de la vida de Conway",
-      "description": "Lenguajes Estructurados",
-      "sidebar": "tutorialSidebar"
-    },
     "Lenguaje C/02.02_estructuras": {
       "id": "Lenguaje C/02.02_estructuras",
-      "title": "02.02 - Estructuras de datos (struct)",
+      "title": "02.02 - Estructuras de datos",
       "description": "\"# Lenguajes Estructurados",
-      "sidebar": "tutorialSidebar"
-    },
-    "Lenguaje C/02.02.E_fractales_julia": {
-      "id": "Lenguaje C/02.02.E_fractales_julia",
-      "title": "02.02.E - Fractales de Julia",
-      "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     },
     "Lenguaje C/02.03_punteros": {

@@ -1,12 +1,12 @@
 {
   "title": "01 - Introducción",
-  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "description": "Introducción a la asignatura",
   "slug": "/category/01---introducción",
   "permalink": "/lenguajes-estructurados/docs/category/01---introducción",
   "navigation": {
     "previous": {
-      "title": "Tutorial Intro",
-      "permalink": "/lenguajes-estructurados/docs/intro"
+      "title": "00.02 - Instalar biblioteca SDL2",
+      "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2"
     },
     "next": {
       "title": "01.01 - Programación Estructurada",

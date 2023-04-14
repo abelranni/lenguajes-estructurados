@@ -1,6 +1,6 @@
 {
   "title": "02 - Lenguaje C",
-  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "description": "Fundamentos de programación en C",
   "slug": "/category/02---lenguaje-c",
   "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c",
   "navigation": {
@@ -9,8 +9,8 @@
       "permalink": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas"
     },
     "next": {
-      "title": "02.01.E - Juego de la vida de Conway",
-      "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01.E_life_conway"
+      "title": "02.01 - Conceptos Generales",
+      "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
     }
   }
 }

@@ -1,0 +1,8 @@
+{
+  "label": "00 - Configuración",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Instalación y configuración de las herramientas necesarias"
+  }
+}
