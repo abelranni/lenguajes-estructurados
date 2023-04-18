@@ -61,6 +61,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Introduccion/01.03_dry_etc",
+              "path": "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Lenguaje C/02.01_conceptos",
               "path": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
               "sidebar": "tutorialSidebar"

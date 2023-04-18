@@ -53,6 +53,12 @@
             "label": "01.02 - Buenas prácticas",
             "href": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas",
             "docId": "Introduccion/01.02_buenas_practicas"
+          },
+          {
+            "type": "link",
+            "label": "01.03 - Principios de Código Limpio",
+            "href": "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc",
+            "docId": "Introduccion/01.03_dry_etc"
           }
         ],
         "href": "/lenguajes-estructurados/docs/category/01---introducción"
@@ -195,6 +201,12 @@
     "Introduccion/01.02_buenas_practicas": {
       "id": "Introduccion/01.02_buenas_practicas",
       "title": "01.02 - Buenas prácticas",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Introduccion/01.03_dry_etc": {
+      "id": "Introduccion/01.03_dry_etc",
+      "title": "01.03 - Principios de Código Limpio",
       "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     },

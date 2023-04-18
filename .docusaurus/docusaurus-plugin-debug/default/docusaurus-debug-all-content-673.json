@@ -296,6 +296,35 @@
                 "permalink": "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada"
               },
               "next": {
+                "title": "01.03 - Principios de Código Limpio",
+                "permalink": "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc"
+              }
+            },
+            {
+              "unversionedId": "Introduccion/01.03_dry_etc",
+              "id": "Introduccion/01.03_dry_etc",
+              "title": "01.03 - Principios de Código Limpio",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/01 - Introduccion/01.03_dry_etc.md",
+              "sourceDirName": "01 - Introduccion",
+              "slug": "/Introduccion/01.03_dry_etc",
+              "permalink": "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/01 - Introduccion/01.03_dry_etc.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "01.02 - Buenas prácticas",
+                "permalink": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas"
+              },
+              "next": {
                 "title": "02 - Lenguaje C",
                 "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
               }
@@ -488,6 +517,10 @@
                   {
                     "type": "doc",
                     "id": "Introduccion/01.02_buenas_practicas"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Introduccion/01.03_dry_etc"
                   }
                 ],
                 "link": {
@@ -579,7 +612,6 @@
           "id": "welcome",
           "metadata": {
             "permalink": "/lenguajes-estructurados/blog/welcome",
-            "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/blog/2023-04-10-bienvenida/index.md",
             "source": "@site/blog/2023-04-10-bienvenida/index.md",
             "title": "Bienvenida",
             "description": "Las funciones de blogging de Docusaurus funcionan con el plugin de blog.",

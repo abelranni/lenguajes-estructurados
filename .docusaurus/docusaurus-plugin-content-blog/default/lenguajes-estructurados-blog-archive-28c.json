@@ -4,7 +4,6 @@
       "id": "welcome",
       "metadata": {
         "permalink": "/lenguajes-estructurados/blog/welcome",
-        "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/blog/2023-04-10-bienvenida/index.md",
         "source": "@site/blog/2023-04-10-bienvenida/index.md",
         "title": "Bienvenida",
         "description": "Las funciones de blogging de Docusaurus funcionan con el plugin de blog.",

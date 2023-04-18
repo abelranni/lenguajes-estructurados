@@ -30,10 +30,6 @@ export default {
           "sidebarPath": "C:\\ucel\\lenguajes-estructurados\\sidebars.js",
           "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/"
         },
-        "blog": {
-          "showReadingTime": true,
-          "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/"
-        },
         "theme": {
           "customCss": "C:\\ucel\\lenguajes-estructurados\\src\\css\\custom.css"
         }
@@ -54,11 +50,6 @@ export default {
           "sidebarId": "tutorialSidebar",
           "position": "left",
           "label": "Contenido"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
         },
         {
           "href": "https://github.com/abelranni/lenguajes-estructurados",
@@ -96,10 +87,6 @@ export default {
         {
           "title": "More",
           "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
             {
               "label": "GitHub",
               "href": "https://github.com/abelranni/lenguajes-estructurados"

@@ -79,7 +79,7 @@ export default [
   },
   {
     path: '/lenguajes-estructurados/docs',
-    component: ComponentCreator('/lenguajes-estructurados/docs', '8ae'),
+    component: ComponentCreator('/lenguajes-estructurados/docs', 'f46'),
     routes: [
       {
         path: '/lenguajes-estructurados/docs/category/00---configuración',
@@ -162,6 +162,12 @@ export default [
       {
         path: '/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas',
         component: ComponentCreator('/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas', '61c'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc',
+        component: ComponentCreator('/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc', '8bf'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

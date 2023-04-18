@@ -127,7 +127,7 @@
     },
     "content": "content---lenguajes-estructurados-markdown-page-393-8e2"
   },
-  "/lenguajes-estructurados/docs-8ae": {
+  "/lenguajes-estructurados/docs-f46": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---lenguajes-estructurados-docsed-5-e9c"
@@ -189,6 +189,10 @@
   "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas-61c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---lenguajes-estructurados-docs-introduccion-01-02-buenas-practicas-179-f93"
+  },
+  "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc-8bf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---lenguajes-estructurados-docs-introduccion-01-03-dry-etc-4-c-8-9f5"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos-120": {
     "__comp": "__comp---theme-doc-item-178-a40",

@@ -5,8 +5,8 @@
   "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c",
   "navigation": {
     "previous": {
-      "title": "01.02 - Buenas prácticas",
-      "permalink": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas"
+      "title": "01.03 - Principios de Código Limpio",
+      "permalink": "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc"
     },
     "next": {
       "title": "02.01 - Conceptos Generales",
