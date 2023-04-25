@@ -1,9 +1,9 @@
 #include <stdlib.h> // para rand()
 #include <time.h>   // para time()
 #include <math.h>
-#include "ttt.h"
+#include "tateti.h"
 
-// gcc .\ttt.c -o ttt.exe -lSDL2 -lSDL2_ttf -lSDL2_image
+// gcc .\tateti.c -o tateti.exe -lSDL2 -lSDL2_ttf -lSDL2_image
 
 int is_full()
 {
@@ -59,7 +59,7 @@ int check_winner()
     return 0;
 }
 
-int check_game_over(int currentPlayer)
+int check_game_over()
 {
     printf("Verificando si el juego ha terminado...\n");
     int winner = check_winner();
@@ -77,6 +77,25 @@ int check_game_over(int currentPlayer)
 
     return 0;
 }
+
+void draw_line_winner(int winner)
+{
+    // Dibujar la línea que indica el ganador
+    SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF);
+    for (int i = 0; i < 3; ++i)
+    {
+        if (board[i][0] == winner && board[i][1] == winner && board[i][2] == winner)
+        {
+            SDL_RenderDrawLine(renderer, i * SCREEN_WIDTH / 3 + SCREEN_WIDTH / 6, 0, i * SCREEN_WIDTH / 3 + SCREEN_WIDTH / 6, SCREEN_HEIGHT);
+        }
+        if (board[0][i] == winner && board[1][i] == winner && board[2][i] == winner)
+        {
+            SDL_RenderDrawLine(renderer, 0, i * SCREEN_HEIGHT / 3 + SCREEN_HEIGHT / 6, SCREEN_WIDTH, i * SCREEN_HEIGHT / 3 + SCREEN_HEIGHT / 6);
+        }
+    }
+    SDL_RenderPresent(renderer);
+}
+
 
 int minimax(int depth, int is_maximizing, int player)
 {
@@ -175,7 +194,7 @@ void ia_move(int currentPlayer)
 }
 
 // Función para manejar el evento SDL_MOUSEBUTTONDOWN
-void handle_mouse_event(SDL_Event e, int *currentPlayer, int *quit)
+void handle_mouse_event(SDL_Event e, int *currentPlayer, int *restart)
 {
     int x = e.button.x / (SCREEN_WIDTH / 3);
     int y = e.button.y / (SCREEN_HEIGHT / 3);
@@ -184,7 +203,7 @@ void handle_mouse_event(SDL_Event e, int *currentPlayer, int *quit)
     {
         if (check_game_over(*currentPlayer))
         {
-            // *quit = 1;
+            *restart = 1;
             return;
         }
         *currentPlayer = (*currentPlayer == 1) ? 2 : 1; // Cambiar el jugador actual
@@ -195,7 +214,7 @@ void handle_mouse_event(SDL_Event e, int *currentPlayer, int *quit)
             ia_move_minimax(*currentPlayer);
             if (check_game_over(*currentPlayer))
             {
-                // *quit = 1;
+                *restart = 1;
                 return;
             }
             *currentPlayer = 1; // Cambiar el jugador actual de vuelta al jugador humano
@@ -203,7 +222,7 @@ void handle_mouse_event(SDL_Event e, int *currentPlayer, int *quit)
     }
 }
 
-int WinMain(int argc, char *args[])
+int WinMain()
 {
     if (!init())
     {
@@ -219,6 +238,7 @@ int WinMain(int argc, char *args[])
     }
 
     int quit = 0;
+    int restart = 0;
     SDL_Event e;
     int currentPlayer = 1;
 
@@ -232,11 +252,24 @@ int WinMain(int argc, char *args[])
             }
             if (e.type == SDL_MOUSEBUTTONDOWN)
             {
-                handle_mouse_event(e, &currentPlayer, &quit);
+                if (restart)
+                {
+                    restart = 0;
+                    currentPlayer = 1;
+                    clear_board();
+                }
+                else 
+                {
+                    handle_mouse_event(e, &currentPlayer, &restart);
+                }
             }
         }
 
         draw_board();
+        if (restart)
+        {
+            draw_line_winner(check_winner());
+        }
         SDL_RenderPresent(renderer);
     }
 

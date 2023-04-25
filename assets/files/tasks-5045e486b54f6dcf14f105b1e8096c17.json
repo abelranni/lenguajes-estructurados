@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-o",
+                "${workspaceFolder}\\tateti.exe",
+                "${workspaceFolder}\\tateti.c",
+                "-lSDL2",
+                "-lSDL2_image",
+                "-lSDL2_ttf",
+                // "-lSDL2main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
