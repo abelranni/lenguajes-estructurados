@@ -5,8 +5,8 @@
   "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos",
   "navigation": {
     "previous": {
-      "title": "02.05 - Manejo de memoria",
-      "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria"
+      "title": "Relación entre matrices y punteros",
+      "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices"
     },
     "next": {
       "title": "03.01 - Juego de la vida de Conway",

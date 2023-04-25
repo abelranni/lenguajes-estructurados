@@ -91,6 +91,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Lenguaje C/Punteros/punteros",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Lenguaje C/Punteros/punteros_y_matrices",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "/category/00---configuración",
               "path": "/lenguajes-estructurados/docs/category/00---configuración",
               "sidebar": "tutorialSidebar"

@@ -98,6 +98,26 @@
             "label": "02.05 - Manejo de memoria",
             "href": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria",
             "docId": "Lenguaje C/02.05_memoria"
+          },
+          {
+            "type": "category",
+            "label": "Punteros",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "Punteros en C",
+                "href": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros",
+                "docId": "Lenguaje C/Punteros/punteros"
+              },
+              {
+                "type": "link",
+                "label": "Relación entre matrices y punteros",
+                "href": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices",
+                "docId": "Lenguaje C/Punteros/punteros_y_matrices"
+              }
+            ]
           }
         ],
         "href": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
@@ -237,6 +257,18 @@
     "Lenguaje C/02.05_memoria": {
       "id": "Lenguaje C/02.05_memoria",
       "title": "02.05 - Manejo de memoria",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/Punteros/punteros": {
+      "id": "Lenguaje C/Punteros/punteros",
+      "title": "Punteros en C",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Lenguaje C/Punteros/punteros_y_matrices": {
+      "id": "Lenguaje C/Punteros/punteros_y_matrices",
+      "title": "Relación entre matrices y punteros",
       "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     }

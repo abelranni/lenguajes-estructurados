@@ -79,7 +79,7 @@ export default [
   },
   {
     path: '/lenguajes-estructurados/docs',
-    component: ComponentCreator('/lenguajes-estructurados/docs', 'f46'),
+    component: ComponentCreator('/lenguajes-estructurados/docs', '91b'),
     routes: [
       {
         path: '/lenguajes-estructurados/docs/category/00---configuración',
@@ -198,6 +198,18 @@ export default [
       {
         path: '/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria',
         component: ComponentCreator('/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria', 'ce2'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros',
+        component: ComponentCreator('/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros', '985'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices',
+        component: ComponentCreator('/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices', '8ec'),
         exact: true,
         sidebar: "tutorialSidebar"
       }

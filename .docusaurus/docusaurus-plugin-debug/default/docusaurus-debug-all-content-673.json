@@ -470,6 +470,66 @@
                 "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso"
               },
               "next": {
+                "title": "Punteros en C",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros"
+              }
+            },
+            {
+              "unversionedId": "Lenguaje C/Punteros/punteros",
+              "id": "Lenguaje C/Punteros/punteros",
+              "title": "Punteros en C",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/02 - Lenguaje C/Punteros/1.punteros.md",
+              "sourceDirName": "02 - Lenguaje C/Punteros",
+              "slug": "/Lenguaje C/Punteros/punteros",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/Punteros/1.punteros.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "02.05 - Manejo de memoria",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria"
+              },
+              "next": {
+                "title": "Relación entre matrices y punteros",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices"
+              }
+            },
+            {
+              "unversionedId": "Lenguaje C/Punteros/punteros_y_matrices",
+              "id": "Lenguaje C/Punteros/punteros_y_matrices",
+              "title": "Relación entre matrices y punteros",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/02 - Lenguaje C/Punteros/2.punteros_y_matrices.md",
+              "sourceDirName": "02 - Lenguaje C/Punteros",
+              "slug": "/Lenguaje C/Punteros/punteros_y_matrices",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/Punteros/2.punteros_y_matrices.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Punteros en C",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros"
+              },
+              "next": {
                 "title": "03 - Ejercicios Resueltos",
                 "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
               }
@@ -555,6 +615,22 @@
                   {
                     "type": "doc",
                     "id": "Lenguaje C/02.05_memoria"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Punteros",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Lenguaje C/Punteros/punteros"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Lenguaje C/Punteros/punteros_y_matrices"
+                      }
+                    ]
                   }
                 ],
                 "link": {
