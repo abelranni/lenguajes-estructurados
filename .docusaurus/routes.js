@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/lenguajes-estructurados/__docusaurus/debug',
-    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug', 'a31'),
-    exact: true
-  },
-  {
-    path: '/lenguajes-estructurados/__docusaurus/debug/config',
-    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/config', '4f5'),
-    exact: true
-  },
-  {
-    path: '/lenguajes-estructurados/__docusaurus/debug/content',
-    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/content', 'a69'),
-    exact: true
-  },
-  {
-    path: '/lenguajes-estructurados/__docusaurus/debug/globalData',
-    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/globalData', '390'),
-    exact: true
-  },
-  {
-    path: '/lenguajes-estructurados/__docusaurus/debug/metadata',
-    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/metadata', '9ee'),
-    exact: true
-  },
-  {
-    path: '/lenguajes-estructurados/__docusaurus/debug/registry',
-    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/registry', 'cca'),
-    exact: true
-  },
-  {
-    path: '/lenguajes-estructurados/__docusaurus/debug/routes',
-    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/routes', '070'),
-    exact: true
-  },
-  {
     path: '/lenguajes-estructurados/blog',
     component: ComponentCreator('/lenguajes-estructurados/blog', '304'),
     exact: true

@@ -1,232 +1,189 @@
 {
-  "/lenguajes-estructurados/__docusaurus/debug-a31": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docusaurus-debug-293-abd"
-    }
-  },
-  "/lenguajes-estructurados/__docusaurus/debug/config-4f5": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docusaurus-debug-293-abd"
-    }
-  },
-  "/lenguajes-estructurados/__docusaurus/debug/content-a69": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docusaurus-debug-293-abd"
-    },
-    "allContent": "allContent---lenguajes-estructurados-docusaurus-debug-content-246-644"
-  },
-  "/lenguajes-estructurados/__docusaurus/debug/globalData-390": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docusaurus-debug-293-abd"
-    }
-  },
-  "/lenguajes-estructurados/__docusaurus/debug/metadata-9ee": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docusaurus-debug-293-abd"
-    }
-  },
-  "/lenguajes-estructurados/__docusaurus/debug/registry-cca": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docusaurus-debug-293-abd"
-    }
-  },
-  "/lenguajes-estructurados/__docusaurus/debug/routes-070": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docusaurus-debug-293-abd"
-    }
-  },
   "/lenguajes-estructurados/blog-304": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-blog-68-b-65a"
+      "plugin": "68b4d019"
     },
-    "sidebar": "sidebar---lenguajes-estructurados-blog-814-ea7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---lenguajes-estructurados-bloge-64-93e"
+        "content": "e64a0f4e"
       }
     ],
-    "metadata": "metadata---lenguajes-estructurados-bloge-5-a-5c4"
+    "metadata": "e5ae0dd0"
   },
   "/lenguajes-estructurados/blog/archive-239": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__comp": "9e4087bc",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-blog-68-b-65a"
+      "plugin": "68b4d019"
     },
-    "archive": "archive---lenguajes-estructurados-blog-archive-7-a-8-2de"
+    "archive": "7a83ab08"
   },
   "/lenguajes-estructurados/blog/tags-c10": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__comp": "01a85c17",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-blog-68-b-65a"
+      "plugin": "68b4d019"
     },
-    "sidebar": "sidebar---lenguajes-estructurados-blog-814-ea7",
-    "tags": "tags---lenguajes-estructurados-blog-tagsf-07-076"
+    "sidebar": "814f3328",
+    "tags": "f0743fe9"
   },
   "/lenguajes-estructurados/blog/tags/c-248": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-blog-68-b-65a"
+      "plugin": "68b4d019"
     },
-    "sidebar": "sidebar---lenguajes-estructurados-blog-814-ea7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---lenguajes-estructurados-bloge-64-93e"
+        "content": "e64a0f4e"
       }
     ],
-    "tag": "tag---lenguajes-estructurados-blog-tags-c-495-7a9",
-    "listMetadata": "listMetadata---lenguajes-estructurados-blog-tags-c-428-f74"
+    "tag": "4957b057",
+    "listMetadata": "428850b3"
   },
   "/lenguajes-estructurados/blog/tags/intro-e40": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-blog-68-b-65a"
+      "plugin": "68b4d019"
     },
-    "sidebar": "sidebar---lenguajes-estructurados-blog-814-ea7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---lenguajes-estructurados-bloge-64-93e"
+        "content": "e64a0f4e"
       }
     ],
-    "tag": "tag---lenguajes-estructurados-blog-tags-intro-14-c-ad6",
-    "listMetadata": "listMetadata---lenguajes-estructurados-blog-tags-intro-407-ba5"
+    "tag": "14c96d09",
+    "listMetadata": "407f921e"
   },
   "/lenguajes-estructurados/blog/tags/lenguajes-f02": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-blog-68-b-65a"
+      "plugin": "68b4d019"
     },
-    "sidebar": "sidebar---lenguajes-estructurados-blog-814-ea7",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---lenguajes-estructurados-bloge-64-93e"
+        "content": "e64a0f4e"
       }
     ],
-    "tag": "tag---lenguajes-estructurados-blog-tags-lenguajes-319-1e6",
-    "listMetadata": "listMetadata---lenguajes-estructurados-blog-tags-lenguajes-443-09c"
+    "tag": "3199d638",
+    "listMetadata": "4435e519"
   },
   "/lenguajes-estructurados/blog/welcome-931": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-blog-68-b-65a"
+      "plugin": "68b4d019"
     },
-    "sidebar": "sidebar---lenguajes-estructurados-blog-814-ea7",
-    "content": "content---lenguajes-estructurados-blog-welcome-26-d-c5a"
+    "sidebar": "814f3328",
+    "content": "26d0afd6"
   },
   "/lenguajes-estructurados/markdown-page-d31": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-markdown-pagee-64-355"
+      "plugin": "e64b608a"
     },
-    "content": "content---lenguajes-estructurados-markdown-page-393-8e2"
+    "content": "393be207"
   },
   "/lenguajes-estructurados/docs-91b": {
-    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__comp": "1be78505",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-docsed-5-e9c"
+      "plugin": "ed58c1ff"
     },
-    "versionMetadata": "versionMetadata---lenguajes-estructurados-docs-935-b1e"
+    "versionMetadata": "935f2afb"
   },
   "/lenguajes-estructurados/docs/category/00---configuración-cc3": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---lenguajes-estructurados-docs-category-00-configuracionead-360"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "ead30643"
   },
   "/lenguajes-estructurados/docs/category/01---introducción-e21": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---lenguajes-estructurados-docs-category-01-introduccion-992-8ca"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "992db1ca"
   },
   "/lenguajes-estructurados/docs/category/02---lenguaje-c-e85": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---lenguajes-estructurados-docs-category-02-lenguaje-c-11-f-643"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "11f2288f"
   },
   "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos-1e9": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---lenguajes-estructurados-docs-category-03-ejercicios-resueltos-327-6b9"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "327431ac"
   },
   "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw-772": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-configuraciones-00-01-config-vscode-mingwe-53-e42"
+    "__comp": "17896441",
+    "content": "e5305471"
   },
   "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2-70c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-configuraciones-00-02-library-sdl-234-b-5ad"
+    "__comp": "17896441",
+    "content": "34bac0ae"
   },
   "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.01_life_conway-ce1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-ejercicios-resueltos-03-01-life-conwayb-24-f6e"
+    "__comp": "17896441",
+    "content": "b24849a3"
   },
   "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia-fae": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-ejercicios-resueltos-03-02-fractales-julia-659-cf0"
+    "__comp": "17896441",
+    "content": "659cce03"
   },
   "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.A_snake-c6e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-ejercicios-resueltos-03-03-a-snake-4-fe-161"
+    "__comp": "17896441",
+    "content": "4fe08438"
   },
   "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py-823": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-ejercicios-resueltos-03-03-b-snake-py-769-9c6"
+    "__comp": "17896441",
+    "content": "76904fa7"
   },
   "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe-fed": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-ejercicios-resueltos-03-05-tictactoe-5-e-1-656"
+    "__comp": "17896441",
+    "content": "5e1f94cc"
   },
   "/lenguajes-estructurados/docs/intro-e89": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-intro-0-e-3-571"
+    "__comp": "17896441",
+    "content": "0e384e19"
   },
   "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada-8ff": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-introduccion-01-01-programacion-estructurada-328-74e"
+    "__comp": "17896441",
+    "content": "328f79fb"
   },
   "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas-61c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-introduccion-01-02-buenas-practicas-179-f93"
+    "__comp": "17896441",
+    "content": "1790c7bc"
   },
   "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc-8bf": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-introduccion-01-03-dry-etc-4-c-8-9f5"
+    "__comp": "17896441",
+    "content": "4c86cf9f"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos-120": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-lenguaje-c-02-01-conceptose-28-2ab"
+    "__comp": "17896441",
+    "content": "e28fe493"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras-e45": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-lenguaje-c-02-02-estructuras-53-c-52f"
+    "__comp": "17896441",
+    "content": "53c43db6"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros-e9b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-lenguaje-c-02-03-punterosb-03-213"
+    "__comp": "17896441",
+    "content": "b0380f27"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso-c37": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-lenguaje-c-02-04-repaso-0-a-2-aa6"
+    "__comp": "17896441",
+    "content": "0a268d0b"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria-ce2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-lenguaje-c-02-05-memoria-573-abd"
+    "__comp": "17896441",
+    "content": "57332717"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros-985": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-lenguaje-c-punteros-punteros-8-fc-40e"
+    "__comp": "17896441",
+    "content": "8fc4a76d"
   },
   "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices-8ec": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---lenguajes-estructurados-docs-lenguaje-c-punteros-punteros-y-matricesc-8-e-8f9"
+    "__comp": "17896441",
+    "content": "c8e0246c"
   },
   "/lenguajes-estructurados/-ccf": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---lenguajes-estructurados-markdown-pagee-64-355"
+      "plugin": "e64b608a"
     },
-    "config": "config---lenguajes-estructurados-5-e-9-05e"
+    "config": "5e9f5e1a"
   }
 }
