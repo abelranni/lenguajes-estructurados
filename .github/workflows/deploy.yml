@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set project dir environment var
-        run: echo ::set-env name=PROJECT_DIR::"$GITHUB_WORKSPACE/website"      
+      # - name: Set project dir environment var
+      #   run: echo ::set-env name=PROJECT_DIR::"$GITHUB_WORKSPACE/website"      
       - uses: actions/setup-node@v3
         with:
           node-version: 18
