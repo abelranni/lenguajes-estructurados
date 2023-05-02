@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Redes/tcp",
+  "id": "Redes/tcp",
+  "title": "TCP Server-Client en C",
+  "description": "Lenguajes Estructurados",
+  "source": "@site/docs/04 - Redes/tcp.md",
+  "sourceDirName": "04 - Redes",
+  "slug": "/Redes/tcp",
+  "permalink": "/lenguajes-estructurados/docs/Redes/tcp",
+  "draft": false,
+  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/04 - Redes/tcp.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "marp": true,
+    "theme": "default",
+    "size": 969,
+    "paginate": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "04 - Redes",
+    "permalink": "/lenguajes-estructurados/docs/category/04---redes"
+  }
+}

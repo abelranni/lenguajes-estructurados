@@ -9,8 +9,8 @@
       "permalink": "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc"
     },
     "next": {
-      "title": "02.01 - Conceptos Generales",
-      "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
+      "title": "02.00 - Preprocesador y Macros",
+      "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros"
     }
   }
 }

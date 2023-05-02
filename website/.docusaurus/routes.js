@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/lenguajes-estructurados/__docusaurus/debug',
+    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug', '553'),
+    exact: true
+  },
+  {
+    path: '/lenguajes-estructurados/__docusaurus/debug/config',
+    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/config', 'af8'),
+    exact: true
+  },
+  {
+    path: '/lenguajes-estructurados/__docusaurus/debug/content',
+    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/content', 'ab9'),
+    exact: true
+  },
+  {
+    path: '/lenguajes-estructurados/__docusaurus/debug/globalData',
+    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/globalData', '25b'),
+    exact: true
+  },
+  {
+    path: '/lenguajes-estructurados/__docusaurus/debug/metadata',
+    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/metadata', '8af'),
+    exact: true
+  },
+  {
+    path: '/lenguajes-estructurados/__docusaurus/debug/registry',
+    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/registry', '2ea'),
+    exact: true
+  },
+  {
+    path: '/lenguajes-estructurados/__docusaurus/debug/routes',
+    component: ComponentCreator('/lenguajes-estructurados/__docusaurus/debug/routes', 'fed'),
+    exact: true
+  },
+  {
     path: '/lenguajes-estructurados/blog',
     component: ComponentCreator('/lenguajes-estructurados/blog', '239'),
     exact: true
@@ -44,7 +79,7 @@ export default [
   },
   {
     path: '/lenguajes-estructurados/docs',
-    component: ComponentCreator('/lenguajes-estructurados/docs', '5cf'),
+    component: ComponentCreator('/lenguajes-estructurados/docs', '029'),
     routes: [
       {
         path: '/lenguajes-estructurados/docs/category/00---configuración',
@@ -67,6 +102,12 @@ export default [
       {
         path: '/lenguajes-estructurados/docs/category/03---ejercicios-resueltos',
         component: ComponentCreator('/lenguajes-estructurados/docs/category/03---ejercicios-resueltos', '1e9'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/lenguajes-estructurados/docs/category/04---redes',
+        component: ComponentCreator('/lenguajes-estructurados/docs/category/04---redes', '4f3'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
@@ -137,6 +178,12 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
+        path: '/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros',
+        component: ComponentCreator('/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros', '82b'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
         path: '/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos',
         component: ComponentCreator('/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos', '120'),
         exact: true,
@@ -175,6 +222,12 @@ export default [
       {
         path: '/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices',
         component: ComponentCreator('/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices', '8ec'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/lenguajes-estructurados/docs/Redes/tcp',
+        component: ComponentCreator('/lenguajes-estructurados/docs/Redes/tcp', '647'),
         exact: true,
         sidebar: "tutorialSidebar"
       }

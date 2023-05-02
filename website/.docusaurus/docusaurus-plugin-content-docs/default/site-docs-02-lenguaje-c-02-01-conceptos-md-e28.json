@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "02 - Lenguaje C",
-    "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
+    "title": "02.00 - Preprocesador y Macros",
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros"
   },
   "next": {
     "title": "02.02 - Estructuras de datos",

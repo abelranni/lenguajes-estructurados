@@ -71,6 +71,12 @@
         "items": [
           {
             "type": "link",
+            "label": "02.00 - Preprocesador y Macros",
+            "href": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros",
+            "docId": "Lenguaje C/02.00_preprocesador_y_macros"
+          },
+          {
+            "type": "link",
             "label": "02.01 - Conceptos Generales",
             "href": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
             "docId": "Lenguaje C/02.01_conceptos"
@@ -160,6 +166,21 @@
           }
         ],
         "href": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
+      },
+      {
+        "type": "category",
+        "label": "04 - Redes",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "TCP Server-Client en C",
+            "href": "/lenguajes-estructurados/docs/Redes/tcp",
+            "docId": "Redes/tcp"
+          }
+        ],
+        "href": "/lenguajes-estructurados/docs/category/04---redes"
       }
     ]
   },
@@ -230,6 +251,12 @@
       "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     },
+    "Lenguaje C/02.00_preprocesador_y_macros": {
+      "id": "Lenguaje C/02.00_preprocesador_y_macros",
+      "title": "02.00 - Preprocesador y Macros",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
     "Lenguaje C/02.01_conceptos": {
       "id": "Lenguaje C/02.01_conceptos",
       "title": "02.01 - Conceptos Generales",
@@ -269,6 +296,12 @@
     "Lenguaje C/Punteros/punteros_y_matrices": {
       "id": "Lenguaje C/Punteros/punteros_y_matrices",
       "title": "Relación entre matrices y punteros",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Redes/tcp": {
+      "id": "Redes/tcp",
+      "title": "TCP Server-Client en C",
       "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     }

@@ -217,6 +217,10 @@
               "previous": {
                 "title": "03.03.B - Snake en Python",
                 "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py"
+              },
+              "next": {
+                "title": "04 - Redes",
+                "permalink": "/lenguajes-estructurados/docs/category/04---redes"
               }
             },
             {
@@ -330,6 +334,35 @@
               }
             },
             {
+              "unversionedId": "Lenguaje C/02.00_preprocesador_y_macros",
+              "id": "Lenguaje C/02.00_preprocesador_y_macros",
+              "title": "02.00 - Preprocesador y Macros",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/02 - Lenguaje C/02.00_preprocesador_y_macros.md",
+              "sourceDirName": "02 - Lenguaje C",
+              "slug": "/Lenguaje C/02.00_preprocesador_y_macros",
+              "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.00_preprocesador_y_macros.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "02 - Lenguaje C",
+                "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
+              },
+              "next": {
+                "title": "02.01 - Conceptos Generales",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
+              }
+            },
+            {
               "unversionedId": "Lenguaje C/02.01_conceptos",
               "id": "Lenguaje C/02.01_conceptos",
               "title": "02.01 - Conceptos Generales",
@@ -350,8 +383,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "02 - Lenguaje C",
-                "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
+                "title": "02.00 - Preprocesador y Macros",
+                "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros"
               },
               "next": {
                 "title": "02.02 - Estructuras de datos",
@@ -533,6 +566,31 @@
                 "title": "03 - Ejercicios Resueltos",
                 "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
               }
+            },
+            {
+              "unversionedId": "Redes/tcp",
+              "id": "Redes/tcp",
+              "title": "TCP Server-Client en C",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/04 - Redes/tcp.md",
+              "sourceDirName": "04 - Redes",
+              "slug": "/Redes/tcp",
+              "permalink": "/lenguajes-estructurados/docs/Redes/tcp",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/04 - Redes/tcp.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": true,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "04 - Redes",
+                "permalink": "/lenguajes-estructurados/docs/category/04---redes"
+              }
             }
           ],
           "drafts": [],
@@ -596,6 +654,10 @@
                 "collapsible": true,
                 "collapsed": true,
                 "items": [
+                  {
+                    "type": "doc",
+                    "id": "Lenguaje C/02.00_preprocesador_y_macros"
+                  },
                   {
                     "type": "doc",
                     "id": "Lenguaje C/02.01_conceptos"
@@ -672,6 +734,24 @@
                   "description": "Ejercicios resueltos de la asignatura",
                   "slug": "/category/03---ejercicios-resueltos",
                   "permalink": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
+                }
+              },
+              {
+                "type": "category",
+                "label": "04 - Redes",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Redes/tcp"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "description": "Implementación de servicios de red",
+                  "slug": "/category/04---redes",
+                  "permalink": "/lenguajes-estructurados/docs/category/04---redes"
                 }
               }
             ]

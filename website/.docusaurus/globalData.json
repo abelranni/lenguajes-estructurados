@@ -66,6 +66,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Lenguaje C/02.00_preprocesador_y_macros",
+              "path": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Lenguaje C/02.01_conceptos",
               "path": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
               "sidebar": "tutorialSidebar"
@@ -101,6 +106,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Redes/tcp",
+              "path": "/lenguajes-estructurados/docs/Redes/tcp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "/category/00---configuración",
               "path": "/lenguajes-estructurados/docs/category/00---configuración",
               "sidebar": "tutorialSidebar"
@@ -118,6 +128,11 @@
             {
               "id": "/category/03---ejercicios-resueltos",
               "path": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/04---redes",
+              "path": "/lenguajes-estructurados/docs/category/04---redes",
               "sidebar": "tutorialSidebar"
             }
           ],

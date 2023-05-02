@@ -1,0 +1,94 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-o",
+                "${workspaceFolder}\\tateti.exe",
+                "${workspaceFolder}\\tateti.c",
+                "-lSDL2",
+                "-lSDL2_image",
+                "-lSDL2_ttf",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "compile_init",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\init.c",
+                "-o",
+                "${workspaceFolder}\\obj\\init.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "compile_main",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\main.c",
+                "-o",
+                "${workspaceFolder}\\obj\\main.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "build_multiple_objects",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\obj\\init.o",
+                "${workspaceFolder}\\obj\\main.o",
+                "-o",
+                "${workspaceFolder}\\bin\\tateti.exe",
+                "-lSDL2",
+                "-lSDL2_image",
+                "-lSDL2_ttf",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },       
+        {
+            "label": "build_all",
+            "dependsOn": [
+                "compile_init",
+                "compile_main",
+                "build_multiple_objects"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }     
+    ],
+    "version": "2.0.0"
+}

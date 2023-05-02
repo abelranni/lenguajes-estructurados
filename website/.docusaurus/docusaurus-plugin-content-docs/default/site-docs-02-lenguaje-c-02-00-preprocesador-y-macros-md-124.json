@@ -1,0 +1,29 @@
+{
+  "unversionedId": "Lenguaje C/02.00_preprocesador_y_macros",
+  "id": "Lenguaje C/02.00_preprocesador_y_macros",
+  "title": "02.00 - Preprocesador y Macros",
+  "description": "Lenguajes Estructurados",
+  "source": "@site/docs/02 - Lenguaje C/02.00_preprocesador_y_macros.md",
+  "sourceDirName": "02 - Lenguaje C",
+  "slug": "/Lenguaje C/02.00_preprocesador_y_macros",
+  "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros",
+  "draft": false,
+  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.00_preprocesador_y_macros.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "marp": true,
+    "theme": "default",
+    "size": 969,
+    "paginate": true
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "02 - Lenguaje C",
+    "permalink": "/lenguajes-estructurados/docs/category/02---lenguaje-c"
+  },
+  "next": {
+    "title": "02.01 - Conceptos Generales",
+    "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos"
+  }
+}
