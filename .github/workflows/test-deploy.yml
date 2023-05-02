@@ -20,5 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: cd to website directory
+        run: cd website
       - name: Test build website
         run: yarn build

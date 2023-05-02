@@ -47,7 +47,7 @@
           ]
         }
       },
-      "content": "Las [funciones de blogging de Docusaurus](https://docusaurus.io/docs/blog) funcionan con el [plugin de blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimplemente añada archivos Markdown (o carpetas) al directorio `blog`.\n\nLos autores habituales del blog pueden añadirse a `authors.yml`.\n\nLa fecha de la entrada del blog se puede extraer de los nombres de archivo, tales como:\n\n- `2019-05-30-bienvenida.md`\n- `2019-05-30-welcome/index.md`\n\nEl blog también admite etiquetas."
+      "content": "Las [funciones de blogging de Docusaurus](https://docusaurus.io/docs/blog) funcionan con el [plugin de blog](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\r\n\r\nSimplemente añada archivos Markdown (o carpetas) al directorio `blog`.\r\n\r\nLos autores habituales del blog pueden añadirse a `authors.yml`.\r\n\r\nLa fecha de la entrada del blog se puede extraer de los nombres de archivo, tales como:\r\n\r\n- `2019-05-30-bienvenida.md`\r\n- `2019-05-30-welcome/index.md`\r\n\r\nEl blog también admite etiquetas."
     }
   ]
 }

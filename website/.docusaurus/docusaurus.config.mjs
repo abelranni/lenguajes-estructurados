@@ -27,11 +27,11 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "C:\\ucel\\lenguajes-estructurados\\sidebars.js",
+          "sidebarPath": "C:\\ucel\\lenguajes-estructurados\\website\\sidebars.js",
           "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/"
         },
         "theme": {
-          "customCss": "C:\\ucel\\lenguajes-estructurados\\src\\css\\custom.css"
+          "customCss": "C:\\ucel\\lenguajes-estructurados\\website\\src\\css\\custom.css"
         }
       }
     ]

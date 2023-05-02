@@ -4,47 +4,47 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/lenguajes-estructurados/blog',
-    component: ComponentCreator('/lenguajes-estructurados/blog', '304'),
+    component: ComponentCreator('/lenguajes-estructurados/blog', '239'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/blog/archive',
-    component: ComponentCreator('/lenguajes-estructurados/blog/archive', '239'),
+    component: ComponentCreator('/lenguajes-estructurados/blog/archive', 'ec1'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/blog/tags',
-    component: ComponentCreator('/lenguajes-estructurados/blog/tags', 'c10'),
+    component: ComponentCreator('/lenguajes-estructurados/blog/tags', 'dbb'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/blog/tags/c',
-    component: ComponentCreator('/lenguajes-estructurados/blog/tags/c', '248'),
+    component: ComponentCreator('/lenguajes-estructurados/blog/tags/c', '623'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/blog/tags/intro',
-    component: ComponentCreator('/lenguajes-estructurados/blog/tags/intro', 'e40'),
+    component: ComponentCreator('/lenguajes-estructurados/blog/tags/intro', 'f83'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/blog/tags/lenguajes',
-    component: ComponentCreator('/lenguajes-estructurados/blog/tags/lenguajes', 'f02'),
+    component: ComponentCreator('/lenguajes-estructurados/blog/tags/lenguajes', '797'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/blog/welcome',
-    component: ComponentCreator('/lenguajes-estructurados/blog/welcome', '931'),
+    component: ComponentCreator('/lenguajes-estructurados/blog/welcome', '66d'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/markdown-page',
-    component: ComponentCreator('/lenguajes-estructurados/markdown-page', 'd31'),
+    component: ComponentCreator('/lenguajes-estructurados/markdown-page', '964'),
     exact: true
   },
   {
     path: '/lenguajes-estructurados/docs',
-    component: ComponentCreator('/lenguajes-estructurados/docs', '91b'),
+    component: ComponentCreator('/lenguajes-estructurados/docs', '5cf'),
     routes: [
       {
         path: '/lenguajes-estructurados/docs/category/00---configuración',
@@ -182,7 +182,7 @@ export default [
   },
   {
     path: '/lenguajes-estructurados/',
-    component: ComponentCreator('/lenguajes-estructurados/', 'ccf'),
+    component: ComponentCreator('/lenguajes-estructurados/', '40e'),
     exact: true
   },
   {
