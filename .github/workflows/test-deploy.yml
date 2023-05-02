@@ -12,9 +12,9 @@ jobs:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: cd to website directory
         run: cd website
-      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18
