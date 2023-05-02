@@ -22,4 +22,4 @@ jobs:
         working-directory: website
       - name: Test build website
         run: yarn build
-        working-directory: website
+        working-directory: ./website
