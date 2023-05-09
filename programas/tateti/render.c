@@ -119,61 +119,61 @@ void draw_line_winner(int winner)
     SDL_RenderPresent(renderer);
 }
 
-void draw_rounded_rect_winner(int winner)
-{
-    const Uint8 red = 255, green = 0, blue = 0, alpha = 255;
-    const int rectWidth = SCREEN_WIDTH - 2 * PADDING;
-    const int rectHeight = (SCREEN_HEIGHT - 2 * PADDING) / 3;
-    const float borderRadius = 20.0f;
-    SDL_SetRenderDrawColor(renderer, red, green, blue, alpha);
-    for (int i = 0; i < 3; ++i)
-    {
-        if (board[i][0] == winner && board[i][1] == winner && board[i][2] == winner)
-        {
-            roundedBoxRGBA(renderer,
-                           PADDING + i * CELL_WIDTH,
-                           PADDING,
-                           PADDING + i * CELL_WIDTH + CELL_WIDTH,
-                           PADDING + 3 * CELL_HEIGHT,
-                           borderRadius,
-                           red,
-                           green,
-                           blue,
-                           alpha);
-        }
-        if (board[0][i] == winner && board[1][i] == winner && board[2][i] == winner)
-        {
-            roundedBoxRGBA(renderer,
-                           PADDING,
-                           PADDING + i * CELL_HEIGHT,
-                           PADDING + 3 * CELL_WIDTH,
-                           PADDING + i * CELL_HEIGHT + CELL_HEIGHT,
-                           borderRadius,
-                           red,
-                           green,
-                           blue,
-                           alpha);
-        }
-    }
+// void draw_rounded_rect_winner(int winner)
+// {
+//     const Uint8 red = 255, green = 0, blue = 0, alpha = 255;
+//     const int rectWidth = SCREEN_WIDTH - 2 * PADDING;
+//     const int rectHeight = (SCREEN_HEIGHT - 2 * PADDING) / 3;
+//     const float borderRadius = 20.0f;
+//     SDL_SetRenderDrawColor(renderer, red, green, blue, alpha);
+//     for (int i = 0; i < 3; ++i)
+//     {
+//         if (board[i][0] == winner && board[i][1] == winner && board[i][2] == winner)
+//         {
+//             roundedBoxRGBA(renderer,
+//                            PADDING + i * CELL_WIDTH,
+//                            PADDING,
+//                            PADDING + i * CELL_WIDTH + CELL_WIDTH,
+//                            PADDING + 3 * CELL_HEIGHT,
+//                            borderRadius,
+//                            red,
+//                            green,
+//                            blue,
+//                            alpha);
+//         }
+//         if (board[0][i] == winner && board[1][i] == winner && board[2][i] == winner)
+//         {
+//             roundedBoxRGBA(renderer,
+//                            PADDING,
+//                            PADDING + i * CELL_HEIGHT,
+//                            PADDING + 3 * CELL_WIDTH,
+//                            PADDING + i * CELL_HEIGHT + CELL_HEIGHT,
+//                            borderRadius,
+//                            red,
+//                            green,
+//                            blue,
+//                            alpha);
+//         }
+//     }
 
-    if (board[0][0] == winner && board[1][1] == winner && board[2][2] == winner)
-    {
-        SDL_RenderDrawLine(renderer,
-                           0,
-                           0,
-                           SCREEN_WIDTH,
-                           SCREEN_HEIGHT);
-    }
+//     if (board[0][0] == winner && board[1][1] == winner && board[2][2] == winner)
+//     {
+//         SDL_RenderDrawLine(renderer,
+//                            0,
+//                            0,
+//                            SCREEN_WIDTH,
+//                            SCREEN_HEIGHT);
+//     }
 
-    if (board[0][2] == winner && board[1][1] == winner && board[2][0] == winner)
-    {
-        SDL_RenderDrawLine(renderer,
-                           0,
-                           SCREEN_HEIGHT,
-                           SCREEN_WIDTH,
-                           0);
-    }
+//     if (board[0][2] == winner && board[1][1] == winner && board[2][0] == winner)
+//     {
+//         SDL_RenderDrawLine(renderer,
+//                            0,
+//                            SCREEN_HEIGHT,
+//                            SCREEN_WIDTH,
+//                            0);
+//     }
 
-    // SDL_RenderPresent(renderer);
+//     // SDL_RenderPresent(renderer);
 
-}
+// }

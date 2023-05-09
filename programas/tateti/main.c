@@ -76,8 +76,8 @@ int WinMain(void)
         draw_board();
         if (restart)
         {
-            //draw_line_winner(check_winner());
-            draw_rounded_rect_winner(check_winner());
+            draw_line_winner(check_winner());
+            // draw_rounded_rect_winner(check_winner());
             fichas_propias = 0;
         }
         SDL_RenderPresent(renderer);
