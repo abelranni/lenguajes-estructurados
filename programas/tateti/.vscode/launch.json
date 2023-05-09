@@ -12,7 +12,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "c:\\msys64\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Habilitar la expansión de alias de gdb",

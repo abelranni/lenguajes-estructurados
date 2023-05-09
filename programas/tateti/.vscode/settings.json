@@ -5,6 +5,11 @@
         "stdlib.h": "c",
         "sdl_image.h": "c",
         "t_init.h": "c",
-        "sdl.h": "c"
+        "sdl.h": "c",
+        "global.h": "c",
+        "init.h": "c",
+        "math.h": "c",
+        "render.h": "c",
+        "sdl2_gfxprimitives.h": "c"
     }
 }
