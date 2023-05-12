@@ -1,40 +1,41 @@
-
 #include <stdio.h>
+#include <stdbool.h>
 #include "logic.h"
 #include "minimax.h"
 #include "event.h"
 #include "global.h"
 
-
-// Función para manejar el evento SDL_MOUSEBUTTONDOWN
-void handle_mouse_event(SDL_Event e, int *currentPlayer, int *restart)
+/*
+*   Función para manejar los eventos de SDL
+*/
+void handle_mouse_event(SDL_Event e, bool *must_restart_game)
 {
     int x = e.button.x / (SCREEN_WIDTH / 3);
     int y = e.button.y / (SCREEN_HEIGHT / 3);
 
-    if (fichas_propias < 3)
+    if (chips_counter < 6)
     {
-        fichas_propias++;
-        if (add_piece(x, y, *currentPlayer))
+        chips_counter++;
+        if (add_chip(x, y, current_player))
         {
-            if (check_game_over(*currentPlayer))
+            if (check_game_over(current_player))
             {
-                *restart = 1;
+                *must_restart_game = true;
                 return;
             }
-            *currentPlayer = (*currentPlayer == 1) ? 2 : 1; // Cambiar el jugador actual
+            current_player = (current_player == 1) ? 2 : 1; // Cambiar el jugador actual
             
             // El programa juega automáticamente después del movimiento del jugador humano
-            if (*currentPlayer == 2)
-            {
-                ia_move_minimax(*currentPlayer);
-                if (check_game_over(*currentPlayer))
-                {
-                    *restart = 1;
-                    return;
-                }
-                *currentPlayer = 1; // Cambiar el jugador actual de vuelta al jugador humano
-            }
+            // if (current_player == 2)
+            // {
+            //     ia_move_minimax(current_player);
+            //     if (check_game_over(current_player))
+            //     {
+            //         *must_restart_game = true;
+            //         return;
+            //     }
+            //     current_player = 1; // Cambiar el jugador actual de vuelta al jugador humano
+            // }
         }
     }
     else

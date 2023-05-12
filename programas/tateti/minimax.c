@@ -5,7 +5,7 @@
 #include "global.h"
 
 
-void ia_move_minimax(int currentPlayer)
+void ia_move_minimax(int current_player)
 {
     int best_value = -1000;
     int best_x = -1;
@@ -17,8 +17,8 @@ void ia_move_minimax(int currentPlayer)
         {
             if (board[i][j] == 0)
             {
-                board[i][j] = currentPlayer;
-                int value = minimax(0, 0, currentPlayer);
+                board[i][j] = current_player;
+                int value = minimax(0, 0, current_player);
                 board[i][j] = 0;
 
                 if (value > best_value)
@@ -33,7 +33,7 @@ void ia_move_minimax(int currentPlayer)
 
     if (best_x != -1 && best_y != -1)
     {
-        add_piece(best_x, best_y, currentPlayer);
+        add_chip(best_x, best_y, current_player);
     }
 }
 
@@ -45,7 +45,7 @@ int minimax(int depth, int is_maximizing, int player)
         return winner == player ? 1 : -1;
     }
 
-    if (is_full())
+    if (is_board_full())
     {
         return 0;
     }

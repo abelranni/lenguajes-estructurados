@@ -9,6 +9,7 @@
 #define _INC_MAIN
 
 // VARIABLES
+extern int current_player;
 
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
@@ -18,10 +19,10 @@ extern const int CELL_HEIGHT;    // Alto de cada celda del tablero
 
 extern SDL_Window      *window;
 extern SDL_Renderer    *renderer;
-extern int fichas_propias;
+extern int chips_counter;
 extern int board[3][3]; 
-extern SDL_Texture *player1_texture;
-extern SDL_Texture *player2_texture;
+extern SDL_Texture *player_texture_1;
+extern SDL_Texture *player_texture_2;
 
 // FUNCIONES
 

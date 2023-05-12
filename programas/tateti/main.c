@@ -1,22 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "init.h"
 #include "render.h"
 #include "logic.h"
 #include "minimax.h"
 #include "event.h"
+#include "state.h"
 #include "main.h"
 #include "global.h"
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 const int PADDING = 10;
-const int CELL_WIDTH = (SCREEN_WIDTH - 2 * PADDING)/3;
-const int CELL_HEIGHT = (SCREEN_HEIGHT - 2 * PADDING)/3;
+const int CELL_WIDTH = (SCREEN_WIDTH - 2 * PADDING) / 3;
+const int CELL_HEIGHT = (SCREEN_HEIGHT - 2 * PADDING) / 3;
 
 SDL_Window *window = NULL;
 SDL_Renderer *renderer = NULL;
-int fichas_propias = 0;
+int chips_counter = 0;      // Contador de Fichas
+
+/**
+ *  \brief Mouse button event structure (event.button.*)
+ */
+
 
 /*
 La matriz board representa el estado del tablero:
@@ -27,9 +34,13 @@ La matriz board representa el estado del tablero:
 int board[3][3] = {0};
 
 // Texturas para las fichas del jugador 1 y 2
-SDL_Texture *player1_texture = NULL;
-SDL_Texture *player2_texture = NULL;
+SDL_Texture *player_texture_1 = NULL;
+SDL_Texture *player_texture_2 = NULL;
+int current_player = 1;
 
+/*
+*   Función principal
+*/
 int WinMain(void)
 {
     if (!init())
@@ -37,49 +48,31 @@ int WinMain(void)
         return finish_with_error("Error al inicializar");
     }
 
-    player1_texture = load_texture("./assets/rojo.png");
-    player2_texture = load_texture("./assets/verde.png");
+    player_texture_1 = load_texture("./assets/rojo.png");
+    player_texture_2 = load_texture("./assets/verde.png");
 
-    if (!player1_texture || !player2_texture)
+    if (!player_texture_1 || !player_texture_2)
     {
         return finish_with_error("Error al cargar las texturas de las fichas");
     }
 
-    int quit = 0;
-    int restart = 0;
-    SDL_Event e;
-    int currentPlayer = 1;
+    bool quit_main_loop = false;
+    bool must_restart_game = false;
 
-    while (!quit)
+    SDL_Event e;
+
+    while (!quit_main_loop)
     {
         while (SDL_PollEvent(&e) != 0)
         {
             if (e.type == SDL_QUIT)
             {
-                quit = 1;
+                quit_main_loop = true;
             }
-            if (e.type == SDL_MOUSEBUTTONDOWN)
-            {
-                if (restart)
-                {
-                    restart = 0;
-                    currentPlayer = 1;
-                    clear_board();
-                }
-                else
-                {
-                    handle_mouse_event(e, &currentPlayer, &restart);
-                }
-            }
+            state_machine(e);
         }
-
+        draw_line_winner(check_winner());
         draw_board();
-        if (restart)
-        {
-            draw_line_winner(check_winner());
-            // draw_rounded_rect_winner(check_winner());
-            fichas_propias = 0;
-        }
         SDL_RenderPresent(renderer);
     }
 

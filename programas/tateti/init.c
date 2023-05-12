@@ -2,7 +2,9 @@
 #include "init.h"
 #include "global.h"
 
-
+/*
+*   Función para inicializar SDL
+*/
 int init()
 {
     if (SDL_Init(SDL_INIT_VIDEO) < 0)
@@ -41,6 +43,9 @@ int init()
     return 1;
 }
 
+/*
+*   Función para limpiar la memoria
+*/
 void clean_up()
 {
     SDL_DestroyRenderer(renderer);
@@ -50,7 +55,9 @@ void clean_up()
     SDL_Quit();
 }
 
-// Función para manejar errores y limpiar la memoria
+/*
+*   Función para manejar errores y limpiar la memoria
+*/
 int finish_with_error(const char *message)
 {
     printf("%s\n", message);

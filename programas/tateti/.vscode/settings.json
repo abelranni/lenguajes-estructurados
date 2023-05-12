@@ -10,6 +10,8 @@
         "init.h": "c",
         "math.h": "c",
         "render.h": "c",
-        "sdl2_gfxprimitives.h": "c"
+        "sdl2_gfxprimitives.h": "c",
+        "logic.h": "c",
+        "stdbool.h": "c"
     }
 }

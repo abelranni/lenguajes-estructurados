@@ -9,17 +9,9 @@ const SDL_Color BACKGROUND_COLOR = {0xFF, 0xFF, 0xFF, 0xFF};
 const SDL_Color LINE_COLOR = {0, 0, 0, 0xFF};
 
 
-void draw_piece(SDL_Texture *texture, int x, int y)
-{
-    SDL_Rect dest_rect;
-    dest_rect.x = x * (SCREEN_WIDTH / 3) + (SCREEN_WIDTH / 6) - 16;
-    dest_rect.y = y * (SCREEN_HEIGHT / 3) + (SCREEN_HEIGHT / 6) - 16;
-    dest_rect.w = 32;
-    dest_rect.h = 32;
-
-    SDL_RenderCopy(renderer, texture, NULL, &dest_rect);
-}
-
+/*
+*   Dibuja el tablero en la ventana
+*/
 void draw_board()
 {
     SDL_SetRenderDrawColor(renderer, BACKGROUND_COLOR.r, BACKGROUND_COLOR.g, BACKGROUND_COLOR.b, BACKGROUND_COLOR.a);
@@ -45,6 +37,15 @@ void draw_board()
         SDL_RenderFillRect(renderer, &horizontalRect);
     }
 
+    draw_all_chips();
+    SDL_RenderPresent(renderer);
+}
+
+/*
+*   Dibuja todas las fichas en el tablero
+*/
+void draw_all_chips()
+{
     // Dibujar las fichas en el tablero
     for (int i = 0; i < 3; ++i)
     {
@@ -52,17 +53,35 @@ void draw_board()
         {
             if (board[i][j] == 1)
             {
-                draw_piece(player1_texture, i, j);
+                draw_chip(player_texture_1, i, j);
             }
             else if (board[i][j] == 2)
             {
-                draw_piece(player2_texture, i, j);
+                draw_chip(player_texture_2, i, j);
             }
         }
     }
-    SDL_RenderPresent(renderer);
+
 }
 
+/*
+*   Dibuja una ficha en el tablero
+*/
+void draw_chip(SDL_Texture *texture, int x, int y)
+{
+    SDL_Rect rectangle_to_draw;
+    rectangle_to_draw.x = x * (SCREEN_WIDTH / 3) + (SCREEN_WIDTH / 6) - 16;
+    rectangle_to_draw.y = y * (SCREEN_HEIGHT / 3) + (SCREEN_HEIGHT / 6) - 16;
+    rectangle_to_draw.w = 32;
+    rectangle_to_draw.h = 32;
+
+    SDL_RenderCopy(renderer, texture, NULL, &rectangle_to_draw);
+}
+
+
+/*
+*   Carga una textura desde un archivo
+*/
 SDL_Texture *load_texture(const char *path)
 {
     SDL_Surface *loaded_surface = IMG_Load(path);
@@ -83,22 +102,30 @@ SDL_Texture *load_texture(const char *path)
     return texture;
 }
 
-void draw_line_winner(int winner)
+
+/*
+*   Dibuja la línea que indica el ganador
+*/
+void draw_line_winner(int winner_player)
 {
+    if (winner_player == 0)
+    {
+        return;
+    }
     // Dibujar la línea que indica el ganador
     SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF);
     for (int i = 0; i < 3; ++i)
     {
-        if (board[i][0] == winner && board[i][1] == winner && board[i][2] == winner)
+        if (board[i][0] == winner_player && board[i][1] == winner_player && board[i][2] == winner_player)
         {
             SDL_RenderDrawLine(renderer, i * SCREEN_WIDTH / 3 + SCREEN_WIDTH / 6, 0, i * SCREEN_WIDTH / 3 + SCREEN_WIDTH / 6, SCREEN_HEIGHT);
         }
-        if (board[0][i] == winner && board[1][i] == winner && board[2][i] == winner)
+        if (board[0][i] == winner_player && board[1][i] == winner_player && board[2][i] == winner_player)
         {
             SDL_RenderDrawLine(renderer, 0, i * SCREEN_HEIGHT / 3 + SCREEN_HEIGHT / 6, SCREEN_WIDTH, i * SCREEN_HEIGHT / 3 + SCREEN_HEIGHT / 6);
         }
     }
-    if (board[0][0] == winner && board[1][1] == winner && board[2][2] == winner)
+    if (board[0][0] == winner_player && board[1][1] == winner_player && board[2][2] == winner_player)
     {
         SDL_RenderDrawLine(renderer,
                            0,
@@ -107,7 +134,7 @@ void draw_line_winner(int winner)
                            SCREEN_HEIGHT);
     }
 
-    if (board[0][2] == winner && board[1][1] == winner && board[2][0] == winner)
+    if (board[0][2] == winner_player && board[1][1] == winner_player && board[2][0] == winner_player)
     {
         SDL_RenderDrawLine(renderer,
                            0,
@@ -119,61 +146,3 @@ void draw_line_winner(int winner)
     SDL_RenderPresent(renderer);
 }
 
-// void draw_rounded_rect_winner(int winner)
-// {
-//     const Uint8 red = 255, green = 0, blue = 0, alpha = 255;
-//     const int rectWidth = SCREEN_WIDTH - 2 * PADDING;
-//     const int rectHeight = (SCREEN_HEIGHT - 2 * PADDING) / 3;
-//     const float borderRadius = 20.0f;
-//     SDL_SetRenderDrawColor(renderer, red, green, blue, alpha);
-//     for (int i = 0; i < 3; ++i)
-//     {
-//         if (board[i][0] == winner && board[i][1] == winner && board[i][2] == winner)
-//         {
-//             roundedBoxRGBA(renderer,
-//                            PADDING + i * CELL_WIDTH,
-//                            PADDING,
-//                            PADDING + i * CELL_WIDTH + CELL_WIDTH,
-//                            PADDING + 3 * CELL_HEIGHT,
-//                            borderRadius,
-//                            red,
-//                            green,
-//                            blue,
-//                            alpha);
-//         }
-//         if (board[0][i] == winner && board[1][i] == winner && board[2][i] == winner)
-//         {
-//             roundedBoxRGBA(renderer,
-//                            PADDING,
-//                            PADDING + i * CELL_HEIGHT,
-//                            PADDING + 3 * CELL_WIDTH,
-//                            PADDING + i * CELL_HEIGHT + CELL_HEIGHT,
-//                            borderRadius,
-//                            red,
-//                            green,
-//                            blue,
-//                            alpha);
-//         }
-//     }
-
-//     if (board[0][0] == winner && board[1][1] == winner && board[2][2] == winner)
-//     {
-//         SDL_RenderDrawLine(renderer,
-//                            0,
-//                            0,
-//                            SCREEN_WIDTH,
-//                            SCREEN_HEIGHT);
-//     }
-
-//     if (board[0][2] == winner && board[1][1] == winner && board[2][0] == winner)
-//     {
-//         SDL_RenderDrawLine(renderer,
-//                            0,
-//                            SCREEN_HEIGHT,
-//                            SCREEN_WIDTH,
-//                            0);
-//     }
-
-//     // SDL_RenderPresent(renderer);
-
-// }

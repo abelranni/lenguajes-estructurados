@@ -3,7 +3,7 @@
         {
             "type": "shell",
             "label": "build",
-            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "-Wall",
@@ -23,7 +23,7 @@
         {
             "type": "shell",
             "label": "compile_init",
-            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -40,8 +40,98 @@
         },
         {
             "type": "shell",
+            "label": "compile_event",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\event.c",
+                "-o",
+                "${workspaceFolder}\\obj\\event.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "compile_logic",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\logic.c",
+                "-o",
+                "${workspaceFolder}\\obj\\logic.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "compile_minimax",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\minimax.c",
+                "-o",
+                "${workspaceFolder}\\obj\\minimax.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "compile_render",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\render.c",
+                "-o",
+                "${workspaceFolder}\\obj\\render.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "compile_state",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "${workspaceFolder}\\state.c",
+                "-o",
+                "${workspaceFolder}\\obj\\state.o",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },                                        
+        {
+            "type": "shell",
             "label": "compile_main",
-            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -59,13 +149,18 @@
         {
             "type": "shell",
             "label": "build_multiple_objects",
-            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "-Wall",
                 "-Wextra",
                 "-pedantic",
                 "${workspaceFolder}\\obj\\init.o",
+                "${workspaceFolder}\\obj\\event.o",
+                "${workspaceFolder}\\obj\\logic.o",
+                "${workspaceFolder}\\obj\\minimax.o",
+                "${workspaceFolder}\\obj\\render.o",
+                "${workspaceFolder}\\obj\\state.o",
                 "${workspaceFolder}\\obj\\main.o",
                 "-o",
                 "${workspaceFolder}\\bin\\tateti.exe",
@@ -96,6 +191,11 @@
             "label": "build_all",
             "dependsOn": [
                 "compile_init",
+                "compile_event",
+                "compile_logic",
+                "compile_minimax",
+                "compile_render",
+                "compile_state",
                 "compile_main",
                 "build_multiple_objects"
             ],

@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include "logic.h"
 #include "global.h"
 
+
 /*
-La función add_piece agrega una ficha en la posición (x, y) del tablero.
+Función para agregar una ficha en la posición (x, y) del tablero.
 Retorna:
 - 1 si se pudo agregar la ficha
 - 0 en caso contrario
 */
-
-int add_piece(int x, int y, int player)
+int add_chip(int x, int y, int player)
 {
     if (x < 0 || x > 2 || y < 0 || y > 2)
     {
@@ -22,9 +23,31 @@ int add_piece(int x, int y, int player)
     }
 
     board[x][y] = player;
+    printf( "Tablero:\n");
+    print_board();
+
     return 1;
 }
 
+void print_board()
+{
+    printf("-------------\n");
+    for (int i = 0; i < 3; ++i)
+    {
+        printf("| ");
+        for (int j = 0; j < 3; ++j)
+        {
+            printf("%d | ", board[j][i]);
+        }
+        printf("\n-------------\n");
+    }
+}
+
+
+
+/*
+Función para reiniciar el tablero
+*/
 void clear_board()
 {
     for (int i = 0; i < 3; ++i)
@@ -36,7 +59,10 @@ void clear_board()
     }
 }
 
-int is_full()
+/*
+Función para verificar si el tablero está lleno
+*/
+bool is_board_full()
 {
     int empty_cells = 0;
     for (int i = 0; i < 3; ++i)
@@ -51,11 +77,14 @@ int is_full()
     }
     if (empty_cells == 0)
     {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
+/*
+Función para verificar si hay un ganador
+*/
 int check_winner()
 {
     // Verificar filas
@@ -90,6 +119,9 @@ int check_winner()
     return 0;
 }
 
+/*
+Función para verificar si el juego ha terminado
+*/
 int check_game_over()
 {
     printf("Verificando si el juego ha terminado...\n");
@@ -100,7 +132,7 @@ int check_game_over()
         return 1;
     }
 
-    if (is_full())
+    if (is_board_full())
     {
         printf("Empate!\n");
         return 1;

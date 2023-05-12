@@ -7,7 +7,7 @@
 ```mermaid
 graph TD
     A[ia_move] --> B{is_empty}
-    B -->|Yes| C[add_piece]
+    B -->|Yes| C[add_chip]
     B -->|No| D[Próxima posición]
     C --> E[minimax]
     E --> F[remove_piece]
@@ -28,12 +28,12 @@ graph TD
 graph TD
     A[minimax] --> B{is_winner}
     B -->|Yes| C[Retornar valor de ganador]
-    B -->|No| D{is_full_board}
+    B -->|No| D{is_board_full_board}
     D -->|Yes| E[Retornar empate]
     D -->|No| F{isMaxPlayer}
     F -->|Yes| G[Iterar movimientos Max]
     F -->|No| H[Iterar movimientos Min]
-    G --> I[add_piece]
+    G --> I[add_chip]
     H --> I
     I --> J[minimax recursivo]
     J --> K[remove_piece]
@@ -61,10 +61,10 @@ graph TD
 
 ---
 
-### Diagrama de flujo de la función `is_full_board`
+### Diagrama de flujo de la función `is_board_full_board`
 ```mermaid
 graph TD
-    A[is_full_board] --> B{Revisar todas las casillas}
+    A[is_board_full_board] --> B{Revisar todas las casillas}
     B -->|Yes| C[Retornar tablero lleno]
     B -->|No| D[Continuar revisión]
     D --> B
@@ -94,3 +94,16 @@ graph TD
 
 
 
+### Duagrama de estados
+
+```mermaid
+stateDiagram
+    [*] --> INITIAL
+    INITIAL --> SELECT_CHIP: Todos los chips están en el tablero y no hay ganador
+    SELECT_CHIP --> MOVE_CHIP: El jugador selecciona uno de sus chips
+    MOVE_CHIP --> SELECT_CHIP: El chip se mueve y no hay ganador
+    MOVE_CHIP --> END_GAME: El chip se mueve y hay un ganador
+    INITIAL --> END_GAME: Hay un ganador antes de mover chips
+    END_GAME --> [*]: El juego se reinicia o se cierra
+
+```
