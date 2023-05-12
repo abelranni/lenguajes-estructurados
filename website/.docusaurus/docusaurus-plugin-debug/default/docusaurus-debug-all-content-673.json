@@ -11,8 +11,8 @@
           "className": "docs-version-current",
           "path": "/lenguajes-estructurados/docs",
           "tagsPath": "/lenguajes-estructurados/docs/tags",
-          "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs",
-          "editUrlLocalized": "https://github.com/abelranni/lenguajes-estructurados/tree/main/i18n/es/docusaurus-plugin-content-docs/current",
+          "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs",
+          "editUrlLocalized": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/i18n/es/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "C:\\ucel\\lenguajes-estructurados\\website\\sidebars.js",
@@ -29,7 +29,7 @@
               "slug": "/Configuraciones/00.01_config_vscode_mingw",
               "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.01_config_vscode_mingw",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/00 - Configuraciones/00.01_config_vscode_mingw.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/00 - Configuraciones/00.01_config_vscode_mingw.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -58,7 +58,7 @@
               "slug": "/Configuraciones/00.02_library_SDL2",
               "permalink": "/lenguajes-estructurados/docs/Configuraciones/00.02_library_SDL2",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/00 - Configuraciones/00.02_library_SDL2.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/00 - Configuraciones/00.02_library_SDL2.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -87,7 +87,7 @@
               "slug": "/Ejercicios Resueltos/03.01_life_conway",
               "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.01_life_conway",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.01_life_conway.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/03 - Ejercicios Resueltos/03.01_life_conway.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -116,7 +116,7 @@
               "slug": "/Ejercicios Resueltos/03.02_fractales_julia",
               "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.02_fractales_julia",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.02_fractales_julia.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/03 - Ejercicios Resueltos/03.02_fractales_julia.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -146,7 +146,7 @@
               "slug": "/Ejercicios Resueltos/03.03.A_snake",
               "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.A_snake",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.03.A_snake.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/03 - Ejercicios Resueltos/03.03.A_snake.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -175,7 +175,7 @@
               "slug": "/Ejercicios Resueltos/03.03.B_snake_py",
               "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.03.B_snake_py.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/03 - Ejercicios Resueltos/03.03.B_snake_py.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -191,20 +191,20 @@
               },
               "next": {
                 "title": "03.05 -  TicTacToe",
-                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe"
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.A_tictactoe"
               }
             },
             {
-              "unversionedId": "Ejercicios Resueltos/03.05_tictactoe",
-              "id": "Ejercicios Resueltos/03.05_tictactoe",
+              "unversionedId": "Ejercicios Resueltos/03.05.A_tictactoe",
+              "id": "Ejercicios Resueltos/03.05.A_tictactoe",
               "title": "03.05 -  TicTacToe",
               "description": "Lenguajes Estructurados",
-              "source": "@site/docs/03 - Ejercicios Resueltos/03.05_tictactoe.md",
+              "source": "@site/docs/03 - Ejercicios Resueltos/03.05.A_tictactoe.md",
               "sourceDirName": "03 - Ejercicios Resueltos",
-              "slug": "/Ejercicios Resueltos/03.05_tictactoe",
-              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe",
+              "slug": "/Ejercicios Resueltos/03.05.A_tictactoe",
+              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.A_tictactoe",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.05_tictactoe.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/03 - Ejercicios Resueltos/03.05.A_tictactoe.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -217,6 +217,35 @@
               "previous": {
                 "title": "03.03.B - Snake en Python",
                 "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py"
+              },
+              "next": {
+                "title": "03.05 -  TicTacToe - Estados",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.B_estados"
+              }
+            },
+            {
+              "unversionedId": "Ejercicios Resueltos/03.05.B_estados",
+              "id": "Ejercicios Resueltos/03.05.B_estados",
+              "title": "03.05 -  TicTacToe - Estados",
+              "description": "Lenguajes Estructurados",
+              "source": "@site/docs/03 - Ejercicios Resueltos/03.05.B_estados.md",
+              "sourceDirName": "03 - Ejercicios Resueltos",
+              "slug": "/Ejercicios Resueltos/03.05.B_estados",
+              "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.B_estados",
+              "draft": false,
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/03 - Ejercicios Resueltos/03.05.B_estados.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "marp": false,
+                "theme": "default",
+                "size": 969,
+                "paginate": true
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "03.05 -  TicTacToe",
+                "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.A_tictactoe"
               },
               "next": {
                 "title": "04 - Redes",
@@ -233,7 +262,7 @@
               "slug": "/intro",
               "permalink": "/lenguajes-estructurados/docs/intro",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/intro.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/intro.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 0,
@@ -256,7 +285,7 @@
               "slug": "/Introduccion/01.01_programacion_estructurada",
               "permalink": "/lenguajes-estructurados/docs/Introduccion/01.01_programacion_estructurada",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/01 - Introduccion/01.01_programacion_estructurada.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/01 - Introduccion/01.01_programacion_estructurada.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -285,7 +314,7 @@
               "slug": "/Introduccion/01.02_buenas_practicas",
               "permalink": "/lenguajes-estructurados/docs/Introduccion/01.02_buenas_practicas",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/01 - Introduccion/01.02_buenas_practicas.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/01 - Introduccion/01.02_buenas_practicas.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -314,7 +343,7 @@
               "slug": "/Introduccion/01.03_dry_etc",
               "permalink": "/lenguajes-estructurados/docs/Introduccion/01.03_dry_etc",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/01 - Introduccion/01.03_dry_etc.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/01 - Introduccion/01.03_dry_etc.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -343,7 +372,7 @@
               "slug": "/Lenguaje C/02.00_preprocesador_y_macros",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.00_preprocesador_y_macros",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.00_preprocesador_y_macros.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/02.00_preprocesador_y_macros.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -372,7 +401,7 @@
               "slug": "/Lenguaje C/02.01_conceptos",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.01_conceptos",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.01_conceptos.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/02.01_conceptos.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -401,7 +430,7 @@
               "slug": "/Lenguaje C/02.02_estructuras",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.02_estructuras",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.02_estructuras.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/02.02_estructuras.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -430,7 +459,7 @@
               "slug": "/Lenguaje C/02.03_punteros",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.03_punteros",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.03_punteros.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/02.03_punteros.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -459,7 +488,7 @@
               "slug": "/Lenguaje C/02.04_repaso",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.04_repaso",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.04_repaso.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/02.04_repaso.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -488,7 +517,7 @@
               "slug": "/Lenguaje C/02.05_memoria",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/02.05_memoria",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/02.05_memoria.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/02.05_memoria.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -517,7 +546,7 @@
               "slug": "/Lenguaje C/Punteros/punteros",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/Punteros/1.punteros.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/Punteros/1.punteros.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 1,
@@ -547,7 +576,7 @@
               "slug": "/Lenguaje C/Punteros/punteros_y_matrices",
               "permalink": "/lenguajes-estructurados/docs/Lenguaje C/Punteros/punteros_y_matrices",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/02 - Lenguaje C/Punteros/2.punteros_y_matrices.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/02 - Lenguaje C/Punteros/2.punteros_y_matrices.md",
               "tags": [],
               "version": "current",
               "sidebarPosition": 2,
@@ -577,7 +606,7 @@
               "slug": "/Redes/tcp",
               "permalink": "/lenguajes-estructurados/docs/Redes/tcp",
               "draft": false,
-              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/04 - Redes/tcp.md",
+              "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/04 - Redes/tcp.md",
               "tags": [],
               "version": "current",
               "frontMatter": {
@@ -726,7 +755,11 @@
                   },
                   {
                     "type": "doc",
-                    "id": "Ejercicios Resueltos/03.05_tictactoe"
+                    "id": "Ejercicios Resueltos/03.05.A_tictactoe"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Ejercicios Resueltos/03.05.B_estados"
                   }
                 ],
                 "link": {
@@ -925,6 +958,7 @@
   },
   "docusaurus-plugin-debug": {},
   "docusaurus-theme-classic": {},
+  "docusaurus-theme-mermaid": {},
   "docusaurus-bootstrap-plugin": {},
   "docusaurus-mdx-fallback-plugin": {}
 }

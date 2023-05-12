@@ -41,8 +41,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Ejercicios Resueltos/03.05_tictactoe",
-              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe",
+              "id": "Ejercicios Resueltos/03.05.A_tictactoe",
+              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.A_tictactoe",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Ejercicios Resueltos/03.05.B_estados",
+              "path": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.B_estados",
               "sidebar": "tutorialSidebar"
             },
             {

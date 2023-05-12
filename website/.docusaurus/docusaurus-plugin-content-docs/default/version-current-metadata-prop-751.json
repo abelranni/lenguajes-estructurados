@@ -161,8 +161,14 @@
           {
             "type": "link",
             "label": "03.05 -  TicTacToe",
-            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe",
-            "docId": "Ejercicios Resueltos/03.05_tictactoe"
+            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.A_tictactoe",
+            "docId": "Ejercicios Resueltos/03.05.A_tictactoe"
+          },
+          {
+            "type": "link",
+            "label": "03.05 -  TicTacToe - Estados",
+            "href": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.B_estados",
+            "docId": "Ejercicios Resueltos/03.05.B_estados"
           }
         ],
         "href": "/lenguajes-estructurados/docs/category/03---ejercicios-resueltos"
@@ -221,9 +227,15 @@
       "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     },
-    "Ejercicios Resueltos/03.05_tictactoe": {
-      "id": "Ejercicios Resueltos/03.05_tictactoe",
+    "Ejercicios Resueltos/03.05.A_tictactoe": {
+      "id": "Ejercicios Resueltos/03.05.A_tictactoe",
       "title": "03.05 -  TicTacToe",
+      "description": "Lenguajes Estructurados",
+      "sidebar": "tutorialSidebar"
+    },
+    "Ejercicios Resueltos/03.05.B_estados": {
+      "id": "Ejercicios Resueltos/03.05.B_estados",
+      "title": "03.05 -  TicTacToe - Estados",
       "description": "Lenguajes Estructurados",
       "sidebar": "tutorialSidebar"
     },

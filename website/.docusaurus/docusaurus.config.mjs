@@ -28,7 +28,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "C:\\ucel\\lenguajes-estructurados\\website\\sidebars.js",
-          "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/"
+          "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/"
         },
         "theme": {
           "customCss": "C:\\ucel\\lenguajes-estructurados\\website\\src\\css\\custom.css"
@@ -300,6 +300,13 @@ export default {
         }
       ]
     },
+    "mermaid": {
+      "theme": {
+        "light": "neutral",
+        "dark": "dark"
+      },
+      "options": {}
+    },
     "colorMode": {
       "defaultMode": "light",
       "disableSwitch": false,
@@ -318,6 +325,12 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "markdown": {
+    "mermaid": true
+  },
+  "themes": [
+    "@docusaurus/theme-mermaid"
+  ],
   "baseUrlIssueBanner": true,
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
@@ -325,14 +338,10 @@ export default {
   ],
   "customFields": {},
   "plugins": [],
-  "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
   "clientModules": [],
   "titleDelimiter": "|",
-  "noIndex": false,
-  "markdown": {
-    "mermaid": false
-  }
+  "noIndex": false
 };

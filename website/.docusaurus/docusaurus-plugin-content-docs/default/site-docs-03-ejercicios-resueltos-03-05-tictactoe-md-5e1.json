@@ -8,7 +8,7 @@
   "slug": "/Ejercicios Resueltos/03.05_tictactoe",
   "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe",
   "draft": false,
-  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/docs/03 - Ejercicios Resueltos/03.05_tictactoe.md",
+  "editUrl": "https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/docs/03 - Ejercicios Resueltos/03.05_tictactoe.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -19,8 +19,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "03.03.B - Snake en Python",
-    "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.03.B_snake_py"
+    "title": "03.05 -  TicTacToe - Estados",
+    "permalink": "/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.B_estados"
   },
   "next": {
     "title": "04 - Redes",

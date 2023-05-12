@@ -79,7 +79,7 @@ export default [
   },
   {
     path: '/lenguajes-estructurados/docs',
-    component: ComponentCreator('/lenguajes-estructurados/docs', '029'),
+    component: ComponentCreator('/lenguajes-estructurados/docs', '1c4'),
     routes: [
       {
         path: '/lenguajes-estructurados/docs/category/00---configuración',
@@ -148,8 +148,14 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe',
-        component: ComponentCreator('/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05_tictactoe', 'fed'),
+        path: '/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.A_tictactoe',
+        component: ComponentCreator('/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.A_tictactoe', 'a03'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.B_estados',
+        component: ComponentCreator('/lenguajes-estructurados/docs/Ejercicios Resueltos/03.05.B_estados', 'b4d'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

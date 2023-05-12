@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/abelranni/lenguajes-estructurados/tree/main/',
+            'https://github.com/abelranni/lenguajes-estructurados/tree/main/wewbsite/',
         },
         // blog: {
         //   showReadingTime: true,
@@ -56,7 +56,7 @@ const config = {
         // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
+        },         
       }),
     ],
   ],
@@ -132,7 +132,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      mermaid: {
+        theme: {light: 'neutral', dark: 'dark'},
+      },      
     }),
+    markdown: {
+      mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],    
 };
 
 module.exports = config;
