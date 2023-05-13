@@ -12,6 +12,12 @@
         "render.h": "c",
         "sdl2_gfxprimitives.h": "c",
         "logic.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "sdl_ttf.h": "c",
+        "sdl_main.h": "c",
+        "compare": "c",
+        "limits": "c",
+        "new": "c",
+        "state.h": "c"
     }
 }

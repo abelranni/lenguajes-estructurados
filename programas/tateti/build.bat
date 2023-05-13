@@ -25,7 +25,15 @@ echo Compilando main.c...
 gcc -c main.c -o ./obj/main.o
 
 echo Linkeando...
-gcc ./obj/init.o ./obj/render.o ./obj/logic.o ./obj/minimax.o ./obj/event.o ./obj/state.o ./obj/main.o -o ./bin/tateti.exe  -lSDL2 -lSDL2_ttf -lSDL2_image
+gcc ^
+./obj/init.o ^
+./obj/render.o ^
+./obj/logic.o ^
+./obj/minimax.o ^
+./obj/event.o ^
+./obj/state.o ^
+./obj/main.o ^
+-o ./bin/tateti.exe -lSDL2 -lSDL2_ttf -lSDL2_image
 
 echo Ejecutando el programa...
 cd bin

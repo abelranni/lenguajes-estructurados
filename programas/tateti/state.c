@@ -5,31 +5,18 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include "global.h"
 #include "logic.h"
 #include "minimax.h"
 #include "render.h"
 #include "state.h"
-#include "global.h"
-
-typedef enum
-{
-    INITIAL,     // Inicio del juego, los jugadores están poniendo sus fichas en el tablero
-    SELECT_CHIP, // Un jugador selecciona una de sus fichas para moverla
-    MOVE_CHIP,   // Un jugador ha seleccionado una ficha y ahora selecciona dónde moverla
-    END_GAME     // El juego ha terminado
-} GameState;
 
 GameState current_game_state = INITIAL;
-
-typedef struct chip_selection
-{
-    int x;
-    int y;
-    int player;
-} ChipSelection;
-
 ChipSelection selected_chip = {0, 0, 0};
 
+/*
+*   Función de entrada de la máquina de estados
+*/
 void state_machine(SDL_Event e)
 {
     if (e.type != SDL_MOUSEBUTTONDOWN)
@@ -37,6 +24,7 @@ void state_machine(SDL_Event e)
         return;
     }
 
+    Cell cell = get_cell_xy(e.button.x, e.button.y);
     switch (current_game_state)
     {
     case INITIAL:
@@ -60,36 +48,30 @@ void state_machine(SDL_Event e)
 
     case MOVE_CHIP:
         // Lógica para seleccionar dónde mover la ficha seleccionada
-
         if (check_player_chip_movement(e))
         {
-            int x = e.button.x / (SCREEN_WIDTH / 3);
-            int y = e.button.y / (SCREEN_HEIGHT / 3);
-
-            if (move_chip(x, y, current_player))
+            if (move_chip(cell.x, cell.y, current_player))
             {
-                board[selected_chip.x][selected_chip.y] = 0;
+                board[selected_chip.cell.x][selected_chip.cell.y] = 0;
                 selected_chip = (ChipSelection){0, 0, 0};
 
                 printf("Movimiento valido\n");
-                printf("Jugador %d mueve ficha de (%d, %d) a (%d, %d)\n", current_player, selected_chip.x, selected_chip.y, x, y);
+                printf("Jugador %d mueve ficha de (%d, %d) a (%d, %d)\n", current_player, selected_chip.cell.x, selected_chip.cell.y, cell.x, cell.y);
 
                 change_current_player();
                 current_game_state = SELECT_CHIP;
             }
         }
-
         break;
 
     case END_GAME:
         // Lógica para manejar el final del juego
-        int x = e.button.x / (SCREEN_WIDTH / 3);
-        int y = e.button.y / (SCREEN_HEIGHT / 3);
-        if (x == 1 && y == 1)
+        if (cell.x == 1 && cell.y == 1)
         {
             reset_game();
         }
         return;
+
     }
 
     int winner = check_winner();
@@ -98,11 +80,13 @@ void state_machine(SDL_Event e)
         printf("Juego terminado\n");
         printf("Ganador: Jugador %d\n", winner);
         current_game_state = END_GAME;
-        draw_line_winner(winner);
     }
 
 }
 
+/*
+* Resetea el juego
+*/
 void reset_game()
 {
 
@@ -119,19 +103,16 @@ void reset_game()
     current_game_state = INITIAL;
 }
 
-
 /*
  *   Coloca las fichas en el tablero
  */
 void initial_put_chip(SDL_Event e)
 {
+    Cell cell = get_cell_xy(e.button.x, e.button.y);
 
-    int x = e.button.x / (SCREEN_WIDTH / 3);
-    int y = e.button.y / (SCREEN_HEIGHT / 3);
+    printf("initial_put_chip: (%d, %d)\n", cell.x, cell.y);
 
-    printf("initial_put_chip: (%d, %d)\n", x, y);
-
-    if (add_chip(x, y, current_player))
+    if (add_chip(cell.x, cell.y, current_player))
     {
         chips_counter++;
         change_current_player();
@@ -146,44 +127,44 @@ void change_current_player()
     current_player = (current_player == 1) ? 2 : 1;
 }
 
+/*
+*   Verifica si el jugador selecciona una de sus fichas
+*/
 bool check_player_chip_selection(SDL_Event e)
 {
-
-    int x = e.button.x / (SCREEN_WIDTH / 3);
-    int y = e.button.y / (SCREEN_HEIGHT / 3);
-
-    if (board[x][y] == current_player)
+    Cell cell = get_cell_xy(e.button.x, e.button.y);
+    if (board[cell.x][cell.y] == current_player)
     {
-        selected_chip.x = x;
-        selected_chip.y = y;
+        selected_chip.cell.x = cell.x;
+        selected_chip.cell.y = cell.y;
         selected_chip.player = current_player;
         printf("Ficha seleccionada\n");
-        printf("Jugador %d mueve ficha de (%d, %d)\n", current_player, x, y);
+        printf("Jugador %d mueve ficha de (%d, %d)\n", current_player, cell.x, cell.y);
         return true;
     }
-
     return false;
 }
 
+/*
+*   Verifica si el jugador selecciona una casilla válida para mover su ficha
+*/
 bool check_player_chip_movement(SDL_Event e)
 {
-
-    int x = e.button.x / (SCREEN_WIDTH / 3);
-    int y = e.button.y / (SCREEN_HEIGHT / 3);
-
-    printf("check_player_chip_movement: (%d, %d)\n", x, y);
-
-    if (board[x][y] == 0)
+    Cell cell = get_cell_xy(e.button.x, e.button.y);
+    printf("check_player_chip_movement: (%d, %d)\n", cell.x, cell.y);
+    if (board[cell.x][cell.y] == 0)
     {
-        printf("check_player_chip_movement: (%d, %d) es valido \n", x, y);
+        printf("check_player_chip_movement: (%d, %d) es valido \n", cell.x, cell.y);
         return true;
     }
-
-    printf("check_player_chip_movement: (%d, %d) no es valido \n", x, y);
-    printf("board[%d][%d]: %d\n", x, y, board[x][y]);
+    printf("check_player_chip_movement: (%d, %d) no es valido \n", cell.x, cell.y);
+    printf("board[%d][%d]: %d\n", cell.x, cell.y, board[cell.x][cell.y]);
     return false;
 }
 
+/*
+*   Mueve la ficha seleccionada a la casilla seleccionada
+*/
 bool move_chip(int x, int y, int player)
 {
     if (board[x][y] == 0)
@@ -191,6 +172,16 @@ bool move_chip(int x, int y, int player)
         board[x][y] = player;
         return true;
     }
-
     return false;
+}
+
+/*
+*   Obtiene la celda seleccionada según las coordenadas del mouse
+*/
+Cell get_cell_xy(int x, int y)
+{
+    Cell cell = {0, 0};
+    cell.x = x / (SCREEN_WIDTH / 3);
+    cell.y = y / (SCREEN_HEIGHT / 3);
+    return cell;
 }

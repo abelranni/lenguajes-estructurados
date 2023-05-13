@@ -1,5 +1,3 @@
-#include <SDL2/SDL2_gfxPrimitives.h>
-
 #include <stdio.h>
 #include "render.h"
 #include "global.h"
@@ -7,7 +5,6 @@
 // Constantes para personalizar colores
 const SDL_Color BACKGROUND_COLOR = {0xFF, 0xFF, 0xFF, 0xFF};
 const SDL_Color LINE_COLOR = {0, 0, 0, 0xFF};
-
 
 /*
 *   Dibuja el tablero en la ventana
@@ -36,7 +33,6 @@ void draw_board()
         SDL_RenderFillRect(renderer, &verticalRect);
         SDL_RenderFillRect(renderer, &horizontalRect);
     }
-
     draw_all_chips();
     SDL_RenderPresent(renderer);
 }
@@ -61,7 +57,6 @@ void draw_all_chips()
             }
         }
     }
-
 }
 
 /*
@@ -74,7 +69,6 @@ void draw_chip(SDL_Texture *texture, int x, int y)
     rectangle_to_draw.y = y * (SCREEN_HEIGHT / 3) + (SCREEN_HEIGHT / 6) - 16;
     rectangle_to_draw.w = 32;
     rectangle_to_draw.h = 32;
-
     SDL_RenderCopy(renderer, texture, NULL, &rectangle_to_draw);
 }
 
@@ -96,9 +90,7 @@ SDL_Texture *load_texture(const char *path)
     {
         printf("Error al crear la textura a partir de %s: %s\n", path, SDL_GetError());
     }
-
     SDL_FreeSurface(loaded_surface);
-
     return texture;
 }
 
@@ -142,7 +134,6 @@ void draw_line_winner(int winner_player)
                            SCREEN_WIDTH,
                            0);
     }
-
     SDL_RenderPresent(renderer);
 }
 

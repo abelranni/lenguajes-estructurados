@@ -14,4 +14,5 @@ void draw_chip(SDL_Texture *texture, int x, int y);
 void draw_line_winner(int winner);
 void draw_rounded_rect_winner(int winner);
 
+
 #endif // _INC_RENDER
