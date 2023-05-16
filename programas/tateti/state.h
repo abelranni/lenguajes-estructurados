@@ -26,7 +26,7 @@ typedef struct chip_selection
 } ChipSelection;
 
 void state_machine( SDL_Event e );
-void initial_put_chip( Cell cell_clicked );
+void initial_place_chip( Cell cell_clicked );
 void change_current_player();
 
 

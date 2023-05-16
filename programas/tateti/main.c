@@ -33,6 +33,8 @@ La matriz board representa el estado del tablero:
 */
 int board[3][3] = {0};
 
+TTF_Font *font = NULL;
+
 // Texturas para las fichas del jugador 1 y 2
 SDL_Texture *player_texture_1 = NULL;
 SDL_Texture *player_texture_2 = NULL;
@@ -61,6 +63,13 @@ int WinMain(void)
 
     SDL_Event e;
 
+    font = TTF_OpenFont("./assets/OpenSans-Regular.ttf", 28);
+    if (!font)
+    {
+        return finish_with_error("Error al cargar la fuente");
+    }
+
+
     while (!quit_main_loop)
     {
         while (SDL_PollEvent(&e) != 0)
@@ -71,11 +80,33 @@ int WinMain(void)
             }
             state_machine(e);
         }
+        
+        SDL_RenderClear(renderer);  // Limpia la pantalla
+
         draw_line_winner(check_winner());
         draw_board();
+
+        char playerTurnText[50];
+        sprintf(playerTurnText, "Turno del jugador: %d", current_player);
+        render_text(playerTurnText, SCREEN_WIDTH / 2, SCREEN_HEIGHT - 50);
+
         SDL_RenderPresent(renderer);
     }
 
     clean_up();
     return 0;
+}
+
+void render_text(const char *text, int x, int y) {
+    SDL_Color textColor = {0, 0, 0};  // Negro
+    SDL_Surface *textSurface = TTF_RenderText_Solid(font, text, textColor);
+    SDL_Texture *textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
+    int textWidth = textSurface->w;
+    int textHeight = textSurface->h;
+
+    SDL_FreeSurface(textSurface);
+
+    SDL_Rect renderQuad = {x, y, textWidth, textHeight};
+    SDL_RenderCopy(renderer, textTexture, NULL, &renderQuad);
+    SDL_DestroyTexture(textTexture);
 }

@@ -34,7 +34,7 @@ void draw_board()
         SDL_RenderFillRect(renderer, &horizontalRect);
     }
     draw_all_chips();
-    SDL_RenderPresent(renderer);
+    // SDL_RenderPresent(renderer);
 }
 
 /*

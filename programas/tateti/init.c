@@ -13,6 +13,12 @@ int init()
         return 0;
     }
 
+    // Inicializa SDL_ttf
+    if (TTF_Init() == -1) {
+        printf("SDL_ttf no se pudo inicializar! SDL_ttf Error: %s\n", TTF_GetError());
+        return 0;
+    }
+
     window = SDL_CreateWindow("Tateti", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 
                                SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
     if (!window)
@@ -50,9 +56,11 @@ void clean_up()
 {
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
-    TTF_Quit();
     IMG_Quit();
     SDL_Quit();
+    TTF_CloseFont(font);
+    font = NULL;
+    TTF_Quit();
 }
 
 /*

@@ -3,7 +3,7 @@
         {
             "type": "shell",
             "label": "build",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "-Wall",
@@ -23,7 +23,7 @@
         {
             "type": "shell",
             "label": "compile_init",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -41,7 +41,7 @@
         {
             "type": "shell",
             "label": "compile_event",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -59,7 +59,7 @@
         {
             "type": "shell",
             "label": "compile_logic",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -77,7 +77,7 @@
         {
             "type": "shell",
             "label": "compile_minimax",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -95,7 +95,7 @@
         {
             "type": "shell",
             "label": "compile_render",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -113,7 +113,7 @@
         {
             "type": "shell",
             "label": "compile_state",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -131,7 +131,7 @@
         {
             "type": "shell",
             "label": "compile_main",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-c",
                 "-g",
@@ -149,7 +149,7 @@
         {
             "type": "shell",
             "label": "build_multiple_objects",
-            "command": "c:\\msys64\\mingw64\\bin\\gcc.exe",
+            "command": "c:\\abel\\tools\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "-Wall",

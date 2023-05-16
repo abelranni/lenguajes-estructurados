@@ -22,7 +22,7 @@ extern int chips_counter;
 extern int board[3][3]; 
 extern SDL_Texture *player_texture_1;
 extern SDL_Texture *player_texture_2;
-
+extern TTF_Font *font;
 
 #endif // _INC_MAIN
 

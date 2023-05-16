@@ -5,6 +5,7 @@
 #ifndef _INC_MINIMAX
 #define _INC_MINIMAX
 
+void ia_place_chip_minimax(int current_player);
 void ia_move_minimax(int current_player);
 int minimax(int depth, int is_maximizing, int player);
 

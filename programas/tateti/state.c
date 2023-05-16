@@ -34,7 +34,7 @@ void state_machine(SDL_Event e)
     {
     case INITIAL:
         // Lógica para colocar las fichas en el tablero
-        initial_put_chip(cell_clicked);
+        initial_place_chip(cell_clicked);
         if (chips_counter > 5)
         {
             current_game_state = SELECT_CHIP;
@@ -53,6 +53,15 @@ void state_machine(SDL_Event e)
         break;
 
     case MOVE_CHIP:
+
+        if ((cell_clicked.x == selected_chip.cell.x) && (cell_clicked.y == selected_chip.cell.y)) 
+        {
+            printf("Ficha deseleccionada\n");
+            selected_chip = (ChipSelection){0, 0, 0};
+            current_game_state = SELECT_CHIP;
+            break;
+        }
+
         // Lógica para seleccionar dónde mover la ficha seleccionada
         if (check_player_chip_movement(cell_clicked))
         {
@@ -112,13 +121,16 @@ void reset_game()
 /*
  *   Coloca las fichas en el tablero
  */
-void initial_put_chip(Cell cell_clicked)
+void initial_place_chip(Cell cell_clicked)
 {
     printf("initial_put_chip: (%d, %d)\n", cell_clicked.x, cell_clicked.y);
     if (add_chip(cell_clicked.x, cell_clicked.y, current_player))
     {
         chips_counter++;
         change_current_player();
+        // ia_place_chip_minimax(current_player);
+        // chips_counter++;
+        // change_current_player();
     }
 }
 
