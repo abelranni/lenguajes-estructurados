@@ -26,15 +26,17 @@ typedef struct chip_selection
 } ChipSelection;
 
 void state_machine( SDL_Event e );
-void initial_put_chip( SDL_Event e );
+void initial_put_chip( Cell cell_clicked );
 void change_current_player();
 
 
-bool check_player_chip_selection( SDL_Event e);
-bool check_player_chip_movement( SDL_Event e);
+bool check_player_chip_selection( Cell cell_clicked);
+bool check_player_chip_movement( Cell cell_clicked);
 bool move_chip(int x, int y, int player); 
 void reset_game();
 Cell get_cell_xy(int x, int y);
+double distance(Cell a, Cell b);
+void init_invalid_moves();
 
 
 #endif // _INC_STATE
