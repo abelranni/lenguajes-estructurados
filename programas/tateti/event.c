@@ -10,8 +10,8 @@
 */
 void handle_mouse_event(SDL_Event e, bool *must_restart_game)
 {
-    int x = e.button.x / (SCREEN_WIDTH / 3);
-    int y = e.button.y / (SCREEN_HEIGHT / 3);
+    int x = e.button.x / (BOARD_WIDTH / 3);
+    int y = e.button.y / (BOARD_HEIGHT / 3);
 
     if (chips_counter < 6)
     {

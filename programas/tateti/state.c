@@ -128,9 +128,9 @@ void initial_place_chip(Cell cell_clicked)
     {
         chips_counter++;
         change_current_player();
-        // ia_place_chip_minimax(current_player);
-        // chips_counter++;
-        // change_current_player();
+        ia_place_chip_minimax(current_player);
+        chips_counter++;
+        change_current_player();
     }
 }
 
@@ -251,7 +251,7 @@ bool move_chip(int x, int y, int player)
 Cell get_cell_xy(int x, int y)
 {
     Cell cell = {0, 0};
-    cell.x = x / (SCREEN_WIDTH / 3);
-    cell.y = y / (SCREEN_HEIGHT / 3);
+    cell.x = x / (BOARD_WIDTH / 3);
+    cell.y = y / (BOARD_HEIGHT / 3);
     return cell;
 }

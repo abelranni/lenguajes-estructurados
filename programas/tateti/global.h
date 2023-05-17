@@ -9,9 +9,10 @@
 #define _INC_MAIN
 
 extern int current_player;
-
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
+extern const int BOARD_WIDTH;
+extern const int BOARD_HEIGHT;
 extern const int PADDING;       // Espacio entre las líneas del tablero y los bordes de la ventana
 extern const int CELL_WIDTH;    // Ancho de cada celda del tablero
 extern const int CELL_HEIGHT;    // Alto de cada celda del tablero

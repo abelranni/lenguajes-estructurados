@@ -15,7 +15,7 @@ void draw_board()
     SDL_RenderClear(renderer);
     SDL_SetRenderDrawColor(renderer, LINE_COLOR.r, LINE_COLOR.g, LINE_COLOR.b, LINE_COLOR.a);
 
-    const int cellWidth = (SCREEN_WIDTH - 2 * PADDING) / 3;
+    const int cellWidth = (BOARD_WIDTH - 2 * PADDING) / 3;
     int lineWidth = 5;
     for (int i = 1; i < 3; ++i)
     {
@@ -23,11 +23,11 @@ void draw_board()
             .x = PADDING + i * CELL_WIDTH - lineWidth / 2,
             .y = PADDING,
             .w = lineWidth,
-            .h = SCREEN_HEIGHT - 2 * PADDING};
+            .h = BOARD_HEIGHT - 2 * PADDING};
         SDL_Rect horizontalRect = {
             .x = PADDING,
             .y = PADDING + i * CELL_HEIGHT - lineWidth / 2,
-            .w = SCREEN_WIDTH - 2 * PADDING,
+            .w = BOARD_WIDTH - 2 * PADDING,
             .h = lineWidth};
 
         SDL_RenderFillRect(renderer, &verticalRect);
@@ -65,8 +65,8 @@ void draw_all_chips()
 void draw_chip(SDL_Texture *texture, int x, int y)
 {
     SDL_Rect rectangle_to_draw;
-    rectangle_to_draw.x = x * (SCREEN_WIDTH / 3) + (SCREEN_WIDTH / 6) - 16;
-    rectangle_to_draw.y = y * (SCREEN_HEIGHT / 3) + (SCREEN_HEIGHT / 6) - 16;
+    rectangle_to_draw.x = x * (BOARD_WIDTH / 3) + (BOARD_WIDTH / 6) - 16;
+    rectangle_to_draw.y = y * (BOARD_HEIGHT / 3) + (BOARD_HEIGHT / 6) - 16;
     rectangle_to_draw.w = 32;
     rectangle_to_draw.h = 32;
     SDL_RenderCopy(renderer, texture, NULL, &rectangle_to_draw);
@@ -110,11 +110,11 @@ void draw_line_winner(int winner_player)
     {
         if (board[i][0] == winner_player && board[i][1] == winner_player && board[i][2] == winner_player)
         {
-            SDL_RenderDrawLine(renderer, i * SCREEN_WIDTH / 3 + SCREEN_WIDTH / 6, 0, i * SCREEN_WIDTH / 3 + SCREEN_WIDTH / 6, SCREEN_HEIGHT);
+            SDL_RenderDrawLine(renderer, i * BOARD_WIDTH / 3 + BOARD_WIDTH / 6, 0, i * BOARD_WIDTH / 3 + BOARD_WIDTH / 6, BOARD_HEIGHT);
         }
         if (board[0][i] == winner_player && board[1][i] == winner_player && board[2][i] == winner_player)
         {
-            SDL_RenderDrawLine(renderer, 0, i * SCREEN_HEIGHT / 3 + SCREEN_HEIGHT / 6, SCREEN_WIDTH, i * SCREEN_HEIGHT / 3 + SCREEN_HEIGHT / 6);
+            SDL_RenderDrawLine(renderer, 0, i * BOARD_HEIGHT / 3 + BOARD_HEIGHT / 6, BOARD_WIDTH, i * BOARD_HEIGHT / 3 + BOARD_HEIGHT / 6);
         }
     }
     if (board[0][0] == winner_player && board[1][1] == winner_player && board[2][2] == winner_player)
@@ -122,18 +122,31 @@ void draw_line_winner(int winner_player)
         SDL_RenderDrawLine(renderer,
                            0,
                            0,
-                           SCREEN_WIDTH,
-                           SCREEN_HEIGHT);
+                           BOARD_WIDTH,
+                           BOARD_HEIGHT);
     }
 
     if (board[0][2] == winner_player && board[1][1] == winner_player && board[2][0] == winner_player)
     {
         SDL_RenderDrawLine(renderer,
                            0,
-                           SCREEN_HEIGHT,
-                           SCREEN_WIDTH,
+                           BOARD_HEIGHT,
+                           BOARD_WIDTH,
                            0);
     }
     SDL_RenderPresent(renderer);
 }
 
+void render_text(const char *text, int x, int y) {
+    SDL_Color textColor = {0, 0, 0};  // Negro
+    SDL_Surface *textSurface = TTF_RenderText_Solid(font, text, textColor);
+    SDL_Texture *textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
+    int textWidth = textSurface->w;
+    int textHeight = textSurface->h;
+
+    SDL_FreeSurface(textSurface);
+
+    SDL_Rect renderQuad = {x, y, textWidth, textHeight};
+    SDL_RenderCopy(renderer, textTexture, NULL, &renderQuad);
+    SDL_DestroyTexture(textTexture);
+}

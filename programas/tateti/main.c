@@ -11,10 +11,12 @@
 #include "global.h"
 
 const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
+const int SCREEN_HEIGHT = 520;
+const int BOARD_WIDTH = 640;
+const int BOARD_HEIGHT = 480;
 const int PADDING = 10;
-const int CELL_WIDTH = (SCREEN_WIDTH - 2 * PADDING) / 3;
-const int CELL_HEIGHT = (SCREEN_HEIGHT - 2 * PADDING) / 3;
+const int CELL_WIDTH = (BOARD_WIDTH - 2 * PADDING) / 3;
+const int CELL_HEIGHT = (BOARD_HEIGHT - 2 * PADDING) / 3;
 
 SDL_Window *window = NULL;
 SDL_Renderer *renderer = NULL;
@@ -97,16 +99,3 @@ int WinMain(void)
     return 0;
 }
 
-void render_text(const char *text, int x, int y) {
-    SDL_Color textColor = {0, 0, 0};  // Negro
-    SDL_Surface *textSurface = TTF_RenderText_Solid(font, text, textColor);
-    SDL_Texture *textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
-    int textWidth = textSurface->w;
-    int textHeight = textSurface->h;
-
-    SDL_FreeSurface(textSurface);
-
-    SDL_Rect renderQuad = {x, y, textWidth, textHeight};
-    SDL_RenderCopy(renderer, textTexture, NULL, &renderQuad);
-    SDL_DestroyTexture(textTexture);
-}

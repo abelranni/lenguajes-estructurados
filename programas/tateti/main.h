@@ -6,6 +6,5 @@
 #define _INC_MAIN
 
 int WinMain();
-void render_text(const char *text, int x, int y);
 
 #endif // _INC_MAIN
