@@ -134,7 +134,6 @@ void draw_line_winner(int winner_player)
                            BOARD_WIDTH,
                            0);
     }
-    SDL_RenderPresent(renderer);
 }
 
 void render_text(const char *text, int x, int y) {
