@@ -52,8 +52,8 @@ int WinMain(void)
         return finish_with_error("Error al inicializar");
     }
 
-    player_texture_1 = load_texture("./assets/rojo.png");
-    player_texture_2 = load_texture("./assets/verde.png");
+    player_texture_1 = load_texture("./assets/circle.png");
+    player_texture_2 = load_texture("./assets/xcross.png");
 
     if (!player_texture_1 || !player_texture_2)
     {
@@ -65,7 +65,7 @@ int WinMain(void)
 
     SDL_Event e;
 
-    font = TTF_OpenFont("./assets/OpenSans-Regular.ttf", 28);
+    font = TTF_OpenFont("./assets/OpenSans-Regular.ttf", 24);
     if (!font)
     {
         return finish_with_error("Error al cargar la fuente");
@@ -85,12 +85,9 @@ int WinMain(void)
         
         SDL_RenderClear(renderer);  // Limpia la pantalla
 
-        draw_line_winner(check_winner());
         draw_board();
-
-        char playerTurnText[50];
-        sprintf(playerTurnText, "Turno del jugador: %d", current_player);
-        render_text(playerTurnText, SCREEN_WIDTH / 2, SCREEN_HEIGHT - 50);
+        render_info_game();
+        draw_line_winner(check_winner());
 
         SDL_RenderPresent(renderer);
     }
@@ -99,3 +96,9 @@ int WinMain(void)
     return 0;
 }
 
+void render_info_game()
+{
+    char playerTurnText[50];
+    sprintf(playerTurnText, "Turno del jugador: %d", current_player);
+    render_text(playerTurnText, 10, SCREEN_HEIGHT - 50);
+}

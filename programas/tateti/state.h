@@ -31,12 +31,13 @@ void change_current_player();
 
 
 bool check_player_chip_selection( Cell cell_clicked);
-bool check_player_chip_movement( Cell cell_clicked);
+bool check_player_chip_movement( Cell destination_cell, Cell origin_cell );
 bool move_chip(int x, int y, int player); 
 void reset_game();
 Cell get_cell_xy(int x, int y);
 double distance(Cell a, Cell b);
 void init_invalid_moves();
 
+void debug_show_board_and_delay();
 
 #endif // _INC_STATE

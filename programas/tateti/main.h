@@ -6,5 +6,6 @@
 #define _INC_MAIN
 
 int WinMain();
+void render_info_game();
 
 #endif // _INC_MAIN
