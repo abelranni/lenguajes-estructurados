@@ -15,7 +15,7 @@
 #define DEBUG_SHOW_DELAY 0
 
 GameState current_game_state = INITIAL;
-ChipSelection selected_chip = {0, 0, 0};
+ChipSelection selected_chip = {-1, -1, 0};
 
 /*
 * tabla de movimientos adyacentes pero no diagonales
@@ -60,7 +60,7 @@ void state_machine(SDL_Event e)
         if ((cell_clicked.x == selected_chip.cell.x) && (cell_clicked.y == selected_chip.cell.y)) 
         {
             DEBUG3("Ficha deseleccionada\n");
-            selected_chip = (ChipSelection){0, 0, 0};
+            selected_chip = (ChipSelection){-1, -1, 0};
             current_game_state = SELECT_CHIP;
             break;
         }
@@ -71,7 +71,7 @@ void state_machine(SDL_Event e)
             if (move_chip(cell_clicked.x, cell_clicked.y, current_player))
             {
                 board[selected_chip.cell.x][selected_chip.cell.y] = 0;
-                selected_chip = (ChipSelection){0, 0, 0};
+                selected_chip = (ChipSelection){-1, -1, 0};
 
                 DEBUG3("Movimiento valido\n");
                 DEBUG3("Jugador %d mueve ficha de (%d, %d) a (%d, %d)\n",
@@ -123,7 +123,7 @@ void reset_game()
     }
     chips_counter = 0;
     current_player = 1;
-    selected_chip = (ChipSelection){0, 0, 0};
+    selected_chip = (ChipSelection){-1, -1, 0};
     current_game_state = INITIAL;
 }
 

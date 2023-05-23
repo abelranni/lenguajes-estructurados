@@ -2,6 +2,7 @@
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
 #include <stdbool.h>
+#include "data.h"
 
 #ifndef _INC_STATE
 #define _INC_STATE
@@ -14,16 +15,7 @@ typedef enum
     END_GAME     // El juego ha terminado
 } GameState;
 
-typedef struct cell
-{
-    int x;
-    int y;
-} Cell;
-typedef struct chip_selection
-{
-    Cell cell;
-    int player;
-} ChipSelection;
+
 
 void state_machine( SDL_Event e );
 void initial_place_chip( Cell cell_clicked );

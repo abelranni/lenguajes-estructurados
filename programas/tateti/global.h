@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
+#include "data.h"
 
 //-----------------------------------------------------------------------------
 // Funciones y Variables exportadas desde MAIN
@@ -38,3 +39,10 @@ extern const SDL_Color BACKGROUND_COLOR;
 extern const SDL_Color LINE_COLOR;
 
 #endif // _INC_RENDER
+
+#ifndef _INC_STATE
+
+// extern GameState current_game_state;
+extern ChipSelection selected_chip;
+
+#endif // _INC_STATE

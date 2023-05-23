@@ -64,6 +64,16 @@ void draw_all_chips()
 */
 void draw_chip(SDL_Texture *texture, int x, int y)
 {
+
+    if (x == selected_chip.cell.x && y == selected_chip.cell.y)
+    {
+        SDL_Rect rectangle_border;
+        rectangle_border.x = x * (BOARD_WIDTH / 3) + (BOARD_WIDTH / 6) - 20;
+        rectangle_border.y = y * (BOARD_HEIGHT / 3) + (BOARD_HEIGHT / 6) - 20;
+        rectangle_border.w = 40;
+        rectangle_border.h = 40;
+        SDL_RenderDrawRect(renderer, &rectangle_border);
+    }
     SDL_Rect rectangle_to_draw;
     rectangle_to_draw.x = x * (BOARD_WIDTH / 3) + (BOARD_WIDTH / 6) - 16;
     rectangle_to_draw.y = y * (BOARD_HEIGHT / 3) + (BOARD_HEIGHT / 6) - 16;
