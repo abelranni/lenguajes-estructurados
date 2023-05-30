@@ -82,7 +82,6 @@ void state_machine(SDL_Event e)
 
                 debug_show_board_and_delay();
 
-                debug_udp_send_board();
 
                 change_current_player();
 
@@ -90,6 +89,8 @@ void state_machine(SDL_Event e)
                 change_current_player();
 
                 current_game_state = SELECT_CHIP;
+                
+                debug_udp_send_board();
             }
         }
         break;
@@ -284,7 +285,7 @@ void board_to_string (char *board_str)
     {
         for (j = 0; j< 3; j++)
         {
-            board_str[i*3 + j] = board[i][j] + '0';
+            board_str[i*3 + j] = board[j][i] + '0';
         }
     }
     board_str[9] = '\0';
