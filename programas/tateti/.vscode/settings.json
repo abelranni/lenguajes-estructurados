@@ -18,6 +18,8 @@
         "compare": "c",
         "limits": "c",
         "new": "c",
-        "state.h": "c"
+        "state.h": "c",
+        "string.h": "c",
+        "unistd.h": "c"
     }
 }

@@ -82,14 +82,13 @@ void state_machine(SDL_Event e)
 
                 debug_show_board_and_delay();
 
-
                 change_current_player();
 
                 ia_move_chip_minimax(current_player);
                 change_current_player();
 
                 current_game_state = SELECT_CHIP;
-                
+
                 debug_udp_send_board();
             }
         }
@@ -268,7 +267,6 @@ void debug_show_board_and_delay()
     SDL_RenderPresent(renderer); // Actualiza la pantalla
     SDL_Delay(DEBUG_SHOW_DELAY);    //delay X segundos
 #endif
-
 }
 
 void debug_udp_send_board()
@@ -295,5 +293,4 @@ void udp_send_board (char *board_str)
 {
     udp_send(board_str);
     printf("Enviado: %s\n", board_str);
-    
 }
