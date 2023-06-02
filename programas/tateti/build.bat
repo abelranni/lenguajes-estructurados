@@ -21,6 +21,9 @@ gcc -c event.c -o ./obj/event.o
 echo Compilando state.c...
 gcc -c state.c -o ./obj/state.o
 
+echo Compilando udp.c...
+gcc -c udp.c -o ./obj/udp.o
+
 echo Compilando main.c...
 gcc -c main.c -o ./obj/main.o
 
@@ -32,8 +35,9 @@ gcc ^
 ./obj/minimax.o ^
 ./obj/event.o ^
 ./obj/state.o ^
+./obj/udp.o ^
 ./obj/main.o ^
--o ./bin/tateti.exe -lSDL2 -lSDL2_ttf -lSDL2_image
+-o ./bin/tateti.exe -lSDL2 -lSDL2_ttf -lSDL2_image -lws2_32
 
 echo Ejecutando el programa...
 cd bin

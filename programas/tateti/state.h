@@ -32,4 +32,8 @@ void init_invalid_moves();
 
 void debug_show_board_and_delay();
 
+void debug_udp_send_board();
+void board_to_string (char *board_str);
+void udp_send_board (char *board_str);
+
 #endif // _INC_STATE

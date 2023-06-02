@@ -10,6 +10,7 @@
 #include "logic.h"
 #include "minimax.h"
 #include "render.h"
+#include "udp.h"
 #include "state.h"
 
 #define DEBUG_SHOW_DELAY 0
@@ -87,6 +88,8 @@ void state_machine(SDL_Event e)
                 change_current_player();
 
                 current_game_state = SELECT_CHIP;
+
+                debug_udp_send_board();
             }
         }
         break;
@@ -264,4 +267,30 @@ void debug_show_board_and_delay()
     SDL_RenderPresent(renderer); // Actualiza la pantalla
     SDL_Delay(DEBUG_SHOW_DELAY);    //delay X segundos
 #endif
+}
+
+void debug_udp_send_board()
+{
+    char board_str[9];
+    board_to_string(board_str);
+    udp_send_board(board_str);
+}
+
+void board_to_string (char *board_str)
+{
+    int i, j;
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j< 3; j++)
+        {
+            board_str[i*3 + j] = board[j][i] + '0';
+        }
+    }
+    board_str[9] = '\0';
+}
+
+void udp_send_board (char *board_str)
+{
+    udp_send(board_str);
+    printf("Enviado: %s\n", board_str);
 }

@@ -7,6 +7,8 @@
 #include "minimax.h"
 #include "event.h"
 #include "state.h"
+// #include "tcp.h"
+#include "udp.h"
 #include "main.h"
 #include "global.h"
 
@@ -71,6 +73,8 @@ int WinMain(void)
         return finish_with_error("Error al cargar la fuente");
     }
 
+    (void) udp_config();
+    udp_send("000000000");
 
     while (!quit_main_loop)
     {
