@@ -74,7 +74,7 @@ int WinMain(void)
     }
 
     (void) udp_config();
-    udp_send("Hola\n");
+    udp_send("000000000");
 
     while (!quit_main_loop)
     {

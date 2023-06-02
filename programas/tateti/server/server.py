@@ -7,7 +7,7 @@ pygame.init()
 window_size = (300, 300)
 window = pygame.display.set_mode(window_size)
 pygame.display.set_caption("Tateti")
-font = pygame.font.Font(None, 100)
+font = pygame.font.Font(None, 80)
 
 # Configuración del servidor
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
