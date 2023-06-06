@@ -1,6 +1,4 @@
 
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_ttf.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
@@ -18,7 +16,9 @@ Config read_config_2(const char *filename)
     }
 
     fscanf(file, "screen_width=%d\n", &config.screen_width);
+
     fscanf(file, "screen_height=%d\n", &config.screen_height);
+
     fscanf(file, "background_color=%d,%d,%d\n",
            &config.background_color[0],
            &config.background_color[1],

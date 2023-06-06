@@ -62,6 +62,8 @@ int current_player = 1;
 #endif
 {    
     Config config = read_config("./config.cfg");
+    printf ("Ancho de pantalla: %d\n", config.screen_width);
+    printf ("Alto de pantalla: %d\n", config.screen_height);
 
     if (argc == 4 ) {
         const char *config_file = argv[1];

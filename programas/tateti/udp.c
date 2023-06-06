@@ -13,7 +13,7 @@
     #define SOCKET_ERROR -1
 #endif
 
-#define SERVER "192.168.100.80"
+#define SERVER "10.0.1.140"
 #define BUFLEN 512
 #define PORT 12345
 

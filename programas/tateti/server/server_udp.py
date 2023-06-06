@@ -8,7 +8,7 @@ LINE_WIDTH = 5
 FONT_SIZE = 80
 
 # Configuración del servidor
-SERVER_ADDRESS = ('192.168.100.80', 12345)
+SERVER_ADDRESS = ('10.0.1.140', 12345)
 
 # Tablero del juego
 BOARD_SIZE = 3
