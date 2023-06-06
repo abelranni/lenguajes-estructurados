@@ -5,7 +5,7 @@ size: 16:9
 paginate: true
 ---
 
-# 03.05 -  TicTacToe
+# 03.05.01 -  TicTacToe
 
 ## Lenguajes Estructurados
 

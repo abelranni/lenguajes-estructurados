@@ -47,7 +47,11 @@ int current_player = 1;
 /*
 *   Función principal
 */
-int WinMain(void)
+#ifdef _WIN32
+    int WinMain(void)
+#else
+    int main(void)
+#endif
 {
     if (!init())
     {
