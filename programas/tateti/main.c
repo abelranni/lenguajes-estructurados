@@ -1,3 +1,6 @@
+#ifdef _WIN32
+#include <wtypes.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -7,8 +10,8 @@
 #include "minimax.h"
 #include "event.h"
 #include "state.h"
-// #include "tcp.h"
 #include "udp.h"
+#include "config.h"
 #include "main.h"
 #include "global.h"
 
@@ -48,11 +51,40 @@ int current_player = 1;
 *   Función principal
 */
 #ifdef _WIN32
-    int WinMain(void)
+    int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, char*, int nShowCmd)
+    {
+        return main(__argc, __argv);
+    }    
+    int main(int argc, char *argv[])
 #else
-    int main(void)
+    int main(int argc, char *argv[])
+    
 #endif
-{
+{    
+    Config config = read_config("./config.cfg");
+
+    if (argc == 4 ) {
+        const char *config_file = argv[1];
+        const char *key = argv[2];
+        const char *value = argv[3];      
+
+        printf("Configuración modificada\n");
+        printf("Archivo: %s\n", config_file);
+        printf("Clave: %s\n", key);
+        printf("Valor: %s\n", value);
+        
+        modify_config(config_file, key, value);
+    }
+
+    config = read_config("./config.cfg");
+    printf("Ancho de pantalla: %d\n", config.screen_width);
+    printf("Alto de pantalla: %d\n", config.screen_height);
+    printf("Color de fondo: %d,%d,%d\n", 
+           config.background_color[0], 
+           config.background_color[1], 
+           config.background_color[2]);
+           
+
     if (!init())
     {
         return finish_with_error("Error al inicializar");

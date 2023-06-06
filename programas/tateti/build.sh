@@ -24,11 +24,17 @@ gcc -I/usr/include/SDL2 -c state.c -o ./obj/state.o
 echo "Compilando udp.c..."
 gcc -I/usr/include/SDL2 -c udp.c -o ./obj/udp.o
 
+echo "Compilando config.c..."
+gcc -I/usr/include/SDL2 -c config.c -o ./obj/config.o
+
 echo "Compilando main.c..."
 gcc -I/usr/include/SDL2 -c main.c -o ./obj/main.o
 
+echo Copiando archivo de configuracion...
+cp config.cfg bin/config.cfg
+
 echo "Linkeando..."
-gcc ./obj/init.o ./obj/render.o ./obj/logic.o ./obj/minimax.o ./obj/event.o ./obj/state.o ./obj/udp.o ./obj/main.o -o ./bin/tateti -lSDL2 -lSDL2_ttf -lSDL2_image -lm
+gcc ./obj/init.o ./obj/render.o ./obj/logic.o ./obj/minimax.o ./obj/event.o ./obj/state.o ./obj/udp.o ./obj/config.o ./obj/main.o -o ./bin/tateti -lSDL2 -lSDL2_ttf -lSDL2_image -lm
 
 echo "Ejecutando el programa..."
 cd bin

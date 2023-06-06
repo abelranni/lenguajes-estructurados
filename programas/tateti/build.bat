@@ -24,8 +24,14 @@ gcc -c state.c -o ./obj/state.o
 echo Compilando udp.c...
 gcc -c udp.c -o ./obj/udp.o
 
+echo Compilando config.c...
+gcc -c config.c -o ./obj/config.o
+
 echo Compilando main.c...
 gcc -c main.c -o ./obj/main.o
+
+echo Copiando archivo de configuracion...
+copy config.cfg bin\config.cfg
 
 echo Linkeando...
 gcc ^
@@ -36,6 +42,7 @@ gcc ^
 ./obj/event.o ^
 ./obj/state.o ^
 ./obj/udp.o ^
+./obj/config.o ^
 ./obj/main.o ^
 -o ./bin/tateti.exe -lSDL2 -lSDL2_ttf -lSDL2_image -lws2_32
 
