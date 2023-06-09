@@ -2,6 +2,7 @@
 #include <SDL2/SDL_image.h>
 #include <SDL2/SDL_ttf.h>
 #include "data.h"
+#include "config.h"
 
 //-----------------------------------------------------------------------------
 // Funciones y Variables exportadas desde MAIN
@@ -22,6 +23,8 @@ extern SDL_Window      *window;
 extern SDL_Renderer    *renderer;
 extern int chips_counter;
 extern int board[3][3]; 
+extern Config config;
+
 extern SDL_Texture *player_texture_1;
 extern SDL_Texture *player_texture_2;
 extern TTF_Font *font;

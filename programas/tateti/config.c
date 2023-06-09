@@ -1,32 +1,44 @@
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
 #include "config.h"
 #include "global.h"
 
-Config read_config_2(const char *filename)
+#define CONFIG_FILE  "./config.cfg"
+
+int parse_command( int argc, char *argv[])
 {
-    Config config;
-    FILE *file = fopen(filename, "r");
-    if (file == NULL)
+    if (argc < 2)
     {
-        fprintf(stderr, "No se pudo abrir el archivo %s\n", filename);
-        exit(1);
+        fprintf(stderr, "Usar: %s <command> [args]\n", argv[0]);
+        printf("No se detectan argumentos de comando\n");
+        return 0;    
     }
 
-    fscanf(file, "screen_width=%d\n", &config.screen_width);
+    if (strcmp(argv[1], "set_param") == 0)
+    {
+        if (argc != 4)
+        {
+            fprintf(stderr, "Usar: %s parametro valor\n", argv[0]);
+            exit(1);
+        }
+        const char *key = argv[2];
+        const char *value = argv[3];      
 
-    fscanf(file, "screen_height=%d\n", &config.screen_height);
-
-    fscanf(file, "background_color=%d,%d,%d\n",
-           &config.background_color[0],
-           &config.background_color[1],
-           &config.background_color[2]);
-
-    fclose(file);
-    return config;
+        printf("Configuración modificada\n");
+        printf("Clave: %s\n", key);
+        printf("Valor: %s\n", value);
+        
+        modify_config(CONFIG_FILE, key, value);
+    }
+    else
+    {
+        fprintf(stderr, "Comando desconocido: %s\n", argv[1]);
+        exit(1);
+    }
+    return 0;
 }
+
 
 Config read_config(const char *filename)
 {
@@ -49,6 +61,10 @@ Config read_config(const char *filename)
         {
             sscanf(line, "screen_height=%d", &config.screen_height);
         }
+        else if (strncmp(line, "game_mode=", 10) == 0)
+        {
+            sscanf(line, "game_mode=%d", &config.game_mode);
+        }        
         else if (strncmp(line, "background_color=", 17) == 0)
         {
             sscanf(line, "background_color=%d,%d,%d",
@@ -62,23 +78,6 @@ Config read_config(const char *filename)
     return config;
 }
 
-void write_config(const char *filename, const Config *config) {
-    FILE *file = fopen(filename, "w");
-    if (file == NULL) {
-        fprintf(stderr, "Could not open config file %s\n", filename);
-        exit(1);
-    }
-
-    fprintf(file, "screen_width=%d\n", config->screen_width);
-    fprintf(file, "screen_height=%d\n", config->screen_height);
-    fprintf(file, "background_color=%d,%d,%d\n", 
-            config->background_color[0], 
-            config->background_color[1], 
-            config->background_color[2]);
-
-    fclose(file);
-}
-
 void modify_config(const char *filename, const char *key, const char *value) {
 
     Config config = read_config(filename);
@@ -87,6 +86,8 @@ void modify_config(const char *filename, const char *key, const char *value) {
         config.screen_width = atoi(value);
     } else if (strcmp(key, "screen_height") == 0) {
         config.screen_height = atoi(value);
+    } else if (strcmp(key, "game_mode") == 0) {
+        config.game_mode = atoi(value);        
     } else if (strcmp(key, "background_color") == 0) {
         sscanf(value, "%d,%d,%d", 
                &config.background_color[0], 
@@ -98,4 +99,21 @@ void modify_config(const char *filename, const char *key, const char *value) {
     }
 
     write_config(filename, &config);
+}
+
+void write_config(const char *filename, const Config *config) {
+    FILE *file = fopen(filename, "w");
+    if (file == NULL) {
+        fprintf(stderr, "Could not open config file %s\n", filename);
+        exit(1);
+    }
+    fprintf(file, "game_mode=%d\n", config->game_mode);
+    fprintf(file, "screen_width=%d\n", config->screen_width);
+    fprintf(file, "screen_height=%d\n", config->screen_height);
+    fprintf(file, "background_color=%d,%d,%d\n", 
+            config->background_color[0], 
+            config->background_color[1], 
+            config->background_color[2]);
+
+    fclose(file);
 }
