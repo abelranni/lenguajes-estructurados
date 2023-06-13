@@ -31,7 +31,7 @@ void die(char *s)
     #ifdef _WIN32
         WSACleanup();
     #endif
-    exit(1);
+    // exit(1);
 }
 
 int udp_config(void)
@@ -50,6 +50,7 @@ int udp_config(void)
     if (socket_id == SOCKET_ERROR)
     {
         die("socket");
+        return 1;
     }
     
 

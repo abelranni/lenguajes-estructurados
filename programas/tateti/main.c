@@ -12,6 +12,7 @@
 #include "state.h"
 #include "udp.h"
 #include "config.h"
+#include "debug.h"
 #include "main.h"
 #include "global.h"
 
@@ -64,11 +65,11 @@ int main(int argc, char *argv[])
 {
     (void)parse_command(argc, argv);
     config = read_config("./config.cfg");
-    printf("Configuración:\n");
-    printf("Modo de juego: %d\n", config.game_mode);
-    printf("Ancho de pantalla: %d\n", config.screen_width);
-    printf("Alto de pantalla: %d\n", config.screen_height);
-    printf("Color de fondo: %d,%d,%d\n",
+    DEBUG2("Configuración:\n");
+    DEBUG2("Modo de juego: %d\n", config.game_mode);
+    DEBUG2("Ancho de pantalla: %d\n", config.screen_width);
+    DEBUG2("Alto de pantalla: %d\n", config.screen_height);
+    DEBUG2("Color de fondo: %d,%d,%d\n",
            config.background_color[0],
            config.background_color[1],
            config.background_color[2]);

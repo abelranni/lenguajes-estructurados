@@ -295,5 +295,5 @@ void board_to_string (char *board_str)
 void udp_send_board (char *board_str)
 {
     udp_send(board_str);
-    printf("Enviado: %s\n", board_str);
+    DEBUG2("Mensaje UDP Enviado: %s\n", board_str);
 }

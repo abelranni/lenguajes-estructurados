@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <winsock2.h>
 #include <ws2tcpip.h>
+#include "debug.h"
 #include "tcp.h"
 
 #define PORT 12345
@@ -94,7 +95,7 @@ void tcp_send(char *msg)
     }
     else
     {
-        printf("Mensaje enviado: %s \n", msg);
+        DEBUG2("Mensaje enviado: %s \n", msg);
     }
 
 }

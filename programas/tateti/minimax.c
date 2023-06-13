@@ -6,7 +6,7 @@
 #include "minimax.h"
 #include "global.h"
 
-#define MINIMAX_DEPTH 4
+#define MINIMAX_DEPTH 3
 
 void ia_place_chip_minimax(int current_player)
 {

@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-#define DEBUG_LEVEL 2
+#define DEBUG_LEVEL 1
 
 #if DEBUG_LEVEL >= 1
 #define DEBUG1(...) printf(__VA_ARGS__)
