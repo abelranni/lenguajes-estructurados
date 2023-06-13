@@ -80,15 +80,14 @@ void state_machine(SDL_Event e)
                        selected_chip.cell.x, selected_chip.cell.y,
                        cell_clicked.x, cell_clicked.y);
 
-                debug_show_board_and_delay();
-
+                if (config.game_mode != MANUAL)
+                {
+                    debug_show_board_and_delay();
+                    change_current_player();
+                    ia_move_chip_minimax(current_player);
+                }                
                 change_current_player();
-
-                ia_move_chip_minimax(current_player);
-                change_current_player();
-
                 current_game_state = SELECT_CHIP;
-
                 debug_udp_send_board();
             }
         }
@@ -140,9 +139,13 @@ void initial_place_chip(Cell cell_clicked)
     {
         chips_counter++;
         change_current_player();
-        ia_place_chip_minimax(current_player);
-        chips_counter++;
-        change_current_player();
+        if (config.game_mode != MANUAL)
+        {
+            ia_place_chip_minimax(current_player);
+            chips_counter++;
+            change_current_player();
+        }
+
     }
 }
 
@@ -292,5 +295,5 @@ void board_to_string (char *board_str)
 void udp_send_board (char *board_str)
 {
     udp_send(board_str);
-    printf("Enviado: %s\n", board_str);
+    DEBUG2("Mensaje UDP Enviado: %s\n", board_str);
 }

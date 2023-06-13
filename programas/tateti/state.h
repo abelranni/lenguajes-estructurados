@@ -15,6 +15,13 @@ typedef enum
     END_GAME     // El juego ha terminado
 } GameState;
 
+typedef enum
+{
+    MANUAL,     // Juego simple entre dos jugadores humanos
+    AUTO1,      // Juego contra un algoritmo nivel 1
+    AUTO2,      // Juego contra un algotitmo nivel 2
+    AUTO_FULL   // Juego entre dos algoritmos
+} GameMode;
 
 
 void state_machine( SDL_Event e );

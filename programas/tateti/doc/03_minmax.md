@@ -9,7 +9,7 @@ paginate: true
 
 ## Algoritmo MinMax
 
-## 03.05E -  TicTacToe
+## 03.05.03 -  TicTacToe
 
 ---
 
