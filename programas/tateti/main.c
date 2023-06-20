@@ -15,6 +15,7 @@
 #include "debug.h"
 #include "main.h"
 #include "global.h"
+#include "score.h"
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 520;
@@ -128,6 +129,8 @@ int main(int argc, char *argv[])
 void render_info_game()
 {
     char playerTurnText[50];
-    sprintf(playerTurnText, "Turno del jugador: %d", current_player);
+    int player_one_wins = get_player_one_wins();
+    int player_two_wins = get_player_two_wins();
+    sprintf(playerTurnText, "Turno del jugador: %d\t\t\t\t Victorias P1: %d, P2: %d", current_player, player_one_wins, player_two_wins);
     render_text(playerTurnText, 10, SCREEN_HEIGHT - 50);
 }

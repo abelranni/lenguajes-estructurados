@@ -12,6 +12,7 @@
 #include "render.h"
 #include "udp.h"
 #include "state.h"
+#include "score.h"
 
 #define DEBUG_SHOW_DELAY 0
 
@@ -19,8 +20,8 @@ GameState current_game_state = INITIAL;
 ChipSelection selected_chip = {-1, -1, 0};
 
 /*
-* tabla de movimientos adyacentes pero no diagonales
-*/
+ * tabla de movimientos adyacentes pero no diagonales
+ */
 int invalid_moves[3][3][3][3] = {0};
 
 /*
@@ -58,7 +59,7 @@ void state_machine(SDL_Event e)
 
     case MOVE_CHIP:
 
-        if ((cell_clicked.x == selected_chip.cell.x) && (cell_clicked.y == selected_chip.cell.y)) 
+        if ((cell_clicked.x == selected_chip.cell.x) && (cell_clicked.y == selected_chip.cell.y))
         {
             DEBUG3("Ficha deseleccionada\n");
             selected_chip = (ChipSelection){-1, -1, 0};
@@ -80,12 +81,18 @@ void state_machine(SDL_Event e)
                        selected_chip.cell.x, selected_chip.cell.y,
                        cell_clicked.x, cell_clicked.y);
 
+                int winner = check_winner();
+                if (winner != 0)
+                {
+                    break;
+                }
+
                 if (config.game_mode != MANUAL)
                 {
                     debug_show_board_and_delay();
                     change_current_player();
                     ia_move_chip_minimax(current_player);
-                }                
+                }
                 change_current_player();
                 current_game_state = SELECT_CHIP;
                 debug_udp_send_board();
@@ -105,6 +112,7 @@ void state_machine(SDL_Event e)
     int winner = check_winner();
     if (winner != 0)
     {
+        increase_wins(winner);
         DEBUG3("Juego terminado\n");
         DEBUG3("Ganador: Jugador %d\n", winner);
         current_game_state = END_GAME;
@@ -145,7 +153,6 @@ void initial_place_chip(Cell cell_clicked)
             chips_counter++;
             change_current_player();
         }
-
     }
 }
 
@@ -160,7 +167,7 @@ void change_current_player()
 /*
  *   Verifica si el jugador selecciona una de sus fichas
  */
-bool check_player_chip_selection(Cell cell_clicked) 
+bool check_player_chip_selection(Cell cell_clicked)
 {
     if (board[cell_clicked.x][cell_clicked.y] == current_player)
     {
@@ -177,8 +184,8 @@ bool check_player_chip_selection(Cell cell_clicked)
 /*
  *   Verifica si el jugador selecciona una casilla válida para mover su ficha
  */
-bool check_player_chip_movement(Cell destination_cell , Cell origin_cell)
-{   
+bool check_player_chip_movement(Cell destination_cell, Cell origin_cell)
+{
     // Verificar si la celda de destino está vacía
     if (board[destination_cell.x][destination_cell.y] != 0)
     {
@@ -189,14 +196,16 @@ bool check_player_chip_movement(Cell destination_cell , Cell origin_cell)
 
     // Verificar si la celda de destino es adyacente a la celda de origen
     double dist = distance(origin_cell, destination_cell);
-    if (dist > sqrt(2)) {
+    if (dist > sqrt(2))
+    {
         DEBUG3("CELDA NO ADYACENTE\n");
         DEBUG3("check_player_chip_movement: (%d, %d) no es valido \n", destination_cell.x, destination_cell.y);
-        return false;    
+        return false;
     }
 
     // Verificar si la celda de destino es válida
-    if (invalid_moves[origin_cell.x][origin_cell.y][destination_cell.x][destination_cell.y] == 1) {
+    if (invalid_moves[origin_cell.x][origin_cell.y][destination_cell.x][destination_cell.y] == 1)
+    {
         DEBUG3("CELDA ADYACENTE INVALIDA\n");
         DEBUG3("check_player_chip_movement: (%d, %d) no es valido \n", destination_cell.x, destination_cell.y);
         return false;
@@ -204,9 +213,15 @@ bool check_player_chip_movement(Cell destination_cell , Cell origin_cell)
 
     DEBUG3("check_player_chip_movement: (%d, %d) valido \n", destination_cell.x, destination_cell.y);
     DEBUG3("board[%d][%d]: %d\n", destination_cell.x, destination_cell.y, board[destination_cell.x][destination_cell.y]);
+    int winner = check_winner();
+    if (winner != 0)
+    {
+        DEBUG3("Juego terminado\n");
+        DEBUG3("Ganador: Jugador %d\n", winner);
+        current_game_state = END_GAME;
+    }
     return true;
 }
-
 
 /*
  *   Inicializa la tabla de movimientos válidos
@@ -225,18 +240,18 @@ void init_invalid_moves()
 
     invalid_moves[2][1][1][0] = 1; // 2,1 -> 1,0
     invalid_moves[2][1][1][2] = 1; // 2,1 -> 1,2
-    
+
     invalid_moves[1][2][2][1] = 1; // 1,2 -> 2,1
     invalid_moves[1][2][0][1] = 1; // 1,2 -> 0,1
 }
 
 // Función para calcular la distancia entre dos celdas
-double distance(Cell a, Cell b) {
+double distance(Cell a, Cell b)
+{
     int dx = a.x - b.x;
     int dy = a.y - b.y;
     return sqrt(dx * dx + dy * dy);
 }
-
 
 /*
  *   Mueve la ficha seleccionada a la casilla seleccionada
@@ -265,10 +280,10 @@ Cell get_cell_xy(int x, int y)
 void debug_show_board_and_delay()
 {
 #if DEBUG_SHOW_DELAY > 0
-    SDL_RenderClear(renderer);  // Limpia la pantalla
-    draw_board();                            
+    SDL_RenderClear(renderer); // Limpia la pantalla
+    draw_board();
     SDL_RenderPresent(renderer); // Actualiza la pantalla
-    SDL_Delay(DEBUG_SHOW_DELAY);    //delay X segundos
+    SDL_Delay(DEBUG_SHOW_DELAY); // delay X segundos
 #endif
 }
 
@@ -279,20 +294,20 @@ void debug_udp_send_board()
     udp_send_board(board_str);
 }
 
-void board_to_string (char *board_str)
+void board_to_string(char *board_str)
 {
     int i, j;
     for (i = 0; i < 3; i++)
     {
-        for (j = 0; j< 3; j++)
+        for (j = 0; j < 3; j++)
         {
-            board_str[i*3 + j] = board[j][i] + '0';
+            board_str[i * 3 + j] = board[j][i] + '0';
         }
     }
     board_str[9] = '\0';
 }
 
-void udp_send_board (char *board_str)
+void udp_send_board(char *board_str)
 {
     udp_send(board_str);
     DEBUG2("Mensaje UDP Enviado: %s\n", board_str);

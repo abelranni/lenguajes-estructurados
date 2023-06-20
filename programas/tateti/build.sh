@@ -18,6 +18,9 @@ gcc -I/usr/include/SDL2 -c minimax.c -o ./obj/minimax.o
 echo "Compilando event.c..."
 gcc -I/usr/include/SDL2 -c event.c -o ./obj/event.o
 
+echo "Compilando score.c..."
+gcc -I/usr/include/SDL2 -c score.c -o ./obj/score.o
+
 echo "Compilando state.c..."
 gcc -I/usr/include/SDL2 -c state.c -o ./obj/state.o
 
@@ -34,7 +37,7 @@ echo Copiando archivo de configuracion...
 cp config.cfg bin/config.cfg
 
 echo "Linkeando..."
-gcc ./obj/init.o ./obj/render.o ./obj/logic.o ./obj/minimax.o ./obj/event.o ./obj/state.o ./obj/udp.o ./obj/config.o ./obj/main.o -o ./bin/tateti -lSDL2 -lSDL2_ttf -lSDL2_image -lm
+gcc ./obj/init.o ./obj/render.o ./obj/logic.o ./obj/minimax.o ./obj/event.o ./obj/score.o  ./obj/state.o ./obj/udp.o ./obj/config.o ./obj/main.o -o ./bin/tateti -lSDL2 -lSDL2_ttf -lSDL2_image -lm
 
 echo "Ejecutando el programa..."
 cd bin
