@@ -18,6 +18,9 @@ gcc -c minimax.c -o ./obj/minimax.o
 echo Compilando event.c...
 gcc -c event.c -o ./obj/event.o
 
+echo Compilando score.c...
+gcc -c score.c -o ./obj/score.o
+
 echo Compilando state.c...
 gcc -c state.c -o ./obj/state.o
 
@@ -40,6 +43,7 @@ gcc ^
 ./obj/logic.o ^
 ./obj/minimax.o ^
 ./obj/event.o ^
+./obj/score.o ^
 ./obj/state.o ^
 ./obj/udp.o ^
 ./obj/config.o ^
