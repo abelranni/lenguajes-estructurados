@@ -15,6 +15,7 @@
 #include "debug.h"
 #include "main.h"
 #include "global.h"
+#include "puntuacion.h"
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 520;
@@ -48,12 +49,12 @@ TTF_Font *font = NULL;
 SDL_Texture *player_texture_1 = NULL;
 SDL_Texture *player_texture_2 = NULL;
 int current_player = 1;
-
 /*
  *   Función principal
  */
 #ifdef _WIN32
-int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, char *, int nShowCmd)
+int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
+
 {
     return main(__argc, __argv);
 }
@@ -130,4 +131,6 @@ void render_info_game()
     char playerTurnText[50];
     sprintf(playerTurnText, "Turno del jugador: %d", current_player);
     render_text(playerTurnText, 10, SCREEN_HEIGHT - 50);
+    sprintf(playerTurnText, "Puntuacion: %d", showplayerscore());
+    render_text(playerTurnText, 430, SCREEN_HEIGHT - 50);
 }

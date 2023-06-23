@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
-
 #include "global.h"
 #include "debug.h"
 #include "logic.h"
@@ -12,6 +11,7 @@
 #include "render.h"
 #include "udp.h"
 #include "state.h"
+#include "puntuacion.h"
 
 #define DEBUG_SHOW_DELAY 0
 
@@ -80,6 +80,11 @@ void state_machine(SDL_Event e)
                        selected_chip.cell.x, selected_chip.cell.y,
                        cell_clicked.x, cell_clicked.y);
 
+                int winner=check_winner();
+                if (winner!= 0)
+                {
+                    break;
+                }
                 if (config.game_mode != MANUAL)
                 {
                     debug_show_board_and_delay();
@@ -90,6 +95,8 @@ void state_machine(SDL_Event e)
                 current_game_state = SELECT_CHIP;
                 debug_udp_send_board();
             }
+            playerscores();
+            
         }
         break;
 
@@ -127,6 +134,7 @@ void reset_game()
     current_player = 1;
     selected_chip = (ChipSelection){-1, -1, 0};
     current_game_state = INITIAL;
+    resetplayerscore();
 }
 
 /*

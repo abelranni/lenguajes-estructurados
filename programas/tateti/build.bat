@@ -27,6 +27,9 @@ gcc -c udp.c -o ./obj/udp.o
 echo Compilando config.c...
 gcc -c config.c -o ./obj/config.o
 
+echo Compilando puntuacion.c...
+gcc -c puntuacion.c -o ./obj/puntuacion.o
+
 echo Compilando main.c...
 gcc -c main.c -o ./obj/main.o
 
@@ -43,6 +46,7 @@ gcc ^
 ./obj/state.o ^
 ./obj/udp.o ^
 ./obj/config.o ^
+./obj/puntuacion.o ^
 ./obj/main.o ^
 -o ./bin/tateti.exe -lSDL2 -lSDL2_ttf -lSDL2_image -lws2_32
 
@@ -50,4 +54,3 @@ echo Ejecutando el programa...
 cd bin
 tateti.exe
 cd ..
-
